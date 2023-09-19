@@ -26,3 +26,8 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+Route::get('/admin/profile', function(){
+    return view('profile.show-admin');
+
+})->name('profile.admin');
