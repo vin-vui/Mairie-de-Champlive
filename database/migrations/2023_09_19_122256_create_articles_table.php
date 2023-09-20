@@ -17,7 +17,7 @@ return new class extends Migration
             $table->longText('content');
             $table->string('image')->nullable();
             $table->date('date');
-            $table->longText('description');
+            $table->longText('description')->nullable();
             $table->integer('status')->default(0);
             $table->timestamps();
         });

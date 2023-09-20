@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('association', function (Blueprint $table) {
+        Schema::create('associations', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->longText('presentation');

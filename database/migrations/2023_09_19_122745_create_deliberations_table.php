@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('deliberation', function (Blueprint $table) {
+        Schema::create('deliberations', function (Blueprint $table) {
             $table->id();
             $table->date('date');
-            $table->string('file');
-            $table->longText('description');
+            $table->string('file')->nullable();
+            $table->longText('description')->nullable();
             $table->integer('status')->default(0);
             $table->timestamps();
         });
