@@ -16,6 +16,14 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                'carribean' : '#115E59',
+                'mint' : '#62A87C',
+                'smocky-black' : '#1B1714',
+                'peach' : '#FFE6A7',
+                'seasalt' : '#FAFAFA'
+
+            },
         },
     },
 
