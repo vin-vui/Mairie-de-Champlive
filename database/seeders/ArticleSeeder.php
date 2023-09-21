@@ -27,16 +27,19 @@ class ArticleSeeder extends Seeder
         $article->content = 'Bienvenue au concours annuel de pétanque organisé par l\'association les pétanqueurs';
         $article->image = '';
         $article->date = '22-08-24';
+        $article->location = 'Champlive';
 
         $article->save();
 
 
-        for ($i = 1; $i <= 1000; $i++) { /**Fait parti de la fonction $faker, et dit que l'on ajoute 1000 données aléatoires */
+        for ($i = 1; $i <= 20; $i++) { /**Fait parti de la fonction $faker, et dit que l'on ajoute 1000 données aléatoires */
             $article = new Article;
             $article->title = $this->faker->word();
             $article->content = $this->faker->paragraph();
             $article->image = '';
             $article->date = $this->faker->date();
+            $article->location = $this->faker->word();
+
             $article->save();
         }
 

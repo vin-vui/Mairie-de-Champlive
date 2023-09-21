@@ -14,6 +14,7 @@ class Article extends Model
         'content',
         'image',
         'date',
+        'location',
         'description',
         'status',
     ];

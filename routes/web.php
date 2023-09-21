@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArticleController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -31,3 +33,5 @@ Route::get('/admin/profile', function(){
     return view('profile.show-admin');
 
 })->name('profile.admin');
+
+Route::resource('articles', ArticleController::class);
