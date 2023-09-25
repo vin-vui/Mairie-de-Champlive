@@ -1,11 +1,11 @@
 <x-app-layout>
 
     <div class="m-10">
-        <div class="pb-8 flex justify-around items-center bg-peach">
+        <div class="pb-8 flex justify-around items-center bg-seasalt">
             <h2 class="font-bold text-lg text-smocky-black">CRUD Membres du conseil</h2>
-            <a class=" mt-10 border-4 border-carribean bg-carribean text-peach rounded-xl p-2" href="{{ route('members.create') }}">
+            <a class=" mt-10 border-4 border-carribean bg-carribean text-seasalt rounded-xl p-2" href="{{ route('members.create') }}">
                 Ajouter un membre</a>
-            <a class=" mt-10 border-4  border-carribean bg-carribean text-peach rounded-xl p-2" href="{{ route('dashboard') }}">
+            <a class=" mt-10 border-4  border-carribean bg-carribean text-seasalt rounded-xl p-2" href="{{ route('dashboard') }}">
                 Retour</a>
         </div>
         <div class="row mt-2">
@@ -16,7 +16,7 @@
                     </div>
                 @endif
             </div>
-            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg border-2 border-carribean">
                 <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>

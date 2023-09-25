@@ -1,11 +1,13 @@
 <x-app-layout>
 
     <div class="m-10">
-        <div class="pb-8 flex justify-around items-center bg-peach">
+        <div class="pb-8 flex justify-around items-center bg-seasalt">
             <h2 class="font-bold text-lg text-smocky-black">CRUD Article</h2>
-            <a class=" mt-10 border-4 border-carribean bg-carribean text-peach rounded-xl p-2" href="{{ route('articles.create') }}">
+            <a class=" mt-10 border-4 border-carribean bg-carribean text-seasalt rounded-xl p-2"
+                href="{{ route('articles.create') }}">
                 Ajouter un évènement</a>
-            <a class=" mt-10 border-4  border-carribean bg-carribean text-peach rounded-xl p-2" href="{{ route('dashboard') }}">
+            <a class=" mt-10 border-4  border-carribean bg-carribean text-seasalt rounded-xl p-2"
+                href="{{ route('dashboard') }}">
                 Retour</a>
         </div>
         <div class="row mt-2">
@@ -16,8 +18,8 @@
                     </div>
                 @endif
             </div>
-            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg border-2 border-carribean ">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 ">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
                             <th scope="col" class="px-6 py-3">
@@ -29,12 +31,12 @@
                                         </svg></a>
                                 </div>
                             </th>
-                            
+
                             <th scope="col" class="px-6 py-3">
                                 Nom
                             </th>
                             </th>
-                            <th scope="col" class="px-6 py-3">
+                            <th scope="col" class="px-6 py-3 ">
                                 Description
                             </th>
                             <th scope="col" class="px-16 py-3">
@@ -48,10 +50,10 @@
                             </th>
                         </tr>
                     </thead>
-                  
+
                     <tbody>
                         @foreach ($articles as $article)
-                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700  ">
                                 <td scope="row" class="px-6 py-4">{{ $article->id }}</td>
                                 <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     {{ $article->title }}</td>
@@ -60,6 +62,12 @@
                                 <td class="px-16 py-4">{{ $article->location }}</td>
 
                                 <td class="px-6 py-4 whitespace-nowrap">
+                                    <a class="font-medium text-green-600 dark:text-green-500 hover:underline pr-2"
+                                        href="{{ route('articles.show', $article) }}">Voir</a>
+
+                                    <a class="font-medium text-blue-600 dark:text-blue-500 hover:underline pr-2"
+                                        href="{{ route('articles.edit', $article) }}">Editer</a>
+
                                     <form action="{{ route('articles.destroy', $article) }}" method="POST">
 
                                         @csrf
@@ -68,11 +76,7 @@
                                         <button type="submit"
                                             class="font-medium text-red-600 dark:text-red-500 hover:underline">Supprimer</button>
                                     </form>
-                                    <a class="font-medium text-green-600 dark:text-green-500 hover:underline pr-2"
-                                            href="{{ route('articles.show', $article) }}">Voir</a>
 
-                                    <a class="font-medium text-blue-600 dark:text-blue-500 hover:underline pr-2"
-                                            href="{{ route('articles.edit', $article) }}">Editer</a>
                                 </td>
                             </tr>
                         @endforeach

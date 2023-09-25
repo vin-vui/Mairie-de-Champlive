@@ -36,7 +36,7 @@
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
                             <label class="font-bold text-lg">Contenu :</label>
-                                <textarea class="form-control w-full text-black" rows="6" name="content" value="{{ $article->content }}" placeholder="Contenu"></textarea>
+                                <input class="form-control w-full text-black" rows="6" name="content" value="{{ $article->content }}" placeholder="Description"></input>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
                             <label class="font-bold text-lg">Date :</label>
@@ -51,7 +51,7 @@
                             <input type="file" name="image" id="image" class="form-control-file">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                            <button type="submit" class="border-4 border-carribean bg-carribean  text-peach rounded-xl p-2">Envoyer</button>
+                            <button type="submit" class="border-4 border-carribean bg-carribean  text-seasalt rounded-xl p-2">Envoyer</button>
                         </div>
                     </div>
                 </form>

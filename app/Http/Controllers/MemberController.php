@@ -29,9 +29,7 @@ class MemberController extends Controller
      // create function 
      public function create()
      {
-         $members = Member::all();
- 
-         return view('members.create', compact('members'));
+         return view('members.create');
      }
  
      public function store(Request $request)
@@ -53,15 +51,12 @@ class MemberController extends Controller
       //Show function
      public function show(Member $member)
      {
-         $members = Member::all();
          return view('members.show', compact('member'));
      }
 
      // Edit function
     public function edit (Member $member)
     {
-
-        $members = Member::all();
         return view('members.edit', compact('member'));
 
     }
@@ -72,7 +67,7 @@ class MemberController extends Controller
 
        if ($request->hasFile('image')) 
     {
-        $path = Storage::putFileAs('public', $request->photo, $validData['title'].'.'.$request->image->extension());
+        $path = Storage::putFileAs('public', $request->photo, $validData['lastname'].'.'.$request->photo->extension());
         $validData["image"] = $path;
     }
 

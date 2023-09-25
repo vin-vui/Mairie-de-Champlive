@@ -8,32 +8,36 @@ use Illuminate\Support\Facades\Storage;
 
 class ArticleController extends Controller
 {
+
+    public function rules():array
+    {
+        return [
+           'title'=>'required',
+            'content'=>'required',
+            'image'=>'nullable',
+            'date' =>'required',
+            'location' =>'required',
+            'description' =>'nullable',
+            'status' =>'nullable', 
+        ];
+    }
+
     public function index()
     {
         $articles = Article::all();
 
-        return view ('articles.index', compact ('articles'));
+        return view ('articles.index', compact('articles'));
     }
 
     // create function 
     public function create()
     {
-        $articles = Article::all();
-
-        return view('articles.create', compact('articles'));
+        return view('articles.create');
     }
 
     public function store(Request $request)
     {
-        $validData = $request->validate ([
-            'title'=>'required',
-            'content'=> 'required',
-            'image'=> 'nullable',
-            'date' => 'required',
-            'location' => 'required',
-            'description' => 'nullable',
-            'status' => 'nullable',
-            ]);
+        $validData = $request->validate($this->rules());
 
         if ($request->hasFile('image')) 
     {
@@ -50,7 +54,6 @@ class ArticleController extends Controller
      //Show function
      public function show(Article $article)
      {
-         
          return view('articles.show', compact('article'));
      }
 
@@ -58,22 +61,12 @@ class ArticleController extends Controller
     // Edit function
     public function edit (Article $article)
     {
-
         return view('articles.edit', compact('article'));
-
     }
 
     public function update(Request $request, Article $article)
     {
-        $validData = $request->validate ([
-            'title'=>'required',
-            'content'=> 'required',
-            'image'=> 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp',
-            'date' => 'required',
-            'location' => 'required',
-            'description' => 'nullable',
-            'status' => 'nullable',
-       ]);
+        $validData = $request->validate($this->rules());
 
        if ($request->hasFile('image')) 
     {
