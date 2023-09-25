@@ -23,18 +23,18 @@ class MemberSeeder extends Seeder
     {
 
         $member = new Member;
-        $member-> name = 'Dupond';
-        $member-> nickname = 'Linette';
-        $member-> function = 'Maire';
+        $member-> lastname = 'Dupond';
+        $member-> firstname = 'Linette';
+        $member-> position = 'Maire';
         $member-> photo = '';
         $member->save();
 
 
          for ($i = 1; $i <= 10; $i++) { /**Fait parti de la fonction $faker, et dit que l'on ajoute 1000 données aléatoires */
              $member = new Member;
-             $member->name = $this->faker->word();
-             $member->nickname = $this->faker->word();
-             $member->function = $this->faker->randomElement(['Maire', 'Premier adjoint', 'Deuxième adjoint', 'Conseiller']);
+             $member->lastname = $this->faker->word();
+             $member->firstname = $this->faker->word();
+             $member->position = $this->faker->randomElement(['Maire', 'Premier adjoint', 'Deuxième adjoint', 'Conseiller']);
              $member->photo = '';
              $member->save();
          }

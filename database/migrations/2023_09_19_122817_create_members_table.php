@@ -14,10 +14,10 @@ return new class extends Migration
     {
         Schema::create('members', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('nickname');
-            $table->enum('function', ['Maire', 'Premier adjoint', 'Deuxième adjoint', 'Conseiller']);
-            $table->string('photo');
+            $table->string('lastname');
+            $table->string('firstname');
+            $table->enum('position', ['Maire', 'Premier adjoint', 'Deuxième adjoint', 'Conseiller']);
+            $table->string('photo')->nullable();
             $table->longText('description')->nullable();
             $table->integer('status')->default(0);
             $table->timestamps();

@@ -1,8 +1,8 @@
 <x-app-layout>
     <div class="m-10">
         <div class="pb-8 flex justify-around items-center">
-            <h2 class="font-bold text-lg text-smocky-black">CRUD Articles</h2>
-            <a class=" mt-10 border-4 border-carribean bg-carribean text-white rounded-xl p-2" href="{{ route('articles.index') }}">
+            <h2 class="font-bold text-lg text-smocky-black">CRUD Membres du conseil</h2>
+            <a class=" mt-10 border-4 border-carribean bg-carribean text-white rounded-xl p-2" href="{{ route('members.index') }}">
                 Retour</a>
         </div>
         <div class="row mt-2">
@@ -25,30 +25,32 @@
                 </div>
                 @endif
 
-                <form action="{{ route('articles.update', $article->id) }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('members.update', $member->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
 
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Titre :</label>
-                                <input type="text" name="title" value="{{ $article->title }}" class="form-control w-full" placeholder="Titre">
+                            <label class="font-bold text-lg">Nom </label>
+                                <input type="text" name="lastname" value="{{ $member->lastname }}" class="form-control w-full" placeholder="Titre">
+                            
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Contenu :</label>
-                                <textarea class="form-control w-full text-black" rows="6" name="content" value="{{ $article->content }}" placeholder="Contenu"></textarea>
+                            <label class="font-bold text-lg">Prénom </label>
+                                <input class="form-control w-full text-black" rows="6" name="firstname" value="{{ $member->firstname }}" placeholder="Prénom"></input>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Date :</label>
-                                <input class="form-control w-full text-black" rows="6" name="date" value="{{ $article->date }}" placeholder="Contenu"></input>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Lieu :</label>
-                                <input class="form-control w-full text-black" rows="6" name="location" value="{{ $article->location }}" placeholder="Contenu"></input>
+                            <label class="font-bold text-lg">Fonction </label>
+                            <select class="text-black" name="position">
+                                <option value="Maire">Maire</option>
+                                <option value="Premier adjoint">Premier adjoint</option>
+                                <option value="Deuxième adjoint">Deuxième adjoint</option>
+                                <option value="Conseiller">Conseiller</option>
+                            </select>
                         </div>
                         <div class="form-group py-2">
-                            <label class="font-bold text-lg" for="image">Image :</label>
-                            <input type="file" name="image" id="image" class="form-control-file">
+                            <label class="font-bold text-lg" for="image">Image </label>
+                            <input type="file" name="photo" id="image" class="form-control-file">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                             <button type="submit" class="border-4 border-carribean bg-carribean  text-peach rounded-xl p-2">Envoyer</button>

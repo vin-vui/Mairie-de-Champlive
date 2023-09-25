@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             DeliberationSeeder::class,
             MemberSeeder::class,
             ArticleSeeder::class,
+            UserSeeder::class,
         ]);
     }
 }

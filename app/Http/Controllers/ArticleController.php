@@ -50,7 +50,7 @@ class ArticleController extends Controller
      //Show function
      public function show(Article $article)
      {
-         $articles = Article::all();
+         
          return view('articles.show', compact('article'));
      }
 
@@ -59,7 +59,6 @@ class ArticleController extends Controller
     public function edit (Article $article)
     {
 
-        $articles = Article::all();
         return view('articles.edit', compact('article'));
 
     }

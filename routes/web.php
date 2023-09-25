@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\MemberController;
 
 
 /*
@@ -35,3 +36,5 @@ Route::get('/admin/profile', function(){
 })->name('profile.admin');
 
 Route::resource('articles', ArticleController::class);
+
+Route::resource('members', MemberController::class);

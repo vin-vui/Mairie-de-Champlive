@@ -1,7 +1,7 @@
 <x-app-layout>
     <div class="m-10">
         <div class="pb-8 flex justify-around items-center ">
-            <h2 class="font-bold text-lg text-smocky-black">CRUD Article</h2>
+            <h2 class="font-bold text-lg text-smocky-black">CRUD Membres du conseil</h2>
             <a class=" mt-10 border-4 border-carribean bg-carribean text-peach rounded-xl p-2" href="{{ route('articles.index') }}">
                 Retour</a>
         </div>
@@ -25,29 +25,34 @@
                 </div>
                 @endif
 
-                <form action="{{ route('articles.store') }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('members.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
 
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
                             <label class="font-bold text-lg">Nom :</label>
-                                <input type="text" name="title" class="form-control w-full" placeholder="Nom">    
+                            <div class="form-group text-black">
+                                <input type="text" name="lastname" class="form-control w-full" placeholder="Nom">
+                            </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Description :</label>
-                                <textarea class="form-control w-full" name="content" placeholder="Description"></textarea>
+                            <label class="font-bold text-lg">Prénom :</label>
+                            <div class="form-group text-black">
+                                <textarea class="form-control w-full" name="firstname" placeholder="Prénom"></textarea>
+                            </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Date :</label>
-                                <input class="form-control w-full" name="date" placeholder="Date"></input>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Lieu :</label>
-                                <input class="form-control w-full" name="location" placeholder="Lieu"></input>
+                            <label class="font-bold text-lg">Fonction:</label>
+                            <select class="text-black" name="position">
+                                <option value="Maire">Maire</option>
+                                <option value="Premier adjoint">Premier adjoint</option>
+                                <option value="Deuxième adjoint">Deuxième adjoint</option>
+                                <option value="Conseiller">Conseiller</option>
+                            </select>
                         </div>
                         <div class="form-group py-2">
                             <label class="font-bold text-lg" for="image">Image :</label>
-                            <input type="file" name="image" id="image" class="form-control-file">
+                            <input type="file" name="photo" id="image" class="form-control-file">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                             <button type="submit" class="border-4 border-carribean bg-carribean  text-peach rounded-xl p-2 px-5">Envoyer</button>
