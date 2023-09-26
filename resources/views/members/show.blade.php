@@ -2,7 +2,7 @@
     <div class="m-10">
         <div class="pb-8 flex justify-around items-center">
             <h2 class="font-bold text-lg text-smocky-black">CRUD Membres du conseil </h2>
-            <a class=" mt-10 border-4 border-carribean bg-carribean text-peach rounded-xl p-2" href="{{ route('members.index') }}">
+            <a class=" mt-10 border-4 border-carribean bg-carribean text-seasalt rounded-xl p-2" href="{{ route('members.index') }}">
                 Retour</a>
         </div>
         <div class="row mt-2">

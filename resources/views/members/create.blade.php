@@ -2,7 +2,7 @@
     <div class="m-10">
         <div class="pb-8 flex justify-around items-center ">
             <h2 class="font-bold text-lg text-smocky-black">CRUD Membres du conseil</h2>
-            <a class=" mt-10 border-4 border-carribean bg-carribean text-peach rounded-xl p-2" href="{{ route('articles.index') }}">
+            <a class=" mt-10 border-4 border-carribean bg-carribean text-seasalt rounded-xl p-2" href="{{ route('articles.index') }}">
                 Retour</a>
         </div>
         <div class="row mt-2">
@@ -31,15 +31,11 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
                             <label class="font-bold text-lg">Nom :</label>
-                            <div class="form-group text-black">
                                 <input type="text" name="lastname" class="form-control w-full" placeholder="Nom">
-                            </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
                             <label class="font-bold text-lg">Prénom :</label>
-                            <div class="form-group text-black">
-                                <textarea class="form-control w-full" name="firstname" placeholder="Prénom"></textarea>
-                            </div>
+                                <input class="form-control w-full" name="firstname" placeholder="Prénom"></input>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
                             <label class="font-bold text-lg">Fonction:</label>
@@ -55,7 +51,7 @@
                             <input type="file" name="photo" id="image" class="form-control-file">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                            <button type="submit" class="border-4 border-carribean bg-carribean  text-peach rounded-xl p-2 px-5">Envoyer</button>
+                            <button type="submit" class="border-4 border-carribean bg-carribean  text-seasalt rounded-xl p-2 px-5">Envoyer</button>
                         </div>
                     </div>
                 </form>

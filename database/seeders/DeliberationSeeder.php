@@ -22,12 +22,14 @@ class DeliberationSeeder extends Seeder
     public function run(): void
     {
         $deliberation = new Deliberation;
+        $deliberation->title = 'Délibération septembre';
         $deliberation->date = '22-05-23';
         $deliberation->file = '';
         $deliberation->save();
 
-        for ($i = 1; $i <= 1000; $i++) { /**Fait parti de la fonction $faker, et dit que l'on ajoute 1000 données aléatoires */
+        for ($i = 1; $i <= 20; $i++) { /**Fait parti de la fonction $faker, et dit que l'on ajoute 1000 données aléatoires */
             $deliberation = new Deliberation;
+            $deliberation->title = $this->faker->word();
             $deliberation->date = $this->faker->date();
             $deliberation->file = '';
             $deliberation->save();

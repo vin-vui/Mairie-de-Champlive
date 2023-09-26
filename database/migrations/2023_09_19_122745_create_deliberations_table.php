@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('deliberations', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
             $table->date('date');
-            $table->string('file')->nullable();
+            $table->string('file');
             $table->longText('description')->nullable();
             $table->integer('status')->default(0);
             $table->timestamps();

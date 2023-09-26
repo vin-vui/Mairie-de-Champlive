@@ -71,9 +71,8 @@ class MemberController extends Controller
         $validData["image"] = $path;
     }
 
-        Member::create($validData);
+        $member->update($validData);  
 
-     
         return redirect()->route('members.index')
                        ->with ('success', 'Le membre à bien été mis à jour avec succès !');
 

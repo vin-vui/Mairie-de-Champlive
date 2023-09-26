@@ -10,6 +10,7 @@ class Deliberation extends Model
     use HasFactory;
 
     protected $fillable = [
+        'title',
         'date',
         'file',
         'description',

@@ -73,10 +73,9 @@ class ArticleController extends Controller
         $path = Storage::putFileAs('public', $request->image, $validData['title'].'.'.$request->image->extension());
         $validData["image"] = $path;
     }
+    
+        $article->update($validData);
 
-        Article::create($validData);
-
-     
         return redirect()->route('articles.index')
                        ->with ('success', 'Article mis à jour avec succès !');
 

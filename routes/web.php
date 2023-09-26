@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\MemberController;
+use App\Http\Controllers\DeliberationController;
+use App\Http\Controllers\AssociationController;
 
 
 /*
@@ -38,3 +40,7 @@ Route::get('/admin/profile', function(){
 Route::resource('articles', ArticleController::class);
 
 Route::resource('members', MemberController::class);
+
+Route:: resource('deliberations', DeliberationController::class);
+
+Route:: resource('associations', AssociationController::class);

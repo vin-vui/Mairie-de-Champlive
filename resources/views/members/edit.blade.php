@@ -53,7 +53,7 @@
                             <input type="file" name="photo" id="image" class="form-control-file">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                            <button type="submit" class="border-4 border-carribean bg-carribean  text-peach rounded-xl p-2">Envoyer</button>
+                            <button type="submit" class="border-4 border-carribean bg-carribean  text-seasalt rounded-xl p-2">Envoyer</button>
                         </div>
                     </div>
                 </form>
