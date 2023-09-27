@@ -1,10 +1,10 @@
 <x-app-layout>
     <div class="m-10">
         <div class="pb-8 flex justify-around items-center ">
-            <h2 class="font-bold text-lg text-smocky-black">CRUD Délibération
+            <h2 class="font-bold text-lg text-smocky-black">CRUD Création d'une délibération
             </h2>
-            <a class=" mt-10 border-4 border-carribean bg-carribean text-seasalt rounded-xl p-2"
-                href="{{ route('articles.index') }}">
+            <a class=" mt-10 border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt"
+                href="{{ route('deliberations.index') }}">
                 Retour</a>
         </div>
         <div class="row mt-2">
@@ -48,7 +48,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                         <button type="submit"
-                            class="border-4 border-carribean bg-carribean  text-seasalt rounded-xl p-2 px-5">Envoyer</button>
+                            class="border-2 border-carribean bg-carribean  text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt">Envoyer</button>
                     </div>
             </div>
             </form>

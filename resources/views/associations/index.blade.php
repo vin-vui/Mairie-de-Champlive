@@ -3,10 +3,8 @@
     <div class="m-10">
         <div class="pb-8 flex justify-around items-center bg-seasalt">
             <h2 class="font-bold text-lg text-smocky-black">CRUD Associations</h2>
-            <a class=" mt-10 border-4 border-carribean bg-carribean text-seasalt rounded-xl p-2" href="{{ route('associations.create') }}">
+            <a class=" mt-10 border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt" href="{{ route('associations.create') }}">
                 Ajouter une association</a>
-            <a class=" mt-10 border-4  border-carribean bg-carribean text-seasalt rounded-xl p-2" href="{{ route('dashboard') }}">
-                Retour</a>
         </div>
         <div class="row mt-2">
             <div class="col-lg-12 italic pb-4 text-smocky-black">
@@ -16,7 +14,7 @@
                     </div>
                 @endif
             </div>
-            <div class="relative overflow-x-auto shadow-md sm:rounded-lg border-2 border-carribean">
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg border-2 border-carribean drop-shadow-2xl">
                 <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>

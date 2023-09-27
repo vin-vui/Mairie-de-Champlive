@@ -5,6 +5,7 @@ use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\DeliberationController;
 use App\Http\Controllers\AssociationController;
+use App\Http\Controllers\FrontHomeController;
 
 
 /*
@@ -18,8 +19,8 @@ use App\Http\Controllers\AssociationController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('home', function () {
+    return view('home');
 });
 
 Route::middleware([

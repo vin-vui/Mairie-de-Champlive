@@ -1,8 +1,8 @@
 <x-app-layout>
     <div class="m-10">
         <div class="pb-8 flex justify-around items-center">
-            <h2 class="font-bold text-lg text-smocky-black">CRUD Associations</h2>
-            <a class=" mt-10 border-4 border-carribean bg-carribean text-seasalt rounded-xl p-2" href="{{ route('associations.index') }}">
+            <h2 class="font-bold text-lg text-smocky-black">CRUD Edition d'une association</h2>
+            <a class=" mt-10 border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt" href="{{ route('associations.index') }}">
                 Retour</a>
         </div>
         <div class="row mt-2">
@@ -43,7 +43,7 @@
                             <input type="file" name="image" id="image" class="form-control-file">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                            <button type="submit" class="border-4 border-carribean bg-carribean  text-seasalt rounded-xl p-2">Envoyer</button>
+                            <button type="submit" class="border-2 border-carribean bg-carribean  text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt">Envoyer</button>
                         </div>
                     </div>
                 </form>
