@@ -127,7 +127,7 @@
                     <ul class="space-y-2">
                         <li>
                             <a href="{{ route('articles.index')  }}"
-                                class="flex items-center p-2 text-base font-medium text-seasalt rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                class="flex items-center p-2 text-base font-medium text-seasalt rounded-lg dark:text-white hover:bg-teal-900 dark:hover:bg-gray-700 group">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
                                     <path fill="#fafafa"
                                         d="M4 21q-.825 0-1.413-.588T2 19V5q0-.825.588-1.413T4 3h16q.825 0 1.413.588T22 5v14q0 .825-.588 1.413T20 21H4Zm2-4h12v-2H6v2Zm0-4h4V7H6v6Zm6 0h6v-2h-6v2Zm0-4h6V7h-6v2Z" />
@@ -137,7 +137,7 @@
                         </li>
                         <li>
                             <a href="{{ route('members.index') }}"
-                                class="flex items-center p-2 text-base font-medium text-seasalt rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                class="flex items-center p-2 text-base font-medium text-seasalt rounded-lg dark:text-white hover:bg-teal-900 dark:hover:bg-gray-700 group">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 20 20">
                                     <path fill="#fafafa"
                                         d="M7.879 7.5c.504-.61 1.267-1 2.121-1c.854 0 1.617.39 2.121 1a2.75 2.75 0 1 1-4.243 0Zm5.871 1.75c0-.632-.156-1.228-.432-1.75H17.5A1.5 1.5 0 0 1 19 9v.5c0 1.587-1.206 3.212-3.315 3.784A2.5 2.5 0 0 0 13.5 12h-.95a3.74 3.74 0 0 0 1.2-2.75ZM13.5 13a1.496 1.496 0 0 1 1.5 1.5v.5c0 1.971-1.86 4-5 4c-3.14 0-5-2.029-5-4v-.5A1.496 1.496 0 0 1 6.5 13h7ZM1 9.5c0 1.587 1.206 3.212 3.315 3.784A2.5 2.5 0 0 1 6.5 12h.95a3.74 3.74 0 0 1-1.2-2.75c0-.632.156-1.228.433-1.75H2.5A1.5 1.5 0 0 0 1 9v.5Zm7.75-5.75a2.75 2.75 0 1 0-5.5 0a2.75 2.75 0 0 0 5.5 0Zm8 0a2.75 2.75 0 1 0-5.5 0a2.75 2.75 0 0 0 5.5 0Z" />
@@ -147,7 +147,7 @@
                         </li>
                         <li>
                             <a href="{{ route('deliberations.index') }}"
-                                class="flex items-center p-2 text-base font-medium text-seasalt rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                class="flex items-center p-2 text-base font-medium text-seasalt rounded-lg dark:text-white hover:bg-teal-900 dark:hover:bg-gray-700 group">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 14 14">
                                     <g fill="none" stroke="#fafafa" stroke-linecap="round" stroke-linejoin="round">
                                         <path d="M.5 13.29H8m-1 0v-2.5H1.5v2.5" />
@@ -161,7 +161,7 @@
                         </li>
                         <li>
                             <a href="{{ route('associations.index') }}"
-                                class="flex items-center p-2 text-base font-medium text-seasalt rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                class="flex items-center p-2 text-base font-medium text-seasalt rounded-lg dark:text-white hover:bg-teal-900 dark:hover:bg-gray-700 group">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#fafafa" d="M9 22V8.775q-2.275-.6-3.638-2.513T4 2h2q0 2.075 1.338 3.538T10.75 7h2.5q.75 0 1.4.275t1.175.8L20.35 12.6l-1.4 1.4L15 10.05V22h-2v-6h-2v6H9Zm3-16q-.825 0-1.413-.588T10 4q0-.825.588-1.413T12 2q.825 0 1.413.588T14 4q0 .825-.588 1.413T12 6Z"/></svg>
                                 <span class="ml-3">Associations</span>
                             </a>

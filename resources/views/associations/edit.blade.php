@@ -1,8 +1,8 @@
 <x-app-layout>
     <div class="m-10">
         <div class="pb-8 flex justify-around items-center">
-            <h2 class="font-bold text-lg text-smocky-black">CRUD Délibérations</h2>
-            <a class=" mt-10 border-4 border-carribean bg-carribean text-seasalt rounded-xl p-2" href="{{ route('deliberations.index') }}">
+            <h2 class="font-bold text-lg text-smocky-black">CRUD Associations</h2>
+            <a class=" mt-10 border-4 border-carribean bg-carribean text-seasalt rounded-xl p-2" href="{{ route('associations.index') }}">
                 Retour</a>
         </div>
         <div class="row mt-2">
@@ -25,22 +25,22 @@
                 </div>
                 @endif
 
-                <form action="{{ route('deliberations.update', $deliberation->id) }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('associations.update', $association->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
 
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Titre </label>
-                                <input type="text" name="title" value="{{ $deliberation->title }}" class="form-control w-full" placeholder="Titre de la délibération">
+                            <label class="font-bold text-lg">Nom</label>
+                                <input type="text" name="name" value="{{ $association->name }}" class="form-control w-full" placeholder="Titre de la délibération">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Date </label>
-                                <input class="form-control w-full text-black" rows="6" name="date" value="{{ $deliberation->date }}" placeholder="Date"></input>
+                            <label class="font-bold text-lg">Présentation</label>
+                                <input class="form-control w-full h-36 text-black" rows="6" name="presentation" value="{{ $association->presentation }}" placeholder="Présentation de l'association"></input>
                         </div>
                         <div class="form-group py-2">
-                            <label class="font-bold text-lg" for="file">Fichier PDF </label>
-                            <input type="file" name="file" id="file" class="form-control-file">
+                            <label class="font-bold text-lg" for="image">Image</label>
+                            <input type="file" name="image" id="image" class="form-control-file">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                             <button type="submit" class="border-4 border-carribean bg-carribean  text-seasalt rounded-xl p-2">Envoyer</button>

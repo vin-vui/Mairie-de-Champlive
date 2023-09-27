@@ -2,9 +2,9 @@
 
     <div class="m-10">
         <div class="pb-8 flex justify-around items-center bg-seasalt">
-            <h2 class="font-bold text-lg text-smocky-black">CRUD Délibérations</h2>
-            <a class=" mt-10 border-4 border-carribean bg-carribean text-seasalt rounded-xl p-2" href="{{ route('deliberations.create') }}">
-                Ajouter une délibération</a>
+            <h2 class="font-bold text-lg text-smocky-black">CRUD Associations</h2>
+            <a class=" mt-10 border-4 border-carribean bg-carribean text-seasalt rounded-xl p-2" href="{{ route('associations.create') }}">
+                Ajouter une association</a>
             <a class=" mt-10 border-4  border-carribean bg-carribean text-seasalt rounded-xl p-2" href="{{ route('dashboard') }}">
                 Retour</a>
         </div>
@@ -32,10 +32,10 @@
                             </th>
                             
                             <th scope="col" class="px-6 py-3">
-                               Titre
+                                Nom
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                Date
+                                Présentation
                             </th>
                             <th scope="col" class="px-6 py-3">
                                 Action
@@ -44,20 +44,20 @@
                     </thead>
                   
                     <tbody>
-                        @foreach ($deliberations as $deliberation)
+                        @foreach ($associations as $association)
                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                <td scope="row" class="px-6 py-4">{{ $deliberation->id }}</td>
+                                <td scope="row" class="px-6 py-4">{{ $association->id }}</td>
                                 <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    {{ $deliberation->title}}</td>
-                                <td class="px-6 py-4">{{ $deliberation->date }}</td>
+                                    {{ $association->name}}</td>
+                                <td class="px-6 py-4">{{ $association->presentation }}</td>
                                 <td class="px-6 py-4 whitespace-nowrap">
-                                    <form action="{{ route('deliberations.destroy', $deliberation) }}" method="POST">
+                                    <form action="{{ route('associations.destroy', $association) }}" method="POST">
 
                                         <a class="font-medium text-green-600 dark:text-green-500 hover:underline pr-2"
-                                            href="{{ route('deliberations.show', $deliberation) }}">Voir</a>
+                                            href="{{ route('associations.show', $association) }}">Voir</a>
 
                                         <a class="font-medium text-blue-600 dark:text-blue-500 hover:underline pr-2"
-                                            href="{{ route('deliberations.edit', $deliberation) }}">Editer</a>
+                                            href="{{ route('associations.edit', $association) }}">Editer</a>
 
                                         @csrf
                                         @method('DELETE')

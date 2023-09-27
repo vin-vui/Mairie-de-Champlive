@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Association;
+use Illuminate\Support\Facades\Storage;
 
 class AssociationController extends Controller
 {
@@ -36,13 +37,13 @@ class AssociationController extends Controller
 
         if ($request->hasFile('image')) 
     {
-                $path = Storage::putFileAs('public', $request->image, $validData['title'].'.'.$request->image->extension());
+                $path = Storage::putFileAs('public', $request->image, $validData['name'].'.'.$request->image->extension());
                 $validData["image"] = $path;
     }
         
             Association::create($validData);
 
-        return redirect()->route('asoociations.index')
+        return redirect()->route('associations.index')
                         ->with ('success', 'Votre association a bien été enregistrée !');
      }
 
@@ -58,28 +59,28 @@ class AssociationController extends Controller
         return view('associations.edit', compact('association'));
     }
 
-    public function update(Request $request, Deliberation $deliberation)
+    public function update(Request $request, Association $association)
     {
         $validData = $request->validate($this->rules());
 
        if ($request->hasFile('image')) 
     {
-        $path = Storage::putFileAs('public', $request->image, $validData['title'].'.'.$request->image->extension());
+        $path = Storage::putFileAs('public', $request->image, $validData['name'].'.'.$request->image->extension());
         $validData["image"] = $path;
     }
     
-        $deliberation->update($validData);
+        $association->update($validData);
 
-        return redirect()->route('deliberations.index')
+        return redirect()->route('associations.index')
                        ->with ('success', 'Association mise à jour avec succès !');
 
     }
 
     //  Destroy function
-    public function destroy (Deliberation $deliberation)
+    public function destroy (association $association)
     {
-       $deliberation->delete();
-       return redirect()->route('deliberations.index')
+       $association->delete();
+       return redirect()->route('associations.index')
                            ->with ('success', 'Association supprimée avec succès !');
     }
 }
