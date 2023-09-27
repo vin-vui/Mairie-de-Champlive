@@ -15,7 +15,11 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                'h1': ['Palanquin', 'sans-serif'],
+                'h2':['Quicksand', 'sans-serif'],
+                'p':['Roboto', 'sans-serif']
             },
+            
             colors: {
                 'carribean' : '#115E59',
                 'mint' : '#62A87C',
