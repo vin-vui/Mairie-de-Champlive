@@ -12,7 +12,7 @@ class ArticleController extends Controller
     public function rules():array
     {
         return [
-           'title'=>'required',
+            'title'=>'required',
             'content'=>'required',
             'image'=>'nullable',
             'date' =>'required',

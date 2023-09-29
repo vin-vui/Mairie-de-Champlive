@@ -19,9 +19,10 @@ use App\Http\Controllers\FrontHomeController;
 |
 */
 
-Route::get('home', function () {
-    return view('home');
-});
+Route::get('index', [FrontHomeController::class, 'index'])->name('home');
+    
+
+
 
 Route::middleware([
     'auth:sanctum',

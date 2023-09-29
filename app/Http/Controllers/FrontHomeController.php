@@ -3,17 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\ArticleController;
-use App\Models\DeliberationController; 
+use App\Models\Article;
+use App\Models\Deliberation; 
 
 class FrontHomeController extends Controller
 {
     public function index()
-    {
-        $articles = Article::all()->latest()->limit(3)->get();
-        $deliberations = Deliberation::all()->latest()-limit(4)->get();
+{
+    $articles = Article::latest()->limit(3)->get();
+    $deliberations = Deliberation::latest()->limit(4)->get();
 
-        return view('home.index', compact('articles', 'deliberation'));
+    return view('home.index', compact('articles', 'deliberations'));
+}
 
-    }
+    
 }
