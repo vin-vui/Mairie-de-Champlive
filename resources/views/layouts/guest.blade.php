@@ -170,7 +170,7 @@
                 </div>
 
                 <div class="flex mt-32">
-                    Champlive, un petit village pittoresque du Doubs, en Bourgogne-Franche-Comté, offre une évasion
+                    Champlive, un petit village du Doubs, en Bourgogne-Franche-Comté, offre une évasion
                     parfaite de l'agitation urbaine. Niché dans une vallée verdoyante, il séduit par ses paysages
                     enchanteurs, ses maisons en pierre, et son ambiance chaleureuse. Les amoureux de la nature y
                     trouveront des sentiers de randonnée magnifiques, tandis que les curieux pourront explorer son riche
@@ -185,13 +185,7 @@
         <div>
             {{ $slot }}
         </div>
-        
-        
-
-
     </main>
-
-
 
     {{-- <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
