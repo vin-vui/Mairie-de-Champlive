@@ -38,6 +38,10 @@
                             <label class="font-bold text-lg">Présentation</label>
                                 <input class="form-control w-full h-36 text-black" rows="6" name="presentation" value="{{ $association->presentation }}" placeholder="Présentation de l'association"></input>
                         </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
+                            <label class="font-bold text-lg">Contact</label>
+                                <input class="form-control w-full text-black" rows="6" name="contact" value="{{ $association->contact }}" placeholder="Contact"></input>
+                        </div>
                         <div class="form-group py-2">
                             <label class="font-bold text-lg" for="image">Image</label>
                             <input type="file" name="image" id="image" class="form-control-file">

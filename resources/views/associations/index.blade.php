@@ -18,7 +18,7 @@
                 <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
-                            <th scope="col" class="px-6 py-3">
+                            <th scope="col" class="px-4 py-3">
                                 <div class="flex items-center">No
                                     <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 ml-1"
                                             aria-hidden="true" fill="currentColor" viewBox="0 0 320 512">
@@ -35,6 +35,9 @@
                             <th scope="col" class="px-6 py-3">
                                 Présentation
                             </th>
+                            <th scope="col" class="px-8 py-3">
+                                Contact
+                            </th>
                             <th scope="col" class="px-6 py-3">
                                 Action
                             </th>
@@ -44,10 +47,11 @@
                     <tbody>
                         @foreach ($associations as $association)
                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                <td scope="row" class="px-6 py-4">{{ $association->id }}</td>
+                                <td scope="row" class="px-4 py-4">{{ $association->id }}</td>
                                 <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     {{ $association->name}}</td>
                                 <td class="px-6 py-4">{{ $association->presentation }}</td>
+                                <td class="px-8 py-4">{{ $association->contact }}</td>
                                 <td class="px-6 py-4 whitespace-nowrap">
                                     <form action="{{ route('associations.destroy', $association) }}" method="POST">
 

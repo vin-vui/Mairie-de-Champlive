@@ -14,6 +14,7 @@ class AssociationController extends Controller
             'name'=>'required',
             'presentation'=>'required',
             'image'=>'nullable',
+            'contact'=>'required',
         ];
     }
 

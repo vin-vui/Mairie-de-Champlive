@@ -24,6 +24,10 @@
                             {{ $association->presentation }}
                     </div>
                     <div class="pb-5">
+                        <label class="font-bold text-lg">Contact</label></br>
+                        {{ $association->contact }}
+                </div>
+                    <div class="pb-5">
                             <label class="font-bold text-lg">Image</label>
                             <img src="{{ Storage::url($association->image) }}"> 
                     </div>

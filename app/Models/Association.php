@@ -14,6 +14,7 @@ class Association extends Model
         'name',
         'presentation',
         'image',
+        'contact',
         'description',
         'status',
     ];

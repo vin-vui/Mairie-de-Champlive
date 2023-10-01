@@ -62,3 +62,57 @@
         background-size: 172% calc(2vw + 90px);
     }
 }
+
+
+.shapedividers_com-7249{
+    overflow:hidden;
+    position:relative;
+    }
+    .shapedividers_com-7249::before{ 
+    content:'';
+    font-family:'shape divider from ShapeDividers.com';
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw; 
+    background-size: 100% 150px;
+    background-position: 50% 0%;  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.278 3.62" preserveAspectRatio="none"><path d="M35.278.092S8.238.267 0 3.62V.092z" opacity=".2" fill="%2362a87c"/><path d="M35.278.092S8.238.246 0 3.194V.092z" opacity=".2" fill="%2362a87c"/><path d="M35.278.092S8.238.223 0 2.738V.092zM35.278.092H0V0h35.278z" fill="%2362a87c"/></svg>'); 
+    }
+    
+    @media (min-width:2100px){
+    .shapedividers_com-7249::before{
+    background-size: 100% calc(2vw + 150px);
+    }
+    }
+    
+    
+.shapedividers_com-8128{
+    overflow:hidden;
+    position:relative;
+    }
+    .shapedividers_com-8128::before{ 
+    content:'';
+    font-family:'shape divider from ShapeDividers.com';
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw; 
+    background-size: 100% 138px;
+    background-position: 50% 100%; 
+    transform: rotateY(180deg); background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.278 3.52" preserveAspectRatio="none"><path d="M0 3.528S27.04 3.352 35.278 0v3.528z" opacity=".2" fill="%2362a87c"/><path d="M0 3.528S27.04 3.374 35.278.425v3.103z" opacity=".2" fill="%2362a87c"/><path d="M0 3.528S27.04 3.396 35.278.882v2.646z" fill="%2362a87c"/><path d="M0 3.527h35.278v.092H0z" fill="%2362a87c"/></svg>'); 
+    }
+    
+    @media (min-width:2100px){
+    .shapedividers_com-8128::before{
+    background-size: 100% calc(2vw + 138px);
+    }
+    }
+     

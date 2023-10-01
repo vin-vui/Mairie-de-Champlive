@@ -31,6 +31,7 @@ class AssociationSeeder extends Seeder
         $association = new Association;
         $association->name = 'Les Pétanqueurs';
         $association->presentation = 'Nous sommes une association ou nous jouons à la pétanques tous les samedis';
+        $association->contact = '03 84 32 56 80';
         $association->image = '';
 
         $association-> save();
@@ -40,6 +41,7 @@ class AssociationSeeder extends Seeder
              $association = new Association;
              $association->name = $this->faker->word();
              $association->presentation = $this->faker->paragraph();
+             $association->contact = $this->faker->word();
              $association->image = '';
              $association->save();
          }

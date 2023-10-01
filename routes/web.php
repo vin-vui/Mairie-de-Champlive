@@ -6,7 +6,7 @@ use App\Http\Controllers\MemberController;
 use App\Http\Controllers\DeliberationController;
 use App\Http\Controllers\AssociationController;
 use App\Http\Controllers\FrontHomeController;
-
+use App\Http\Controllers\FrontAssociationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +20,8 @@ use App\Http\Controllers\FrontHomeController;
 */
 
 Route::get('index', [FrontHomeController::class, 'index'])->name('home');
-    
+Route::get('/nos-associations', [FrontAssociationController::class, 'index'])->name('nos-associations');    
+   
 
 
 
