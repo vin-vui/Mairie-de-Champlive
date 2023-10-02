@@ -17,6 +17,8 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/[email protected]/dist/cdn.min.js" defer></script>
+
     <!-- Styles -->
     @livewireStyles
 </head>
@@ -27,14 +29,12 @@
             <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                 <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                     <div>
-                        <a href="#"
+                        <a href="{{ route('home') }}"
                             class="text-sm font-semibold leading-6 font-p text-seasalt block py-2 pr-4 pl-3 text-seasalt border-b-2 border-transparent hover:border-b-2 hover:border-seasalt hover:transition-all">Accueil</a>
                     </div>
                     <div>
                         <div class="hidden md:flex relative pb-2 mt-2" x-data="{ open: false }">
-                            <button type="button"
-                                class="flex  gap-x-1 text-sm font-semibold leading-6 font-p text-seasalt"
-                                @click="open = !open">
+                            <button type="button" class="flex  gap-x-1 text-sm font-semibold leading-6 font-p text-seasalt" @click="open = !open">
                                 La Mairie
                                 <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="#FAFAFA"
                                     aria-hidden="true">
@@ -56,7 +56,7 @@
                                     <div
                                         class="group relative flex gap-x-6 py-2 text-sm leading-6 border-b-2 border-transparent hover:transition-all hover:border-carribean">
                                         <div class="flex-auto">
-                                            <a href="#" class="block font-semibold text-smocky-black ">
+                                            <a href="{{ route('nos-membres') }}" class="block font-semibold text-smocky-black ">
                                                 Conseil municipal
                                                 <span class="absolute inset-0"></span>
                                             </a>

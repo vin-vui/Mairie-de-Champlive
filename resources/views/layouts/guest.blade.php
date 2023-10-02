@@ -28,7 +28,7 @@
                 <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                     <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                         <div>
-                            <a href="#"
+                            <a href="{{ route('home') }}"
                                 class="text-sm font-semibold leading-6 font-p text-seasalt block py-2 pr-4 pl-3 text-seasalt border-b-2 border-transparent hover:border-b-2 hover:border-seasalt hover:transition-all">Accueil</a>
                         </div>
                         <div>
@@ -57,7 +57,7 @@
                                         <div
                                             class="group relative flex gap-x-6 py-2 text-sm leading-6 border-b-2 border-transparent hover:transition-all hover:border-carribean">
                                             <div class="flex-auto">
-                                                <a href="#" class="block font-semibold text-smocky-black ">
+                                                <a href="{{ route('nos-membres') }}" class="block font-semibold text-smocky-black ">
                                                     Conseil municipal
                                                     <span class="absolute inset-0"></span>
                                                 </a>
@@ -66,7 +66,7 @@
                                         <div
                                             class="group relative flex gap-x-6 py-2 text-sm leading-6 border-b-2 border-transparent hover:transition-all hover:border-carribean">
                                             <div class="flex-auto">
-                                                <a href="#" class="block font-semibold text-gray-900">
+                                                <a href="{{ route('nos-deliberations') }}" class="block font-semibold text-gray-900">
                                                     Délibérations
                                                     <span class="absolute inset-0"></span>
                                                 </a>
@@ -111,7 +111,7 @@
                                         <div
                                             class="group relative flex gap-x-6 py-2 text-sm leading-6 border-b-2 border-transparent hover:transition-all hover:border-carribean">
                                             <div class="flex-auto">
-                                                <a href="#" class="block font-semibold text-gray-900">
+                                                <a href="{{ route('nos-articles') }}" class="block font-semibold text-gray-900">
                                                     Actualités
                                                     <span class="absolute inset-0"></span>
                                                 </a>
@@ -120,7 +120,7 @@
                                         <div
                                             class="group relative flex gap-x-6 py-2 text-sm leading-6 border-b-2 border-transparent hover:transition-all hover:border-carribean">
                                             <div class="flex-auto">
-                                                <a href="#" class="block font-semibold text-gray-900">
+                                                <a href="{{ route('nos-associations') }}" class="block font-semibold text-gray-900">
                                                     Associations
                                                     <span class="absolute inset-0"></span>
                                                 </a>

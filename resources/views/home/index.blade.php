@@ -15,16 +15,16 @@
             </div>
             <div class="mx-auto mt-24 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
                 @foreach ($articles as $article)
-                    <div class="flex flex-col overflow-hidden rounded-lg shadow-2xl hover:scale-95">
+                    <div class="flex flex-col overflow-hidden rounded-lg shadow-2xl hover:scale-95 transition duration-300">
                         <div class="flex-shrink-0">
                             <img class="h-48 w-full object-cover" src="{{ Storage::url($article->image) }}"
                                 alt="{{ $article->title }}">
                         </div>
-                        <div class="flex flex-1 flex-col justify-between bg-white p-6">
+                        <div class="flex flex-1 flex-col justify-between bg-seasalt p-6 ">
                             <div class="flex-1">
-                                <a href="#" class="mt-2 block">
+                                <a href="{{ route('article', $article->id) }}" class="mt-2 block">
                                     <p class="text-xl font-semibold text-gray-900">{{ $article->title }}</p>
-                                    <p class="mt-3 text-base text-smocky-black font-p">{{ $article->content }}</p>
+                                    <p class="line-clamp-4 mt-3 text-base text-smocky-black font-p ">{{ $article->content }}</p>
                                 </a>
                             </div>
                         </div>
