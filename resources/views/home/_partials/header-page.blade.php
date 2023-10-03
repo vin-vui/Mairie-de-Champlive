@@ -1,39 +1,15 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=palanquin:400|quicksand:500|roboto:300" rel="stylesheet" />
-
-    <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/[email protected]/dist/cdn.min.js" defer></script>
-
-    <!-- Styles -->
-    @livewireStyles
-</head>
-    
-    <body>
-    <nav class="sticky bg-gradient-to-b from-carribean/90 to-mint px-4 py-3 lg:px-6">
+<div class="fixed w-full top-0 z-40">
+    <nav class="bg-gradient-to-b from-carribean/90 to-mint px-4 py-3 lg:px-6">
         <div class="flex flex-wrap justify-center items-center mx-auto max-w-screen-xl">
             <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                 <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                     <div>
                         <a href="{{ route('home') }}"
-                            class="text-sm font-semibold leading-6 font-p text-seasalt block py-2 pr-4 pl-3 text-seasalt border-b-2 border-transparent hover:border-b-2 hover:border-seasalt hover:transition-all">Accueil</a>
+                            class="text-sm font-semibold leading-6 font-p block py-2 pr-4 pl-3 text-seasalt border-b-2 border-transparent hover:border-b-2 hover:border-seasalt hover:transition-all">Accueil</a>
                     </div>
                     <div>
-                        <div class="hidden md:flex relative pb-2 mt-2" x-data="{ open: false }">
+                        <div class="hidden md:flex relative  pb-2 mt-2" x-data="{ open: false }">
                             <button type="button" class="flex  gap-x-1 text-sm font-semibold leading-6 font-p text-seasalt" @click="open = !open">
                                 La Mairie
                                 <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="#FAFAFA"
@@ -50,7 +26,7 @@
                                 x-transition:leave-start="opacity-100 translate-y-0"
                                 x-transition:leave-end="opacity-0 translate-y-1"
                                 x-description="'Product' flyout menu, show/hide based on flyout menu state."
-                                class="absolute -left-8 top-full z-10 mt-3 max-w-md w-44 overflow-hidden bg-seasalt border-2 border-carribean shadow-lg ring-1 ring-gray-900/5"
+                                class="absolute -left-8 z-50 top-full mt-3 max-w-md w-44 overflow-hidden bg-seasalt border-2 border-carribean shadow-lg ring-1 ring-gray-900/5"
                                 x-ref="panel" @click.away="open = false">
                                 <div class="p-2 pl-5 ">
                                     <div
@@ -85,7 +61,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="hidden md:flex relative pb-2 mt-2" x-data="{ open: false }">
+                        <div class="hidden md:flex relative z-50 pb-2 mt-2" x-data="{ open: false }">
                             <button type="button"
                                 class="flex text-blaitems-center gap-x-1 text-sm font-semibold leading-6 font-p text-white"
                                 @click="open = !open">
@@ -104,7 +80,7 @@
                                 x-transition:leave-start="opacity-100 translate-y-0"
                                 x-transition:leave-end="opacity-0 translate-y-1"
                                 x-description="'Product' flyout menu, show/hide based on flyout menu state."
-                                class="absolute -left-8 top-full z-10 mt-3 max-w-md w-44 overflow-hidden bg-seasalt border-2 border-carribean shadow-lg ring-1 ring-gray-900/5"
+                                class="absolute -left-8 top-full z-50 mt-3 max-w-md w-44 overflow-hidden bg-seasalt border-2 border-carribean shadow-lg ring-1 ring-gray-900/5"
                                 x-ref="panel" @click.away="open = false">
                                 <div class="p-2 pl-5">
                                     <div
@@ -140,11 +116,11 @@
                     </div>
                     <div>
                         <a href="#"
-                            class="text-sm font-semibold leading-6 font-p text-seasalt block py-2 pr-4 pl-3 text-seasalt border-b-2 border-transparent hover:border-b-2 hover:border-seasalt hover:transition-all">Contact</a>
+                            class="text-sm font-semibold leading-6 font-p  block py-2 pr-4 pl-3 text-seasalt border-b-2 border-transparent hover:border-b-2 hover:border-seasalt hover:transition-all">Contact</a>
                     </div>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="shapedividers_com-7249 h-40"></div>
-</body>
+    <div class="shapedividers_com-7249 h-40 relative z-40"></div>
+</div>

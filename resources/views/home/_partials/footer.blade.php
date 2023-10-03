@@ -1,4 +1,5 @@
 <footer>
+    <div class="shapedividers_com-7203 h-40"></div>
     <div class="bg-gradient-to-b from-mint to-carribean/90 flex justify-around py-16 text-seasalt font-p font-semibold">
         <div>
             <div class="mb-5">Horaire d'ouverture :</div>

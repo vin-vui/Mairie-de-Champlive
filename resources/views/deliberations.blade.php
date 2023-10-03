@@ -1,7 +1,4 @@
-<header>
-    @include('home._partials.header-page')
-</header>
-
+<x-guest-layout>
 <body class="bg-seasalt">
     <h1 class="shadow_text font-h1 text-center text-3xl mb-24">
         Délibérations du conseil
@@ -23,7 +20,4 @@
     </div>
 
 </body>
-
-<footer>
-    @include('home._partials.footer-page')
-</footer>
+</x-guest-layout>

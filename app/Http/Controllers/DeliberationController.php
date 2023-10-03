@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Deliberation;
 use Illuminate\Support\Facades\Storage;
+use Carbon\Carbon;
 
 class DeliberationController extends Controller
 {
@@ -33,8 +34,9 @@ class DeliberationController extends Controller
     {
         $validData = $request->validate($this->rules());
 
-            $path = Storage::putFileAs('public', $request->file, $validData['title'].'.'.$request->file->extension());
-            $validData["image"] = $path;
+        $date = Carbon::parse($validData['date'])->format('d-m-Y');
+        $path = Storage::putFileAs('public', $request->file, $date.'.'.$request->file->extension());
+        $validData["image"] = $path;
 
         $deliberation = Deliberation::create($validData);
 

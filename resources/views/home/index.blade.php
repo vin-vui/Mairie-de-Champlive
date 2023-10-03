@@ -1,11 +1,39 @@
 <x-guest-layout>
+    <div class="">
+        <img class="-mt-40 h-[45rem] w-full object-cover " src="image/header2.jpg"
+            alt="Photo du ruisseau de champlive">
+        <div class="shapedividers_com-6697 h-32 "></div>
+    </div>
+    <div class="mx-36">
+        <h1 class="shadow_text flex justify-center text-smocky-black font-h1 text-3xl mt-10 ">
+            Mairie de CHAMPLIVE
+        </h1>
+        <div class="flex justify-around my-32">
+            <div class="">
+                <div class="flex flex-wrap ">
+                    <img class="w-48 mr-36" src="image/blason.png" alt="Blason du village de Champlive">
+                    <img class="w-96 rounded-3xl" src="image/photo_1.jpg" alt="Photographie de la mairie">
+                    <img class=" w-1/2 rounded-3xl mt-16" src="image/photo_2.jpg" alt="Photographie du village">
+                </div>
+            </div>
 
+            <div class="flex mt-32">
+                Champlive, un petit village du Doubs, en Bourgogne-Franche-Comté, offre une évasion
+                parfaite de l'agitation urbaine. Niché dans une vallée verdoyante, il séduit par ses paysages
+                enchanteurs, ses maisons en pierre, et son ambiance chaleureuse. Les amoureux de la nature y
+                trouveront des sentiers de randonnée magnifiques, tandis que les curieux pourront explorer son riche
+                passé historique. Champlive est une invitation à la tranquillité et à l'authenticité de la vie à la
+                campagne française.
+            </div>
+        </div>
+    </div>
+
+    
 
     {{-- News --}}
-    <div class="relative bg-mint px-6 pb-20 pt-16 lg:px-8 lg:pb-28 lg:pt-24">
-        <div class="absolute inset-0">
-            <div class="h-1/3 bg-mint sm:h-2/3"></div>
-        </div>
+
+    <div class="shapedividers_com-5351 h-40"></div>
+    <div class="relative bg-carribean px-6 pb-20 pt-16 lg:px-8 lg:pb-28 lg:pt-24 z-10 ">
         <div class="relative mx-auto max-w-7xl">
             <div class="text-center">
                 <h2 class="text-3xl font-bold font-h1 text-seasalt sm:text-4xl">
@@ -34,7 +62,8 @@
         </div>
     </div>
 
-    <div class="shapedividers_com-5924 h-32"></div>
+
+    <div class="shapedividers_com-1250 h-32"></div>
 
     {{-- Deliberation --}}
     <div class="bg-seasalt mt-16">
@@ -59,11 +88,5 @@
             @endforeach
         </div>
     </div>
-
-    <div class="shapedividers_com-7391 h-32"></div>
-
-    <footer>
-        @include('home._partials.footer')
-    </footer>
 
 </x-guest-layout>

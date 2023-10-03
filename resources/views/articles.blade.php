@@ -1,8 +1,6 @@
+<x-guest-layout>
 <body class="bg-seasalt ">
-    <header>
-        @include('home._partials.header-page')
-    </header>
-
+    
     <main class="mx-24">
         <h1 class="shadow_text font-h1 text-center text-3xl mb-24" >Actualités du village</h1>
 
@@ -32,3 +30,4 @@
     </footer>
 
 </body>
+</x-guest-layout>

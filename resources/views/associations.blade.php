@@ -1,3 +1,4 @@
+<x-guest-layout>
 <body class="bg-seasalt">
     <header>
         @include('home._partials.header-page')
@@ -31,3 +32,4 @@
         @include('home._partials.footer-page')
     </footer>
 </body>
+</x-guest-layout>
