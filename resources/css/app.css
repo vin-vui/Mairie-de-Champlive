@@ -144,3 +144,17 @@
     }
     }
      
+
+      .waviy span {
+        position: relative;
+        display: inline-block;
+        color: #fafafa;
+        text-transform: uppercase;
+        animation: flip 2s;
+        animation-delay: calc(.2s * var(--i))
+      }
+      @keyframes flip {
+        0%,80% {
+          transform: rotateY(360deg) 
+        }
+      }

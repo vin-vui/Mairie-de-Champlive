@@ -1,7 +1,7 @@
 <x-guest-layout>
 <body class="bg-seasalt ">
     
-    <main class="mx-24">
+    <main class="mx-24 relative inset-y-52">
         <h1 class="shadow_text font-h1 text-center text-3xl mb-24" >Actualités du village</h1>
 
     <div class="mx-auto mt-24 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">

@@ -1,13 +1,19 @@
 <x-guest-layout>
-    <div class="">
-        <img class="-mt-40 h-[45rem] w-full object-cover " src="image/header2.jpg"
-            alt="Photo du ruisseau de champlive">
-        <div class="shapedividers_com-6697 h-32 "></div>
+    <div class="relative">
+        <img class="h-[40rem] w-full object-cover " src="image/header2.jpg" alt="Photo du ruisseau de champlive">
+        <div class="waviy absolute text-seasalt mx-auto top-80 font-h1 text-7xl text-center "
+            style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <span style="--i:3">Bienvenue</span>
+            <span style="--i:3">à</span>
+            <span style="--i:3">la</span>
+            <span style="--i:1">Mairie</span>
+            <span style="--i:2">De</span>
+            <span style="--i:3">Champlive</span>
+        </div>
     </div>
+    <div class="shapedividers_com-6697 h-32 "></div>
+
     <div class="mx-36">
-        <h1 class="shadow_text flex justify-center text-smocky-black font-h1 text-3xl mt-10 ">
-            Mairie de CHAMPLIVE
-        </h1>
         <div class="flex justify-around my-32">
             <div class="">
                 <div class="flex flex-wrap ">
@@ -28,7 +34,7 @@
         </div>
     </div>
 
-    
+
 
     {{-- News --}}
 
@@ -43,7 +49,8 @@
             </div>
             <div class="mx-auto mt-24 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
                 @foreach ($articles as $article)
-                    <div class="flex flex-col overflow-hidden rounded-lg shadow-2xl hover:scale-95 transition duration-300">
+                    <div
+                        class="flex flex-col overflow-hidden rounded-lg shadow-2xl hover:scale-95 transition duration-300">
                         <div class="flex-shrink-0">
                             <img class="h-48 w-full object-cover" src="{{ Storage::url($article->image) }}"
                                 alt="{{ $article->title }}">
@@ -52,7 +59,8 @@
                             <div class="flex-1">
                                 <a href="{{ route('article', $article->id) }}" class="mt-2 block">
                                     <p class="text-xl font-semibold text-gray-900">{{ $article->title }}</p>
-                                    <p class="line-clamp-4 mt-3 text-base text-smocky-black font-p ">{{ $article->content }}</p>
+                                    <p class="line-clamp-4 mt-3 text-base text-smocky-black font-p ">
+                                        {{ $article->content }}</p>
                                 </a>
                             </div>
                         </div>
@@ -67,7 +75,7 @@
 
     {{-- Deliberation --}}
     <div class="bg-seasalt mt-16">
-        <a href="#" class="flex justify-center font-h1 font-bold text-3xl ">
+        <a href="{{ route('nos-deliberations') }}" class="flex justify-center font-h1 font-bold text-3xl ">
             <span class="shadow_text border-b-4 border-transparent hover:border-carribean mb-5">Délibérations du
                 conseil</span>
         </a>

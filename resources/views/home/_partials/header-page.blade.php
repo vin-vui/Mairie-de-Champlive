@@ -41,7 +41,7 @@
                                     <div
                                         class="group relative flex gap-x-6 py-2 text-sm leading-6 border-b-2 border-transparent hover:transition-all hover:border-carribean">
                                         <div class="flex-auto">
-                                            <a href="#" class="block font-semibold text-gray-900">
+                                            <a href="nos-deliberations" class="block font-semibold text-gray-900">
                                                 Délibérations
                                                 <span class="absolute inset-0"></span>
                                             </a>
@@ -86,7 +86,7 @@
                                     <div
                                         class="group relative flex gap-x-6 py-2 text-sm leading-6 border-b-2 border-transparent hover:transition-all hover:border-carribean">
                                         <div class="flex-auto">
-                                            <a href="#" class="block font-semibold text-gray-900">
+                                            <a href="nos-articles" class="block font-semibold text-gray-900">
                                                 Actualités
                                                 <span class="absolute inset-0"></span>
                                             </a>
