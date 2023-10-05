@@ -25,9 +25,5 @@
             </div>
     </main>
 
-    <footer>
-        @include('home._partials.footer-page')
-    </footer>
-
 </body>
 </x-guest-layout>

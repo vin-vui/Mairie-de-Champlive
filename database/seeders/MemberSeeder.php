@@ -26,7 +26,7 @@ class MemberSeeder extends Seeder
         $member-> lastname = 'Dupond';
         $member-> firstname = 'Linette';
         $member-> position = 'Maire';
-        $member-> photo = '';
+        $member-> image = '';
         $member->save();
 
 
@@ -35,7 +35,7 @@ class MemberSeeder extends Seeder
              $member->lastname = $this->faker->word();
              $member->firstname = $this->faker->word();
              $member->position = $this->faker->randomElement(['Maire', 'Premier adjoint', 'Deuxième adjoint', 'Conseiller']);
-             $member->photo = '';
+             $member->image = '';
              $member->save();
          }
     }

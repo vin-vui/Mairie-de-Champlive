@@ -36,7 +36,7 @@
                     <div class="pb-5">
                         <div class="flex flex-col">
                             <label class="font-bold text-lg">Photo</label>
-                            <img src="{{ Storage::url($member->photo) }}"> 
+                            <img src="{{ Storage::url($member->image) }}" alt="{{ $member->lastname }}">
                         </div>
                     </div>
                 </div>

@@ -13,7 +13,7 @@ class Member extends Model
         'lastname',
         'firstname',
         'position',
-        'photo',
+        'image',
         'description',
         'status',
     ];

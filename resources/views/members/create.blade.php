@@ -48,7 +48,7 @@
                         </div>
                         <div class="form-group py-2">
                             <label class="font-bold text-lg" for="image">Image :</label>
-                            <input type="file" name="photo" id="image" class="form-control-file">
+                            <input type="file" name="image" id="image" class="form-control-file">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                             <button type="submit" class="border-2 border-carribean bg-carribean  text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt">Envoyer</button>

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('lastname');
             $table->string('firstname');
             $table->enum('position', ['Maire', 'Premier adjoint', 'Deuxième adjoint', 'Conseiller']);
-            $table->string('photo')->nullable();
+            $table->string('image')->nullable();
             $table->longText('description')->nullable();
             $table->integer('status')->default(0);
             $table->timestamps();

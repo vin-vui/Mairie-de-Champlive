@@ -24,7 +24,6 @@
 <body class="bg-seasalt ">
     <header class="">
         @include('home._partials.header-page')
-
     </header>
 
     
@@ -34,7 +33,8 @@
         </div>
     </main>
 
-@include('home._partials.footer')
+    <footer>@include('home._partials.footer')</footer>
+
 
     @livewireScripts
 </body>

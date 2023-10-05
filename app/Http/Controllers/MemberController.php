@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Member;
+use Illuminate\Support\Facades\Storage;
 
 class MemberController extends Controller
 {
@@ -12,7 +13,7 @@ class MemberController extends Controller
         return [
             'lastname'=>'required',
             'firstname'=> 'required',
-            'photo'=> 'nullable',
+            'image'=> 'nullable',
             'position' => 'required',
             'description' => 'nullable',
             'status' => 'nullable',
@@ -38,7 +39,7 @@ class MemberController extends Controller
  
          if ($request->hasFile('image')) 
      {
-                 $path = Storage::putFileAs('public', $request->photo, $validData['title'].'.'.$request->image->extension());
+                 $path = Storage::putFileAs('public', $request->image, $validData['lastname'].'.'.$request->image->extension());
                  $validData["image"] = $path;
      }
          
@@ -67,7 +68,7 @@ class MemberController extends Controller
 
        if ($request->hasFile('image')) 
     {
-        $path = Storage::putFileAs('public', $request->photo, $validData['lastname'].'.'.$request->photo->extension());
+        $path = Storage::putFileAs('public', $request->image, $validData['lastname'].'.'.$request->image->extension());
         $validData["image"] = $path;
     }
 
