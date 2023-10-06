@@ -1,9 +1,6 @@
 <x-guest-layout>
-<body class="bg-seasalt">
-    <header>
-        @include('home._partials.header-page')
-    </header>
-
+<body class="bg-seasalt ">
+    <main class="mx-24 relative mt-56">
     <h1 class="shadow_text font-h1 text-center text-3xl mb-24 ">Associations</h1>
 
     <div class="flex flex-col ">
@@ -28,8 +25,6 @@
         @endforeach
     </div>
 
-    <footer>
-        @include('home._partials.footer-page')
-    </footer>
+</main>
 </body>
 </x-guest-layout>

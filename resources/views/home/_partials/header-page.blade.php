@@ -6,13 +6,13 @@
                 <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                     <div>
                         <a href="{{ route('home') }}"
-                            class="text-sm font-semibold leading-6 font-p block py-2 pr-4 pl-3 text-seasalt border-b-2 border-transparent hover:border-b-2 hover:border-seasalt hover:transition-all">Accueil</a>
+                            class="text-sm font-semibold leading-6 font-p block py-2 pr-4 pl-3 text-seasalt border-b-2 border-transparent  hover:scale-110">Accueil</a>
                     </div>
                     <div>
                         <div class="hidden md:flex relative  pb-2 mt-2" x-data="{ open: false }">
                             <button type="button" class="flex  gap-x-1 text-sm font-semibold leading-6 font-p text-seasalt" @click="open = !open">
                                 La Mairie
-                                <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="#FAFAFA"
+                                <svg class="h-5 w-5 flex-none text-gray-400 hover:scale-110" viewBox="0 0 20 20" fill="#FAFAFA"
                                     aria-hidden="true">
                                     <path fill-rule="evenodd"
                                         d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
@@ -41,7 +41,7 @@
                                     <div
                                         class="group relative flex gap-x-6 py-2 text-sm leading-6 border-b-2 border-transparent hover:transition-all hover:border-carribean">
                                         <div class="flex-auto">
-                                            <a href="nos-deliberations" class="block font-semibold text-gray-900">
+                                            <a href="{{ route('nos-deliberations') }}" class="block font-semibold text-gray-900">
                                                 Délibérations
                                                 <span class="absolute inset-0"></span>
                                             </a>
@@ -50,7 +50,7 @@
                                     <div
                                         class="group relative flex gap-x-6 py-2 text-sm leading-6 border-b-2 border-transparent ">
                                         <div class="flex-auto">
-                                            <a href="#" class="block font-semibold text-gray-900">
+                                            <a href="{{ route('services-alentours') }}" class="block font-semibold text-gray-900">
                                                 Services alentours
                                                 <span class="absolute inset-0"></span>
                                             </a>
@@ -66,7 +66,7 @@
                                 class="flex text-blaitems-center gap-x-1 text-sm font-semibold leading-6 font-p text-white"
                                 @click="open = !open">
                                 Le Village
-                                <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="#FAFAFA"
+                                <svg class="h-5 w-5 flex-none text-gray-400 hover:scale-110" viewBox="0 0 20 20" fill="#FAFAFA"
                                     aria-hidden="true">
                                     <path fill-rule="evenodd"
                                         d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
@@ -86,7 +86,7 @@
                                     <div
                                         class="group relative flex gap-x-6 py-2 text-sm leading-6 border-b-2 border-transparent hover:transition-all hover:border-carribean">
                                         <div class="flex-auto">
-                                            <a href="nos-articles" class="block font-semibold text-gray-900">
+                                            <a href="{{ route('nos-articles') }}" class="block font-semibold text-gray-900">
                                                 Actualités
                                                 <span class="absolute inset-0"></span>
                                             </a>
@@ -113,10 +113,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <a href="#"
-                            class="text-sm font-semibold leading-6 font-p  block py-2 pr-4 pl-3 text-seasalt border-b-2 border-transparent hover:border-b-2 hover:border-seasalt hover:transition-all">Contact</a>
                     </div>
                 </ul>
             </div>

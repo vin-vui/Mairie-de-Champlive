@@ -52,18 +52,23 @@
             </div>
         </div>
 
-        @foreach ($advisors as $advisor)
-            @if ($advisor)
-                <img class="w-52 border-2 border-carribean rounded-xl shadow-lg shadow-carribean"
-                    src="{{ $secondassistant->image != null ? Storage::url($secondassistant->image) : url('image/avatar-default.svg') }}">
-                <div class="text-center my-3 font-p">
-                    <div>{{ $advisor->position }}
-                    </div>
-                    <div class="mt-3">{{ $advisor->firstname }} {{ $advisor->lastname }}
-                    </div>
+        <div class="flex justify-center flex-wrap">
+            @foreach ($advisors as $advisor)
+                <div class="flex mx-16 mt-24  ">
+                    @if ($advisor)
+                        <div class="flex flex-col ">
+                            <img class="w-52 h-52 border-2 border-carribean rounded-xl shadow-lg shadow-carribean"
+                                src="{{ $advisor->image != null ? Storage::url($advisor->image) : url('image/avatar-default.svg') }}">
+                            <div class=" my-3 font-p text-center">
+                                <div>{{ $advisor->position }}
+                                </div>
+                                <div class="mt-3">{{ $advisor->firstname }} {{ $advisor->lastname }}
+                                </div>
+                            </div>
+                        </div>
+                    @endif
                 </div>
-            @endif
-        @endforeach
+            @endforeach
         </div>
 
     </body>
