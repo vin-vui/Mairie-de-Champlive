@@ -4,7 +4,7 @@
     <main class="mx-24 relative inset-y-52">
         <h1 class="shadow_text font-h1 text-center text-3xl mb-24" >Actualités du village</h1>
 
-    <div class="mx-auto mt-24 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
+    <div class="mx-auto mt-24 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3 mb-56">
             @foreach ($articles as $article)
                 <div class="flex flex-col mx-5 my-5 overflow-hidden rounded-lg shadow-xl shadow-carribean/50 border-2 border-carribean hover:scale-95">
                     <div class="flex-shrink-0">

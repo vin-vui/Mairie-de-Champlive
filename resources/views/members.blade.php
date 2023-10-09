@@ -52,7 +52,8 @@
             </div>
         </div>
 
-        <div class="flex justify-center flex-wrap">
+        <div class="flex justify-center flex-wrap w-10/12 mx-auto mb-56
+        ">
             @foreach ($advisors as $advisor)
                 <div class="flex mx-16 mt-24  ">
                     @if ($advisor)

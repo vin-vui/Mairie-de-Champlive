@@ -39,8 +39,8 @@
                                 <input class="form-control w-full text-black" rows="6" name="date" value="{{ $deliberation->date }}" placeholder="Date"></input>
                         </div>
                         <div class="form-group py-2">
-                            <label class="font-bold text-lg" for="file">Fichier PDF </label>
-                            <input type="file" name="file" id="file" class="form-control-file">
+                            <label class="font-bold text-lg" for="file">PDF </label>
+                            <input type="file" name="file" id="file" class="form-control-file" accept="application/pdf">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                             <button type="submit" class="border-2 border-carribean bg-carribean  text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt">Envoyer</button>

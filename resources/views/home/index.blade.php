@@ -74,7 +74,7 @@
     <div class="shapedividers_com-1250 h-32"></div>
 
     {{-- Deliberation --}}
-    <div class="bg-seasalt mt-16">
+    <div class="bg-seasalt mt-16 w-10/12 mx-auto ">
         <a href="{{ route('nos-deliberations') }}" class="flex justify-center font-h1 font-bold text-3xl ">
             <span class="shadow_text border-b-4 border-transparent hover:border-carribean mb-5">Délibérations du
                 conseil</span>
