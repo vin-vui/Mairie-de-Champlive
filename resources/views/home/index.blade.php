@@ -1,7 +1,7 @@
 <x-guest-layout>
     <div class="relative">
         <img class="h-[40rem] w-full object-cover " src="image/header2.jpg" alt="Photo du ruisseau de champlive">
-        <div class="waviy absolute text-seasalt mx-auto top-80 font-h1 text-7xl text-center "
+        <div class="waviy absolute text-seasalt mx-auto top-80 font-h1 text-5xl text-center md:text-6xl lg:text-7xl "
             style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
             <span style="--i:3">Bienvenue</span>
             <span style="--i:3">à</span>
@@ -11,19 +11,19 @@
             <span style="--i:3">Champlive</span>
         </div>
     </div>
-    <div class="shapedividers_com-6697 h-32 "></div>
+    <div class="shapedividers_com-6697 h-36 "></div>
 
-    <div class="mx-36">
-        <div class="flex justify-around my-32">
+    <div class="mx-12 lg:mx-36">
+        <div class="lg:flex justify-around my-32">
             <div class="">
-                <div class="flex flex-wrap ">
-                    <img class="w-48 mr-36" src="image/blason.png" alt="Blason du village de Champlive">
-                    <img class="w-96 rounded-3xl" src="image/photo_1.jpg" alt="Photographie de la mairie">
-                    <img class=" w-1/2 rounded-3xl mt-16" src="image/photo_2.jpg" alt="Photographie du village">
+                <div class="flex justify-center lg:flex-wrap ">
+                    <img class="w-32 lg:w-48 lg:mr-36" src="image/blason.png" alt="Blason du village de Champlive">
+                    <img class="hidden w-96 rounded-3xl lg:block" src="image/photo_1.jpg" alt="Photographie de la mairie">
+                    <img class="hidden w-1/2 rounded-3xl mt-16 lg:block" src="image/photo_2.jpg" alt="Photographie du village">
                 </div>
             </div>
 
-            <div class="flex mt-32">
+            <div class="flex mt-12 lg:mt-48 lg:ml-12">
                 Champlive, un petit village du Doubs, en Bourgogne-Franche-Comté, offre une évasion
                 parfaite de l'agitation urbaine. Niché dans une vallée verdoyante, il séduit par ses paysages
                 enchanteurs, ses maisons en pierre, et son ambiance chaleureuse. Les amoureux de la nature y
@@ -42,10 +42,10 @@
     <div class="relative bg-carribean px-6 pb-20 pt-16 lg:px-8 lg:pb-28 lg:pt-24 z-10 ">
         <div class="relative mx-auto max-w-7xl">
             <div class="text-center">
-                <h2 class="text-3xl font-bold font-h1 text-seasalt sm:text-4xl">
-                    <span class="border-b-4 border-seasalt">Les
+                <a href="{{ route('nos-articles') }}" class="shadow_text text-3xl font-bold font-h1 text-seasalt sm:text-4xl">
+                    <span class="shadow_text border-b-4 border-transparent hover:border-seasalt mb-5">Les
                         actualités du village</span>
-                </h2>
+                </a>
             </div>
             <div class="mx-auto mt-24 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
                 @foreach ($articles as $article)
@@ -82,7 +82,7 @@
 
         <div class="bg-seasalt flex flex-wrap justify-center ">
             @foreach ($deliberations as $deliberation)
-                <div class="bg-mint/70 w-96 mx-24 my-12 flex rounded-xl shadow-2xl border-2 border-carribean">
+                <div class="bg-mint/70 w-96 md:mx-10 lg:mx-24 my-12 flex rounded-xl shadow-2xl border-2 border-carribean">
                     <div>
                         <img class="w-40 rounded-l-xl" src="image/reunion.png" alt="">
                     </div>
