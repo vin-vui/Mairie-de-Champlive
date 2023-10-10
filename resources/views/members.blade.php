@@ -1,7 +1,7 @@
 <x-guest-layout>
 
-    <body>
-        <div class="relative mt-56">
+    <body class="">
+        <div class="relative my-32">
             <h1 class="shadow_text font-h1 text-center text-3xl">
                 Conseil municipal
             </h1>
@@ -9,7 +9,7 @@
 
         <div class="w-52 flex flex-col mx-auto mt-24">
             @if ($mayor)
-                <img class="border-2 border-carribean rounded-xl shadow-lg shadow-carribean"
+                <img class="w-52 border-2 border-carribean rounded-xl shadow-lg shadow-carribean"
                     src="{{ Storage::url($mayor->image) }}" alt="{{ $mayor->firstname }} {{ $mayor->lastname }}">
                 <div class="text-center my-3 font-p">
                     <div>{{ $mayor->position }}
@@ -21,9 +21,9 @@
         </div>
 
 
-        <div class=" mt-24">
-            <div class="flex justify-center ">
-                <div class="flex flex-col mr-40 ">
+        <div class="flex  mt-12">
+            <div class="flex flex-col justify-center mx-auto lg:flex-row">
+                <div class="flex flex-col mx-16 mb-24 lg:mb-12">
                     @if ($firstassistant)
                         <img class="w-52 border-2 border-carribean rounded-xl shadow-lg shadow-carribean"
                             src="{{ $firstassistant->image != null ? Storage::url($firstassistant->image) : url('image/avatar-default.svg') }}"
@@ -36,7 +36,7 @@
                         </div>
                     @endif
                 </div>
-                <div class="flex flex-col ">
+                <div class="flex flex-col mx-16">
                     @if ($secondassistant)
                         <img class="w-52 border-2 border-carribean rounded-xl shadow-lg shadow-carribean"
                             src="{{ $secondassistant->image != null ? Storage::url($secondassistant->image) : url('image/avatar-default.svg') }}"
@@ -52,13 +52,12 @@
             </div>
         </div>
 
-        <div class="flex justify-center flex-wrap w-10/12 mx-auto mb-56
-        ">
+        <div class="flex justify-center flex-wrap w-10/12 mx-auto mb-44">
             @foreach ($advisors as $advisor)
-                <div class="flex mx-16 mt-24  ">
+                <div class="flex mx-16 mt-12  ">
                     @if ($advisor)
                         <div class="flex flex-col ">
-                            <img class="w-52 h-52 border-2 border-carribean rounded-xl shadow-lg shadow-carribean"
+                            <img class="w-52 border-2 border-carribean rounded-xl shadow-lg shadow-carribean"
                                 src="{{ $advisor->image != null ? Storage::url($advisor->image) : url('image/avatar-default.svg') }}">
                             <div class=" my-3 font-p text-center">
                                 <div>{{ $advisor->position }}

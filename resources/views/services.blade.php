@@ -1,7 +1,7 @@
 <x-guest-layout>
 
     <body class="bg-seasalt">
-        <main class="mx-24 relative my-56">
+        <main class="relative my-32 mx-24">
             <h1 class="shadow_text font-h1 text-center text-3xl mb-24 ">
                 Services alentours
             </h1>

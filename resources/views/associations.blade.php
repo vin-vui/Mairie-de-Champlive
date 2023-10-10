@@ -1,16 +1,16 @@
 <x-guest-layout>
 <body class="bg-seasalt ">
-    <main class="mx-24 relative mt-56">
+    <main class="relative my-32 lg:mx-24">
     <h1 class="shadow_text font-h1 text-center text-3xl mb-24 ">Associations</h1>
 
-    <div class="flex flex-col ">
+    <div class="flex flex-col justify-between ">
         @foreach ($associations as $association)
-            <div class="flex justify-center">
-                <div class="flex flex-row w-8/12 mb-24 text-smocky-black border-2 border-carribean rounded-xl shadow-lg shadow-carribean/60">
-                    <div class="w-4/12 flex-shrink-0">
-                        <img class="w-full h-full object-cover rounded-l-xl" src="{{ Storage::url($association->image) }}" alt="{{ $association->name }}">
+            <div class="flex justify-center ">
+                <div class="flex flex-col lg:flex-row w-8/12 mb-24 text-smocky-black border-2 border-carribean rounded-xl shadow-lg shadow-carribean/60">
+                    <div class="sm:w-4/12 sm:flex-shrink-0">
+                        <img class="w-full max-h-96 object-cover rounded-t-xl lg:rounded-l-xl" src="{{ Storage::url($association->image) }}" alt="{{ $association->name }}">
                     </div>
-                    <div class="ml-8 my-6">
+                    <div class=" my-10 px-3">
                         <h3 class="font-h2 mb-4 text-lg underline text-center">{{ $association->name }}</h3>
                         <p class="font-p">{{ $association->presentation }}</p>
                         <div class="mt-16 flex items-center">

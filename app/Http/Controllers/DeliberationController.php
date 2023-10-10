@@ -36,7 +36,7 @@ class DeliberationController extends Controller
 
         $date = Carbon::parse($validData['date'])->format('d-m-Y');
         $path = Storage::putFileAs('public', $request->file, $date.'.'.$request->file->extension());
-        $validData["image"] = $path;
+        $validData["file"] = $path;
 
         $deliberation = Deliberation::create($validData);
 
@@ -62,7 +62,7 @@ class DeliberationController extends Controller
 
         $date = Carbon::parse($validData['date'])->format('d-m-Y');
         $path = Storage::putFileAs('public', $request->file, $date.'.'.$request->file->extension());
-        $validData["image"] = $path;
+        $validData["file"] = $path;
 
             $deliberation->update($validData);
 

@@ -1,7 +1,7 @@
 <x-guest-layout>
 
     <body class="bg-seasalt  ">
-        <div class="relative inset-y-52 mb-56">
+        <div class="relative my-32">
             <h1 class="shadow_text font-h1 text-center text-3xl mb-24  ">
                 Délibérations du conseil
             </h1>

@@ -30,7 +30,9 @@ Route::get('/nos-deliberations', [FrontDeliberationController::class, 'index'])-
 Route::get('/nos-articles', [FrontArticleController::class, 'index'])->name('nos-articles');
 Route::get('/article/{article}',[FrontArticleController::class, 'show'])->name('article');
 Route::get('/services-alentours', [FrontServiceController::class, 'index'])->name('services-alentours');
-
+Route::get('/numbers', function(){
+    return view('numbers');
+})->name('numeros-utiles');
 
 Route::middleware([
     'auth:sanctum',
