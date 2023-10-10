@@ -16,11 +16,11 @@
             <div class="col-lg-12 border-2 border-gray-800 p-4 rounded-xl bg-seasalt text-smocky-black drop-shadow-2xl">
                 <div class="row">
                     <div class="pb-5">
-                            <label class="font-bold text-lg">Nom</label>
+                            <label class="font-bold text-lg">Titre</label>
                             {{ $deliberation->title}}
                     </div>
                     <div class="pb-5">
-                            <label class="font-bold text-lg">Prénom</label>
+                            <label class="font-bold text-lg">Date</label>
                             {{ $deliberation->date }}
                     </div>
                     <div class="pb-5">

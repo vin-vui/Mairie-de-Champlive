@@ -17,19 +17,19 @@
                 <div class="row">
                     <div class="pb-5">
                         <div class="flex flex-col">
-                            <label class="font-bold text-lg">Type</label>
+                            <label class="font-bold text-lg">Titre</label>
                             {{ $article->title}}
                         </div>
                     </div>
                     <div class="pb-5">
                         <div class="flex flex-col">
-                            <label class="font-bold text-lg">Titre</label>
+                            <label class="font-bold text-lg">Description</label>
                             {{ $article->content }}
                         </div>
                     </div>
                     <div class="pb-5">
                         <div class="flex flex-col">
-                            <label class="font-bold text-lg">Contenu</label>
+                            <label class="font-bold text-lg">Date</label>
                             {{ $article->date }}
                         </div>
                     </div>
