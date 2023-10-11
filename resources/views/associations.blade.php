@@ -3,12 +3,12 @@
     <main class="relative my-32 lg:mx-24">
     <h1 class="shadow_text font-h1 text-center text-3xl mb-24 ">Associations</h1>
 
-    <div class="flex flex-col justify-between ">
+    <div class="flex flex-col w-8/12 mx-auto ">
         @foreach ($associations as $association)
             <div class="flex justify-center ">
-                <div class="flex flex-col lg:flex-row w-8/12 mb-24 text-smocky-black border-2 border-carribean rounded-xl shadow-lg shadow-carribean/60">
-                    <div class="sm:w-4/12 sm:flex-shrink-0">
-                        <img class="w-full max-h-96 object-cover rounded-t-xl lg:rounded-l-xl" src="{{ Storage::url($association->image) }}" alt="{{ $association->name }}">
+                <div class="flex flex-col lg:flex-row mx-5 mb-24 text-smocky-black border-2 border-carribean rounded-xl shadow-lg shadow-carribean/60">
+                    <div class="">
+                        <img class="w-full object-cover rounded-t-xl lg:rounded-l-xl" src="{{ Storage::url($association->image) }}" alt="{{ $association->name }}">
                     </div>
                     <div class=" my-10 px-3">
                         <h3 class="font-h2 mb-4 text-lg underline text-center">{{ $association->name }}</h3>
