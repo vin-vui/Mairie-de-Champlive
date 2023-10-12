@@ -22,6 +22,8 @@ class ArticleController extends Controller
         ];
     }
 
+
+     // SELECT * FROM articles;
     public function index()
     {
         $articles = Article::all();
@@ -29,7 +31,12 @@ class ArticleController extends Controller
         return view ('articles.index', compact('articles'));
     }
 
+
     // create function 
+
+    // Ex : INSERT INTO articles (titre, contenu, date_creation)
+    // VALUES ('Mon Titre', 'Mon Contenu', '2023-10-12');
+
     public function create()
     {
         return view('articles.create');
@@ -50,6 +57,8 @@ class ArticleController extends Controller
         return redirect()->route('articles.index')
                         ->with ('success', 'Votre article a bien été enregistré !');
      }
+
+
 
      //Show function
      public function show(Article $article)
