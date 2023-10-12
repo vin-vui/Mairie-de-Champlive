@@ -6,7 +6,7 @@
                 Numéros utiles
             </h1>
 
-            <div class="border-2 border-carribean rounded-xl shadow-lg shadow-carribean mx-10 lg:w-2/3 lg:mx-auto">
+            <div class="border-2 border-carribean text-center rounded-xl shadow-lg shadow-carribean mx-10 lg:w-2/3 lg:mx-auto">
                 <div class="border-b-2 border-carribean/40 py-4 flex justify-between items-center px-10">
                         <img class="w-16" src="image/pompier.png" alt="">
                     <div class="font-p font-semibold text-smocky-black text-lg">
@@ -79,7 +79,7 @@
 
                 <div class="py-4 flex justify-between items-center px-10">
                     <img class="w-16" src="image/114.png" alt="">
-                    <div class="font-p font-semibold text-smocky-black text-lg">
+                    <div class="font-p text-center font-semibold text-smocky-black text-lg">
                         SMS pour les personnes malentendantes
                     </div>
                     <div class="font-h1 text-2xl text-smocky-black font-semibold">

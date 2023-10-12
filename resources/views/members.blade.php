@@ -7,29 +7,26 @@
             </h1>
         </div>
 
-        <div class="flex">
-            <div class="flex flex-col justify-center mx-auto">
-                <div class="flex flex-col justify-center mx-auto lg:mt-24">
-                    @if ($mayor)
-                        <img class="w-52 border-2 border-carribean rounded-xl shadow-lg shadow-carribean"
-                            src="{{ Storage::url($mayor->image) }}" alt="{{ $mayor->firstname }} {{ $mayor->lastname }}">
-                        <div class="text-center my-3 font-p">
-                            <div>{{ $mayor->position }}
-                            </div>
-                            <div class="mt-3">{{ $mayor->firstname }} {{ $mayor->lastname }}
-                            </div>
+        <div class="flex flex-col justify-center mx-auto">
+            <div class="flex flex-col justify-center mx-auto lg:mt-24">
+                @if ($mayor)
+                    <img class="object-cover w-52 border-2 border-carribean rounded-xl shadow-lg shadow-carribean"
+                        src="{{ $mayor->image != null ? Storage::url($mayor->image) : url('image/avatar-default.svg') }}">
+                    <div class="text-center my-3 font-p">
+                        <div>{{ $mayor->position }}
                         </div>
-                    @endif
-                </div>
+                        <div class="mt-3">{{ $mayor->firstname }} {{ $mayor->lastname }}
+                        </div>
+                    </div>
+                @endif
             </div>
         </div>
-
 
         <div class="flex mt-12">
             <div class="flex flex-col justify-center mx-auto lg:flex-row">
                 <div class="flex flex-col mx-16 mb-24 lg:mb-12">
                     @if ($firstassistant)
-                        <img class="w-52 border-2 border-carribean rounded-xl shadow-lg shadow-carribean"
+                        <img class="object-cover w-52 border-2 border-carribean rounded-xl shadow-lg shadow-carribean"
                             src="{{ $firstassistant->image != null ? Storage::url($firstassistant->image) : url('image/avatar-default.svg') }}"
                             alt="{{ $firstassistant->firstname }} {{ $firstassistant->lastname }}">
                         <div class="text-center my-3 font-p">
@@ -42,7 +39,7 @@
                 </div>
                 <div class="flex flex-col mx-16">
                     @if ($secondassistant)
-                        <img class="w-52 border-2 border-carribean rounded-xl shadow-lg shadow-carribean"
+                        <img class="object-cover w-52 border-2 border-carribean rounded-xl shadow-lg shadow-carribean"
                             src="{{ $secondassistant->image != null ? Storage::url($secondassistant->image) : url('image/avatar-default.svg') }}"
                             alt="{{ $secondassistant->firstname }} {{ $secondassistant->lastname }}">
                         <div class="text-center my-3 font-p">
