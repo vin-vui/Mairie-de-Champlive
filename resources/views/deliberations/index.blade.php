@@ -16,9 +16,9 @@
                 @endif
             </div>
             <div class="relative overflow-x-auto shadow-md sm:rounded-lg border-2 border-carribean drop-shadow-2xl">
-                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                        <tr>
+                <table class="w-full text-sm text-left text-gray-500">
+                    <thead class="text-xs text-seasalt uppercase bg-gray-50 ">
+                        <tr class="bg-carribean">
                             <th scope="col" class="px-6 py-3">
                                 <div class="flex items-center">No
                                     <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 ml-1"
@@ -44,25 +44,25 @@
                   
                     <tbody>
                         @foreach ($deliberations as $deliberation)
-                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <tr class="bg-seasalt border-b">
                                 <td scope="row" class="px-6 py-4">{{ $deliberation->id }}</td>
-                                <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                     {{ $deliberation->title}}</td>
                                 <td class="px-6 py-4">{{ $deliberation->date }}</td>
                                 <td class="px-6 py-4 whitespace-nowrap">
                                     <form action="{{ route('deliberations.destroy', $deliberation) }}" method="POST">
 
-                                        <a class="font-medium text-green-600 dark:text-green-500 hover:underline pr-2"
+                                        <a class="font-medium text-green-600 hover:underline pr-2"
                                             href="{{ route('deliberations.show', $deliberation) }}">Voir</a>
 
-                                        <a class="font-medium text-blue-600 dark:text-blue-500 hover:underline pr-2"
+                                        <a class="font-medium text-blue-600 hover:underline pr-2"
                                             href="{{ route('deliberations.edit', $deliberation) }}">Editer</a>
 
                                         @csrf
                                         @method('DELETE')
 
                                         <button type="submit"
-                                            class="font-medium text-red-600 dark:text-red-500 hover:underline">Supprimer</button>
+                                            class="font-medium text-red-600 hover:underline">Supprimer</button>
                                     </form>
                                 </td>
                             </tr>

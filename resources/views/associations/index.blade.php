@@ -15,9 +15,9 @@
                 @endif
             </div>
             <div class="relative overflow-x-auto shadow-md sm:rounded-lg border-2 border-carribean drop-shadow-2xl">
-                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                        <tr>
+                <table class="w-full text-sm text-left text-gray-500 ">
+                    <thead class="text-xs text-seasalt uppercase bg-gray-50">
+                        <tr class="bg-carribean">
                             <th scope="col" class="px-4 py-3">
                                 <div class="flex items-center">No
                                     <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 ml-1"
@@ -46,26 +46,26 @@
                   
                     <tbody>
                         @foreach ($associations as $association)
-                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <tr class="bg-seasalt border-b">
                                 <td scope="row" class="px-4 py-4">{{ $association->id }}</td>
-                                <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
                                     {{ $association->name}}</td>
                                 <td class="px-6 py-4">{{ $association->presentation }}</td>
                                 <td class="px-8 py-4">{{ $association->contact }}</td>
                                 <td class="px-6 py-4 whitespace-nowrap">
                                     <form action="{{ route('associations.destroy', $association) }}" method="POST">
 
-                                        <a class="font-medium text-green-600 dark:text-green-500 hover:underline pr-2"
+                                        <a class="font-medium text-green-600  hover:underline pr-2"
                                             href="{{ route('associations.show', $association) }}">Voir</a>
 
-                                        <a class="font-medium text-blue-600 dark:text-blue-500 hover:underline pr-2"
+                                        <a class="font-medium text-blue-600  hover:underline pr-2"
                                             href="{{ route('associations.edit', $association) }}">Editer</a>
 
                                         @csrf
                                         @method('DELETE')
 
                                         <button type="submit"
-                                            class="font-medium text-red-600 dark:text-red-500 hover:underline">Supprimer</button>
+                                            class="font-medium text-red-600 hover:underline">Supprimer</button>
                                     </form>
                                 </td>
                             </tr>

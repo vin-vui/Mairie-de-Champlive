@@ -74,11 +74,11 @@
                                 x-transition:leave-start="opacity-100 translate-y-0"
                                 x-transition:leave-end="opacity-0 translate-y-1"
                                 x-description="'Product' flyout menu, show/hide based on flyout menu state."
-                                class="absolute -left-8 z-50 top-full mt-3 max-w-md w-44 overflow-hidden text-seasalt rounded-lg font-p bg-gradient-to-b from-carribean/70 to-mint/80 border-2 border-carribean shadow-lg ring-1 ring-gray-900/5"
+                                class="absolute -left-8 z-50 top-full mt-3 max-w-md w-44 overflow-hidden text-seasalt rounded-lg font-p bg-gradient-to-b from-carribean to-mint border-2 border-carribean shadow-lg ring-1 ring-gray-900/5"
                                 x-ref="panel" @click.away="open = false">
                                 <div class="p-2 pl-5 ">
                                     <div
-                                        class="group relative flex gap-x-6 py-2  leading-6 border-b-2 border-transparent hover:transition-all hover:border-carribean">
+                                        class="group relative flex gap-x-6 py-2  leading-6 border-b-2 border-transparent hover:transition-all hover:border-seasalt">
                                         <div class="flex-auto">
                                             <a href="{{ route('nos-membres') }}"
                                                 class="block font-semibold ">
@@ -88,7 +88,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:border-carribean">
+                                        class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:border-seasalt">
                                         <div class="flex-auto">
                                             <a href="{{ route('nos-deliberations') }}"
                                                 class="block font-semibold">
@@ -131,11 +131,11 @@
                                 x-transition:leave-start="opacity-100 translate-y-0"
                                 x-transition:leave-end="opacity-0 translate-y-1"
                                 x-description="'Product' flyout menu, show/hide based on flyout menu state."
-                                class="absolute -left-8 top-full z-50 mt-3 max-w-md w-44 overflow-hidden font-p text-seasalt rounded-lg bg-gradient-to-b from-carribean/70 to-mint/80 border-2 border-carribean shadow-lg ring-1 ring-gray-900/5"
+                                class="absolute -left-8 top-full z-50 mt-3 max-w-md w-44 overflow-hidden font-p text-seasalt rounded-lg bg-gradient-to-b from-carribean to-mint border-2 border-carribean shadow-lg ring-1 ring-gray-900/5"
                                 x-ref="panel" @click.away="open = false">
                                 <div class="p-2 pl-5">
                                     <div
-                                        class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:border-carribean">
+                                        class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:border-seasalt">
                                         <div class="flex-auto">
                                             <a href="{{ route('nos-articles') }}"
                                                 class="block font-semibold ">
@@ -145,7 +145,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:border-carribean">
+                                        class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:border-seasalt">
                                         <div class="flex-auto">
                                             <a href="{{ route('nos-associations') }}"
                                                 class="block font-semibold ">

@@ -1,9 +1,9 @@
 <x-guest-layout>
 <body class="bg-seasalt ">
-    <main class="relative my-32 lg:mx-24">
+    <main class="relative mt-44 lg:mx-24">
     <h1 class="shadow_text font-h1 text-center text-3xl mb-24 ">Associations</h1>
 
-    <div class="flex flex-col w-8/12 mx-auto ">
+    <div class="flex flex-col w-[20rem] md:w-[35rem] lg:w-[45rem] mx-auto ">
         @foreach ($associations as $association)
             <div class="flex justify-center ">
                 <div class="flex flex-col lg:flex-row mx-5 mb-24 text-smocky-black border-2 border-carribean rounded-xl shadow-lg shadow-carribean/60">

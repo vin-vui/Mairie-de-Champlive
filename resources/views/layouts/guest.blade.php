@@ -16,7 +16,7 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Styles -->
     @livewireStyles
 </head>
@@ -38,5 +38,8 @@
 
     @livewireScripts
 </body>
+<script>
+    AOS.init();
+  </script>
 
 </html>

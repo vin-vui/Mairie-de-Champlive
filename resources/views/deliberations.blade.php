@@ -1,11 +1,11 @@
 <x-guest-layout>
 
     <body class="bg-seasalt ">
-        <div class="relative mx-7  my-44 lg:my-32">
-            <h1 class="shadow_text font-h1 text-center text-3xl mb-24  ">
+        <div class="relative mx-7 mt-44  lg:my-32">
+            <h1 class="shadow_text font-h1 text-center text-3xl ">
                 Délibérations du conseil
             </h1>
-            <div class="flex flex-wrap justify-center mb-36 ">
+            <div class="flex flex-wrap justify-center ">
                 @foreach ($deliberations as $deliberation)
                     <div
                         class="bg-mint/70 w-96 md:mx-10 lg:mx-24 my-12 flex rounded-xl shadow-2xl border-2 border-carribean">
