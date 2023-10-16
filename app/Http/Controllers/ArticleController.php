@@ -61,6 +61,8 @@ class ArticleController extends Controller
 
 
      //Show function
+
+    //  SELECT * FROM articles WHERE id = :article_id
      public function show(Article $article)
      {
          return view('articles.show', compact('article'));
@@ -68,11 +70,14 @@ class ArticleController extends Controller
 
      
     // Edit function
+
+    // SELECT * FROM articles WHERE id = :article_id
     public function edit (Article $article)
     {
         return view('articles.edit', compact('article'));
     }
 
+    // UPDATE articles SET location WHERE id = articleId
     public function update(Request $request, Article $article)
     {
         $validData = $request->validate($this->rules());
@@ -91,6 +96,9 @@ class ArticleController extends Controller
     }
 
     //  Destroy function
+
+    // DELETE FROM articles WHERE id = :article_id;
+
     public function destroy (Article $article)
     {
        $article->delete();

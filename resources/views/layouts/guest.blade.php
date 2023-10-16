@@ -38,8 +38,9 @@
 
     @livewireScripts
 </body>
+
 <script>
     AOS.init();
-  </script>
+</script>
 
 </html>
