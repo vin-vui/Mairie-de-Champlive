@@ -1,12 +1,13 @@
 <x-guest-layout>
 
-    <body>
-        <div class="relative my-32">
-            <h1 class="shadow_text font-h1 text-center text-3xl mb-24  ">
+    <body class="bg-seasalt">
+        <div class="relative mt-44">
+            <h1 class="shadow_text font-h1 text-center text-3xl mb-24">
                 Numéros utiles
             </h1>
+        </div>>
 
-            <div class="border-2 border-carribean text-center rounded-xl shadow-lg shadow-carribean mx-10 lg:w-2/3 lg:mx-auto">
+            <div class="border-2 border-carribean text-center rounded-xl shadow-xl shadow-carribean/50 mx-10 lg:w-2/3 lg:mx-auto">
                 <div class="border-b-2 border-carribean/40 py-4 flex justify-around md:justify-between items-center px-3 md:px-10">
                         <img class="w-10 lg:w-16" src="image/pompier.png" alt="">
                     <div class="font-p font-semibold text-smocky-black text-base lg:text-lg">

@@ -1,7 +1,7 @@
 <x-guest-layout>
-    <div class="relative">
+    <div class="relative flex justify-center">
         <img class="h-[40rem] w-full object-cover " src="image/header2.jpg" alt="Photo du ruisseau de champlive">
-        <div class="waviy absolute text-seasalt mx-auto top-80 font-h1 text-5xl text-center md:text-6xl lg:text-7xl "
+        {{-- <div class="waviy absolute text-seasalt mx-auto top-80 font-h1 text-5xl text-center md:text-6xl lg:text-7xl "
             style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
             <span style="--i:3">Bienvenue</span>
             <span style="--i:3">à</span>
@@ -9,6 +9,10 @@
             <span style="--i:1">Mairie</span>
             <span style="--i:2">De</span>
             <span style="--i:3">Champlive</span>
+        </div> --}}
+
+        <div class="absolute text-seasalt uppercase top-80 font-h1 text-5xl md:text-6xl lg:text-7xl whitespace-nowrap">
+            <h1 class="typewriter">Bienvenue à la mairie de champlive</h1>
         </div>
     </div>
     <div class="shapedividers_com-6697 h-36 "></div>
@@ -42,8 +46,8 @@
 
     {{-- News --}}
 
-    <div data-aos="fade-right" class="shapedividers_com-5351 h-40"></div>
-    <div data-aos="fade-right" class="relative bg-carribean px-6 pb-20 pt-16 lg:px-8 lg:pb-28 lg:pt-24 z-10 ">
+    <div class="shapedividers_com-5351 h-40"></div>
+    <div class="relative bg-carribean px-6 pb-20 pt-16 lg:px-8 lg:pb-28 lg:pt-24 z-10 ">
         <div class="relative mx-auto max-w-7xl">
             <div class="text-center">
                 <a href="{{ route('nos-articles') }}"
@@ -52,10 +56,10 @@
                         actualités du village</span>
                 </a>
             </div>
-            <div class="mx-auto mt-24 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
+            <div data-aos="fade-right" class="mx-auto mt-24 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
                 @foreach ($articles as $article)
                     <div
-                        class="flex flex-col overflow-hidden rounded-lg shadow-2xl hover:scale-95 transition duration-300">
+                        class="flex flex-col overflow-hidden rounded-xl shadow-2xl shadow-smocky-black/60 hover:scale-95 transition duration-300">
                         <div class="flex-shrink-0">
                             <img class="h-48 w-full object-cover" src="{{ Storage::url($article->image) }}"
                                 alt="{{ $article->title }}">
@@ -76,7 +80,7 @@
     </div>
 
 
-    <div data-aos="fade-right" class="shapedividers_com-1250 h-36"></div>
+    <div class="shapedividers_com-1250 h-36"></div>
 
     {{-- Deliberation --}}
     <div data-aos="fade-right" class="bg-seasalt mt-16 w-10/12 mx-auto ">
@@ -88,7 +92,7 @@
         <div class="bg-seasalt flex flex-wrap justify-center ">
             @foreach ($deliberations as $deliberation)
                 <div
-                    class="bg-mint/70 w-96 md:mx-10 lg:mx-24 my-12 flex rounded-xl shadow-2xl border-2 border-carribean">
+                    class="bg-mint/70 w-96 md:mx-10 lg:mx-24 my-12 flex rounded-xl shadow-xl shadow-carribean/50 border-2 border-carribean">
                     <div>
                         <img class="w-40 rounded-l-xl" src="image/reunion.png" alt="">
                     </div>

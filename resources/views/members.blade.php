@@ -1,7 +1,7 @@
 <x-guest-layout>
 
-    <body class="">
-        <div class="relative mt-44 lg:my-32">
+    <body class="mx-24 bg-seasalt">
+        <div class="relative mt-44 ">
             <h1 class="shadow_text font-h1 text-center text-3xl mb-24">
                 Conseil municipal
             </h1>

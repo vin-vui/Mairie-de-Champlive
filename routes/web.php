@@ -23,7 +23,7 @@ use App\Http\Controllers\FrontServiceController;
 |
 */
 
-Route::get('home', [FrontHomeController::class, 'index'])->name('home');
+Route::get('/', [FrontHomeController::class, 'index'])->name('home');
 Route::get('/nos-associations', [FrontAssociationController::class, 'index'])->name('nos-associations');    
 Route::get('/nos-membres', [FrontMemberController::class,'index'])->name('nos-membres');
 Route::get('/nos-deliberations', [FrontDeliberationController::class, 'index'])->name('nos-deliberations');

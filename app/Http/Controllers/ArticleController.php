@@ -9,26 +9,26 @@ use Illuminate\Support\Facades\Storage;
 class ArticleController extends Controller
 {
 
-    public function rules():array
+    public function rules(): array
     {
         return [
-            'title'=>'required',
-            'content'=>'required',
-            'image'=>'nullable',
-            'date' =>'required',
-            'location' =>'required',
-            'description' =>'nullable',
-            'status' =>'nullable', 
+            'title' => 'required',
+            'content' => 'required',
+            'image' => 'nullable',
+            'date' => 'required',
+            'location' => 'required',
+            'description' => 'nullable',
+            'status' => 'nullable',
         ];
     }
 
 
-     // SELECT * FROM articles;
+    // SELECT * FROM articles;
     public function index()
     {
         $articles = Article::all();
 
-        return view ('articles.index', compact('articles'));
+        return view('articles.index', compact('articles'));
     }
 
 
@@ -46,33 +46,32 @@ class ArticleController extends Controller
     {
         $validData = $request->validate($this->rules());
 
-        if ($request->hasFile('image')) 
-    {
-                $path = Storage::putFileAs('public', $request->image, $validData['title'].'.'.$request->image->extension());
-                $validData["image"] = $path;
-    }
-        
-            Article::create($validData);
+        if ($request->hasFile('image')) {
+            $path = Storage::putFileAs('public', $request->image, $validData['title'] . '.' . $request->image->extension());
+            $validData["image"] = $path;
+        }
+
+        Article::create($validData);
 
         return redirect()->route('articles.index')
-                        ->with ('success', 'Votre article a bien été enregistré !');
-     }
+            ->with('success', 'Votre article a bien été enregistré !');
+    }
 
 
 
-     //Show function
+    //Show function
 
     //  SELECT * FROM articles WHERE id = :article_id
-     public function show(Article $article)
-     {
-         return view('articles.show', compact('article'));
-     }
+    public function show(Article $article)
+    {
+        return view('articles.show', compact('article'));
+    }
 
-     
+
     // Edit function
 
     // SELECT * FROM articles WHERE id = :article_id
-    public function edit (Article $article)
+    public function edit(Article $article)
     {
         return view('articles.edit', compact('article'));
     }
@@ -82,16 +81,15 @@ class ArticleController extends Controller
     {
         $validData = $request->validate($this->rules());
 
-       if ($request->hasFile('image')) 
-    {
-        $path = Storage::putFileAs('public', $request->image, $validData['title'].'.'.$request->image->extension());
-        $validData["image"] = $path;
-    }
-    
+        if ($request->hasFile('image')) {
+            $path = Storage::putFileAs('public', $request->image, $validData['title'] . '.' . $request->image->extension());
+            $validData["image"] = $path;
+        }
+
         $article->update($validData);
 
         return redirect()->route('articles.index')
-                       ->with ('success', 'Article mis à jour avec succès !');
+            ->with('success', 'Article mis à jour avec succès !');
 
     }
 
@@ -99,10 +97,10 @@ class ArticleController extends Controller
 
     // DELETE FROM articles WHERE id = :article_id;
 
-    public function destroy (Article $article)
+    public function destroy(Article $article)
     {
-       $article->delete();
-       return redirect()->route('articles.index')
-                           ->with ('success', 'Article supprimé avec succès !');
+        $article->delete();
+        return redirect()->route('articles.index')
+            ->with('success', 'Article supprimé avec succès !');
     }
 }

@@ -37,7 +37,7 @@ class AssociationSeeder extends Seeder
         $association-> save();
 
 
-         for ($i = 1; $i <= 1000; $i++) { /**Fait parti de la fonction $faker, et dit que l'on ajoute 1000 données aléatoires */
+         for ($i = 1; $i <= 15; $i++) { /**Fait parti de la fonction $faker, et dit que l'on ajoute 1000 données aléatoires */
              $association = new Association;
              $association->name = $this->faker->word();
              $association->presentation = $this->faker->paragraph();

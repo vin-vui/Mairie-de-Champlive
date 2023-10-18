@@ -145,7 +145,7 @@
     }
      
 
-      .waviy span {
+      /* .waviy span {
         position: relative;
         display: inline-block;
         color: #fafafa;
@@ -157,5 +157,23 @@
         0%,80% {
           transform: rotateY(360deg) 
         }
-      }
+      } */
 
+      .typewriter {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing 3.5s steps(30, end),
+          blink-caret .5s step-end infinite;
+
+          @media screen and (max-width: 1024px) {
+            
+          }
+      }
+      
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      

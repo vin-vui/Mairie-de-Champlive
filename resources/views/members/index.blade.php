@@ -47,7 +47,7 @@
                   
                     <tbody>
                         @foreach ($members as $member)
-                            <tr class="bg-white border-b ">
+                            <tr class="bg-white border-b " x-data="{ open: false }">
                                 <td scope="row" class="px-6 py-4">{{ $member->id }}</td>
                                 <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
                                     {{ $member->lastname }}</td>
@@ -67,8 +67,26 @@
                                         @csrf
                                         @method('DELETE')
 
-                                        <button type="submit"
-                                            class="font-medium text-red-600 hover:underline">Supprimer</button>
+                                        <button type="button" @click="open = true"
+                                        class="font-medium text-red-600 hover:underline">Supprimer</button>
+
+                                    <div x-show="open" @click.outside="open = false"
+                                        class="fixed top-60 left-1/3 z-50" x-cloak>
+                                        <div
+                                            class="bg-white p-10 rounded-lg shadow-lg border-carribean border-2 shadow-carribean ">
+                                            <h2 class="text-lg text-carribean font-bold mb-4">Confirmation de
+                                                suppression</h2>
+                                            <p class="mb-4 text-smocky-black">Êtes-vous sûr de vouloir supprimer ?
+                                            </p>
+                                            <div class="flex justify-end">
+                                                <button type="button"
+                                                    class="text-smocky-black mr-2 border-2 border-transparent rounded-lg p-1 hover:border-gray-200 hover:bg-gray-200 "
+                                                    @click.prevent="open = false">Annuler</button>
+                                                <button type="submit" @click="open = false"
+                                                    class="font-medium border-2 border-transparent rounded-lg p-1 text-red-600 hover:text-seasalt hover:border-red-600 hover:bg-red-600">Supprimer</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                     </form>
                                 </td>
                             </tr>
