@@ -40,7 +40,7 @@
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
                             <label class="font-bold text-lg">Date :</label>
-                                <input class="form-control w-full text-black" rows="6" name="date" value="{{ $article->date }}" placeholder="Contenu"></input>
+                                <input class="form-control w-full text-black" rows="6" name="date" type="date" value="{{ $article->date }}" placeholder="Contenu"></input>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
                             <label class="font-bold text-lg">Lieu :</label>

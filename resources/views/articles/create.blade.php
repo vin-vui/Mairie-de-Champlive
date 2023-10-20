@@ -39,7 +39,7 @@
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
                             <label class="font-bold text-lg">Date :</label>
-                                <input class="form-control w-full" name="date" placeholder="Date"></input>
+                                <input class="form-control w-full" name="date" placeholder="Date" type="date"></input>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
                             <label class="font-bold text-lg">Lieu :</label>

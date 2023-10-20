@@ -2,9 +2,8 @@
 
     <div class="m-10">
         <div class="pb-8 flex justify-around items-center bg-seasalt">
-            <a class=" mt-10 border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt"
-                href="{{ route('articles.create') }}">
-                Ajouter un article</a>
+            <a class=" mt-10 border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt" href="{{ route('galleries.create') }}">
+                Ajouter une photo</a>
         </div>
         <div class="row mt-2">
             <div class="col-lg-12 italic pb-4 text-smocky-black">
@@ -14,9 +13,9 @@
                     </div>
                 @endif
             </div>
-            <div class=" relative overflow-x-auto shadow-md sm:rounded-lg border-2 border-carribean drop-shadow-2xl ">
-                <table class=" w-full text-sm text-left text-gray-500 ">
-                    <thead class="bg-carribean text-xs text-seasalt uppercase">
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg border-2 border-carribean drop-shadow-2xl">
+                <table class="w-full text-sm text-left text-gray-500">
+                    <thead class="text-xs text-seasalt uppercase bg-gray-50 ">
                         <tr class="bg-carribean">
                             <th scope="col" class="px-6 py-3">
                                 <div class="flex items-center">No
@@ -25,47 +24,40 @@
                                             <path
                                                 d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z" />
                                         </svg></a>
+
                                 </div>
                             </th>
-
+                            
                             <th scope="col" class="px-6 py-3">
-                                Nom
+                               Titre
                             </th>
-                            </th>
-                            <th scope="col" class="px-6 py-3 ">
-                                Description
-                            </th>
-                            <th scope="col" class="px-16 py-3">
-                                Date
-                            </th>
-                            <th scope="col" class="px-16 py-3">
-                                Lieu
+                            <th scope="col" class="px-6 py-3">
+                                Image
                             </th>
                             <th scope="col" class="px-6 py-3">
                                 Action
                             </th>
                         </tr>
                     </thead>
-
+                  
                     <tbody>
-                        @foreach ($articles as $article)
-                            <tr class="bg-seasalt border-b " x-data="{ open: false }">
-                                <td scope="row" class="px-6 py-4">{{ $article->id }}</td>
+                        @foreach ($galleries as $gallery)
+                            <tr class="bg-seasalt border-b" x-data="{ open: false }">
+                                <td scope="row" class="px-6 py-4">{{ $gallery->id }}</td>
                                 <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                    {{ $article->title }}</td>
-                                <td class="px-6 py-4">{{ $article->content }}</td>
-                                <td class="px-16 py-4">{{ $article->date }}</td>
-                                <td class="px-16 py-4">{{ $article->location }}</td>
+                                    {{ $gallery->title}}</td>
+                                    <td class="px-6 py-4">
+                                        <img src="{{ Storage::url($gallery->file) }}" alt="{{ $gallery->title }}">
 
+                                    </td>
                                 <td class="px-6 py-4 whitespace-nowrap">
-                                    <a class="font-medium text-green-600  hover:underline pr-2"
-                                        href="{{ route('articles.show', $article) }}">Voir</a>
+                                    <form action="{{ route('galleries.destroy', $gallery) }}" method="POST">
 
-                                    <a class="font-medium text-blue-600  hover:underline pr-2"
-                                        href="{{ route('articles.edit', $article) }}">Editer</a>
+                                        <a class="font-medium text-green-600 hover:underline pr-2"
+                                            href="{{ route('galleries.show', $gallery) }}">Voir</a>
 
-
-                                    <form action="{{ route('articles.destroy', $article) }}" method="POST">
+                                        <a class="font-medium text-blue-600 hover:underline pr-2"
+                                            href="{{ route('galleries.edit', $gallery) }}">Editer</a>
 
                                         @csrf
                                         @method('DELETE')

@@ -11,8 +11,8 @@
             <span style="--i:3">Champlive</span>
         </div> --}}
 
-        <div class="absolute text-seasalt uppercase top-80 font-h1 text-5xl md:text-6xl lg:text-7xl whitespace-nowrap">
-            <h1 class="typewriter">Bienvenue à la mairie de champlive</h1>
+        <div class="absolute text-seasalt uppercase top-80 font-h1 text-3xl md:text-4xl lg:text-5xl whitespace-nowrap">
+            <h1 class="typewriter">Bienvenue à champlive</h1>
         </div>
     </div>
     <div class="shapedividers_com-6697 h-36 "></div>

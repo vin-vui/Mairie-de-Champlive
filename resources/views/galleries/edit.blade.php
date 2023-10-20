@@ -1,8 +1,7 @@
 <x-app-layout>
     <div class="m-10">
         <div class="pb-8 flex justify-around items-center">
-            <h2 class="font-bold text-lg text-smocky-black">CRUD Edition d'une délibérations</h2>
-            <a class=" mt-10 border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt" href="{{ route('deliberations.index') }}">
+            <a class=" mt-10 border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt" href="{{ route('galleries.index') }}">
                 Retour</a>
         </div>
         <div class="row mt-2">
@@ -25,22 +24,18 @@
                 </div>
                 @endif
 
-                <form action="{{ route('deliberations.update', $deliberation->id) }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('galleries.update', $galleries->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
 
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
                             <label class="font-bold text-lg">Titre </label>
-                                <input type="text" name="title" value="{{ $deliberation->title }}" class="form-control w-full" placeholder="Titre de la délibération">
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Date </label>
-                                <input class="form-control w-full text-black" rows="6" name="date" type="date" value="{{ $deliberation->date }}" placeholder="Date"></input>
+                                <input type="text" name="title" value="{{ $gallery->title }}" class="form-control w-full" placeholder="Titre de la délibération">
                         </div>
                         <div class="form-group py-2">
-                            <label class="font-bold text-lg" for="file">Fichier PDF </label>
-                            <input type="file" name="file" id="file" class="form-control-file" accept="application/pdf">
+                            <label class="font-bold text-lg" for="file">Image </label>
+                            <input type="file" name="image" class="form-control-file">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                             <button type="submit" class="border-2 border-carribean bg-carribean  text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt">Envoyer</button>
