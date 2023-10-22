@@ -47,7 +47,9 @@
                                 <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                     {{ $gallery->title}}</td>
                                     <td class="px-6 py-4">
-                                        <img src="{{ Storage::url($gallery->file) }}" alt="{{ $gallery->title }}">
+                                        <img src="{{ url('storage/images/' . $gallery->file) }}" alt="{{ $gallery->title }}">
+
+
 
                                     </td>
                                 <td class="px-6 py-4 whitespace-nowrap">

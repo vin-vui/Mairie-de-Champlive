@@ -46,9 +46,9 @@ class GalleryController extends Controller
          return view('galleries.show', compact('gallery'));
      }
 
-     public function edit (Gallery $galleries)
+     public function edit (Gallery $gallery)
     {
-        return view('galleries.edit', compact('galleries'));
+        return view('galleries.edit', compact('gallery'));
     }
 
     public function update(Request $request, Gallery $gallery)
