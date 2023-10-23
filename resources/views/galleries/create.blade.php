@@ -1,7 +1,7 @@
 <x-app-layout>
     <div class="m-10">
-        <div class="pb-8 flex justify-around items-center ">
-            <a class=" mt-10 border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt"
+        <div class="pb-3 flex justify-end items-center ">
+            <a class="border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt"
                 href="{{ route('galleries.index') }}">
                 Retour</a>
         </div>
@@ -31,7 +31,7 @@
 
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Titre :</label>
+                            <label class="font-bold text-lg">Titre </label>
                             <input type="text" name="title" class="form-control w-full"
                                 placeholder="Titre de la photo">
                         </div>

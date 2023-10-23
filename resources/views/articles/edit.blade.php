@@ -1,8 +1,7 @@
 <x-app-layout>
     <div class="m-10">
-        <div class="pb-8 flex justify-around items-center">
-            <h2 class="font-bold text-lg text-smocky-black">CRUD Edition d'un article</h2>
-            <a class=" mt-10 border-2 border-carribean bg-carribean text-white rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt" href="{{ route('articles.index') }}">
+        <div class="pb-3 flex justify-end items-center">
+            <a class="border-2 border-carribean bg-carribean text-white rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt" href="{{ route('articles.index') }}">
                 Retour</a>
         </div>
         <div class="row mt-2">
@@ -31,24 +30,24 @@
 
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Titre :</label>
+                            <label class="font-bold text-lg">Titre </label>
                                 <input type="text" name="title" value="{{ $article->title }}" class="form-control w-full" placeholder="Titre">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Contenu :</label>
+                            <label class="font-bold text-lg">Contenu </label>
                                 <input class="form-control w-full text-black" rows="6" name="content" value="{{ $article->content }}" placeholder="Description"></input>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Date :</label>
+                            <label class="font-bold text-lg">Date </label>
                                 <input class="form-control w-full text-black" rows="6" name="date" type="date" value="{{ $article->date }}" placeholder="Contenu"></input>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Lieu :</label>
+                            <label class="font-bold text-lg">Lieu </label>
                                 <input class="form-control w-full text-black" rows="6" name="location" value="{{ $article->location }}" placeholder="Contenu"></input>
                         </div>
                         <div class="form-group py-2">
-                            <label class="font-bold text-lg" for="image">Image :</label>
-                            <input type="file" name="image" id="image" class="form-control-file">
+                            <label class="font-bold text-lg" for="image">Image </label>
+                            <input type="file" name="image" id="image" class="form-control-file" value="{{ $article->image }}">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                             <button type="submit" class="border-2 border-carribean bg-carribean  text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt">Envoyer</button>

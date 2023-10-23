@@ -1,8 +1,7 @@
 <x-app-layout>
     <div class="m-10">
-        <div class="pb-8 flex justify-around items-center "> 
-            <h2 class="font-bold text-lg text-smocky-black">CRUD Création membre du conseil</h2>
-            <a class=" mt-10 border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt" href="{{ route('members.index') }}">
+        <div class="pb-3 flex justify-end items-center ">
+            <a class="border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt" href="{{ route('members.index') }}">
                 Retour</a>
         </div>
         <div class="row mt-2">
@@ -30,15 +29,15 @@
 
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Nom :</label>
+                            <label class="font-bold text-lg">Nom </label>
                                 <input type="text" name="lastname" class="form-control w-full" placeholder="Nom">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Prénom :</label>
+                            <label class="font-bold text-lg">Prénom </label>
                                 <input class="form-control w-full" name="firstname" placeholder="Prénom"></input>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Fonction:</label>
+                            <label class="font-bold text-lg">Fonction</label>
                             <select class="text-black" name="position">
                                 <option value="Maire">Maire</option>
                                 <option value="Premier adjoint">Premier adjoint</option>
@@ -47,7 +46,7 @@
                             </select>
                         </div>
                         <div class="form-group py-2">
-                            <label class="font-bold text-lg" for="image">Image :</label>
+                            <label class="font-bold text-lg" for="image">Image </label>
                             <input type="file" name="image" id="image" class="form-control-file">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">

@@ -37,6 +37,8 @@ Route::get('/nos-deliberations', [FrontDeliberationController::class, 'index'])-
 Route::get('/nos-articles', [FrontArticleController::class, 'index'])->name('nos-articles');
 Route::get('/article/{article}',[FrontArticleController::class, 'show'])->name('article');
 Route::get('/services-alentours', [FrontServiceController::class, 'index'])->name('services-alentours');
+Route::get('/rubrique-souvenirs', [FrontHomeController::class, 'gallery'])->name('rubrique-souvenirs');
+Route::get('/journal', [FrontHomeController::class, 'newspaper'])->name('journal');
 
 Route::get('/numbers', function(){
     return view('numbers');

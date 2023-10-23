@@ -20,7 +20,7 @@ class AssociationController extends Controller
 
     public function index()
     {
-        $associations = Association::all();
+        $associations = Association::orderBy('created_at', 'desc')->get();
 
         return view('associations.index',compact('associations'));
     }

@@ -23,17 +23,15 @@
     {{-- <x-banner /> --}}
 
     <div class="antialiased bg-seasalt ">
-        <nav class="bg-carribean  px-4 py-2.5 fixed left-0 right-0 top-0 z-50">
-            <div class="flex flex-wrap justify-between items-center">
-                <div class="flex justify-start items-center">
-                    <a href="{{ route('dashboard') }}" class="flex items-center justify-between mr-4">
+        <nav class="bg-carribean  px-4 h-16 fixed left-0 right-0 top-0 z-50">
+            <div class="flex flex-wrap justify-between items-start mt-2 ">
+                <div class="flex justify-start items-start">
                         <x-application-logo class="" />
-                        <span
-                            class="self-center flex justify-center text-seasalt text-2xl font-semibold whitespace-nowrap">Mairie
-                            de Champlive</span>
-                    </a>
+                        <div
+                            class="flex justify-start mt-3 mx-12 text-seasalt text-2xl font-semibold ">Mairie
+                            de Champlive</div>
                 </div>
-                <div class="flex items-center lg:order-2">
+                <div class="flex items-center mt-3 lg:order-2">
                     <!-- Dropdown menu profile -->
                     <x-dropdown align="right" width="48">
                         <x-slot name="trigger">
@@ -177,7 +175,7 @@
         </aside>
     </div>
 
-    <main class="p-4 md:ml-64 min-h-screen pt-20 bg-seasalt">
+    <main class="p-4 md:ml-64 min-h-screen pt-20 bg-seasalt rounded-lg">
         {{ $slot }}
     </main>
 

@@ -41,6 +41,9 @@
                         <a href="{{ route('nos-articles') }}">Actualités</a>
                         <a href="{{ route('nos-associations') }}">Associations</a>
                         <a href="{{ route('numeros-utiles') }}">Numéros utiles</a>
+                        <a href="{{ route('journal') }}">Journal</a>
+                        <a href="{{ route('rubrique-souvenirs') }}">Rubrique souvenirs</a>
+                       
                     </div>
                 </div>
                 <div>
@@ -155,7 +158,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent">
+                                        class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:border-seasalt">
                                         <div class="flex-auto">
                                             <a href="{{ route('numeros-utiles') }}" class="block font-semibold ">
                                                 Numéros utiles
@@ -163,6 +166,26 @@
                                             </a>
                                         </div>
                                     </div>
+                                    <div
+                                    class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:border-seasalt">
+                                    <div class="flex-auto">
+                                        <a href="{{ route('journal') }}"
+                                            class="block font-semibold ">
+                                            Journal
+                                            <span class="absolute inset-0"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div
+                                class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent">
+                                <div class="flex-auto">
+                                    <a href="{{ route('rubrique-souvenirs') }}"
+                                        class="block font-semibold ">
+                                        Rubrique souvenirs
+                                        <span class="absolute inset-0"></span>
+                                    </a>
+                                </div>
+                            </div>
                                 </div>
                             </div>
                         </div>

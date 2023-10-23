@@ -20,7 +20,7 @@ class DeliberationController extends Controller
 
     public function index()
     {
-        $deliberations = Deliberation::all();
+        $deliberations = Deliberation::orderBy('created_at', 'desc')->get();
 
         return view ('deliberations.index', compact('deliberations'));
     }

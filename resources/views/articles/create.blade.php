@@ -1,8 +1,7 @@
 <x-app-layout>
     <div class="m-10">
-        <div class="pb-8 flex justify-around items-center ">
-            <h2 class="font-bold text-lg text-smocky-black">CRUD Création d'un article</h2>
-            <a class=" mt-10 border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt" href="{{ route('articles.index') }}">
+        <div class="pb-3 flex justify-end items-center ">
+            <a class="border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt" href="{{ route('articles.index') }}">
                 Retour</a>
         </div>
         <div class="row mt-2">
@@ -30,24 +29,24 @@
 
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Nom :</label>
+                            <label class="font-bold text-lg">Nom </label>
                                 <input type="text" name="title" class="form-control w-full" placeholder="Nom">    
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Description :</label>
+                            <label class="font-bold text-lg">Description </label>
                                 <textarea class="form-control w-full" name="content" placeholder="Description"></textarea>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Date :</label>
+                            <label class="font-bold text-lg">Date </label>
                                 <input class="form-control w-full" name="date" placeholder="Date" type="date"></input>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
-                            <label class="font-bold text-lg">Lieu :</label>
+                            <label class="font-bold text-lg">Lieu </label>
                                 <input class="form-control w-full" name="location" placeholder="Lieu"></input>
                         </div>
                         <div class="form-group py-2">
-                            <label class="font-bold text-lg" for="image">Image :</label>
-                            <input type="file" name="image" id="image" class="form-control-file">
+                            <label class="font-bold text-lg" for="image">Image </label>
+                            <input type="file" name="image" id="image" class="form-control-file ">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                             <button type="submit" class="border-2 border-carribean bg-carribean  text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt">Envoyer</button>

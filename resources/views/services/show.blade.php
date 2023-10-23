@@ -1,8 +1,7 @@
 <x-app-layout>
     <div class="m-10">
-        <div class="pb-8 flex justify-around items-center">
-            <h2 class="font-bold text-lg text-smocky-black">CRUD Service</h2>
-            <a class=" mt-10 border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt"
+        <div class="pb-3 flex justify-end items-center">
+            <a class="border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt"
                 href="{{ route('services.index') }}">
                 Retour</a>
         </div>

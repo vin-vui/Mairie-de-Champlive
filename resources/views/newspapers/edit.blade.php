@@ -1,8 +1,7 @@
 <x-app-layout>
     <div class="m-10">
-        <div class="pb-8 flex justify-around items-center">
-            <h2 class="font-bold text-lg text-smocky-black">CRUD Edition d'une délibérations</h2>
-            <a class=" mt-10 border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt"
+        <div class="pb-3 flex justify-end items-center">
+            <a class="border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt"
                 href="{{ route('newspapers.index') }}">
                 Retour</a>
         </div>
@@ -38,7 +37,7 @@
                                 class="form-control w-full" placeholder="Nom de votre image">
                         </div>
                         <div class="form-group py-2">
-                            <label class="font-bold text-lg" for="file">Image </label>
+                            <label class="font-bold text-lg" for="file">Fichier</label>
                             <input type="file" name="file" id="file" class="form-control-file"
                                 accept="application/pdf">
                         </div>

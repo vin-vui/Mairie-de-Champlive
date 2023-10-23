@@ -18,7 +18,7 @@ class NewspaperController extends Controller
 
     public function index()
     {
-        $newspapers = Newspaper::all();
+        $newspapers = Newspaper::orderBy('created_at', 'desc')->get();
 
         return view ('newspapers.index', compact('newspapers'));
     }

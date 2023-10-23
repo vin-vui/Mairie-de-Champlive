@@ -25,11 +25,12 @@ class ArticleController extends Controller
 
     // SELECT * FROM articles;
     public function index()
-    {
-        $articles = Article::all();
+{
+    $articles = Article::orderBy('created_at', 'desc')->get();
 
-        return view('articles.index', compact('articles'));
-    }
+    return view('articles.index', compact('articles'));
+}
+
 
 
     // create function 

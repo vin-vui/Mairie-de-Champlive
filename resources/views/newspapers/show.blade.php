@@ -1,8 +1,7 @@
 <x-app-layout>
     <div class="m-10">
-        <div class="pb-8 flex justify-around items-center">
-            <h2 class="font-bold text-lg text-smocky-black">CRUD Délibération </h2>
-            <a class=" mt-10 border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt"
+        <div class="pb-3 flex justify-end items-center">
+            <a class="border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt"
                 href="{{ route('newspapers.index') }}">
                 Retour</a>
         </div>
@@ -21,8 +20,8 @@
                         {{ $newspaper->title }}
                     </div>
                     <div class="pb-5">
-                        <label class="font-bold text-lg">Image</label>
-                        <img src="{{ Storage::url($newspaper->file) }}">
+                        <label class="font-bold text-lg">Fichier</label>
+                        <embed src="{{ Storage::url($newspaper->file) }}" type="application/pdf" width="1000" height="600" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
                     </div>
                 </div>
             </div>

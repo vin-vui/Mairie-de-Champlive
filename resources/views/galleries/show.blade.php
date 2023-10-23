@@ -1,7 +1,7 @@
 <x-app-layout>
     <div class="m-10">
-        <div class="pb-8 flex justify-around items-center">
-            <a class=" mt-10 border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt" href="{{ route('galleries.index') }}">
+        <div class="pb-3 flex justify-end items-center">
+            <a class="border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt" href="{{ route('galleries.index') }}">
                 Retour</a>
         </div>
         <div class="row mt-2">
@@ -20,7 +20,7 @@
                     </div>
                     <div class="pb-5">
                             <label class="font-bold text-lg">Image</label>
-                            <img src="{{ Storage::url($gallery->file) }}"> 
+                            <img src="{{ Storage::url($gallery->image) }}"> 
                     </div>
                 </div>
             </div>
