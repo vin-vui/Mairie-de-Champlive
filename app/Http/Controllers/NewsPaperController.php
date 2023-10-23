@@ -48,7 +48,7 @@ class NewspaperController extends Controller
 
     public function edit (Newspaper $newspaper)
     {
-        return view('newspapers.show', compact('newspaper'));
+        return view('newspapers.edit', compact('newspaper'));
     }
 
     public function update(Request $request, Newspaper $newspaper)

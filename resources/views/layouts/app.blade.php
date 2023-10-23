@@ -87,7 +87,7 @@
                 <ul class="space-y-2">
                     <li>
                         <a href="{{ route('articles.index') }}"
-                            class="flex items-center p-2 text-base font-medium text-seasalt rounded-lg  hover:bg-teal-900">
+                            class="flex items-center p-2 text-base font-medium text-seasalt rounded-lg  hover:bg-teal-900 ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
                                 <path fill="#fafafa"
                                     d="M4 21q-.825 0-1.413-.588T2 19V5q0-.825.588-1.413T4 3h16q.825 0 1.413.588T22 5v14q0 .825-.588 1.413T20 21H4Zm2-4h12v-2H6v2Zm0-4h4V7H6v6Zm6 0h6v-2h-6v2Zm0-4h6V7h-6v2Z" />

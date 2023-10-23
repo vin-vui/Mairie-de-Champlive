@@ -33,8 +33,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
                             <label class="font-bold text-lg">Titre </label>
-                            <input type="text" name="title" value="{{ $newspaper->title }}"
-                                class="form-control w-full" placeholder="Nom de votre image">
+                                <input type="text" name="title" value="{{ $newspaper->title }}" class="form-control w-full" placeholder="Titre de la délibération">
                         </div>
                         <div class="form-group py-2">
                             <label class="font-bold text-lg" for="file">Fichier</label>
