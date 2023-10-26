@@ -33,13 +33,15 @@
 
         </div>
 
-        <div class="flex flex-col mx-auto my-16 lg:w-[47rem] xl:w-96 xl:justify-end xl:ml-96 xl:my-auto 2xl:w-[50rem] ">
-            <div class="lg:mt-36 mb-10">La première mention du nom Champlive date du XIVème. Son origine vient du fait que les terres étaient
+        <div
+            class="flex flex-col mx-auto my-16 lg:w-[47rem] xl:w-96 xl:justify-end xl:ml-96 xl:my-auto 2xl:w-[50rem] xl:ml:-24 ">
+            <div class="lg:mt-36 mb-10 lg:ml-24">La première mention du nom Champlive date du XIVème. Son origine vient du fait
+                que les terres étaient
                 inondées en cas de fortes pluies, donc Champs lavés d'où Champlive. Depuis, un tunnel a été creusé pour
                 évacuer l'eau. Le village est traversé par un ruisseau, Le Gour.
             </div>
 
-            <div>Au sommet de la colline, les ruines du Château de Vaite, construit au XIIIème, surplombent la vallée du
+            <div class="lg:ml-24">Au sommet de la colline, les ruines du Château de Vaite, construit au XIIIème, surplombent la vallée du
                 Doubs. De cet endroit, on peut avoir un magnifique point de vue. Ce château fut incendié en 1480 par les
                 troupes de Louis XI, la famille Lallemand l'entretint jusqu'en 1792 et c'est en 1793 que le Conseil
                 Général

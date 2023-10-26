@@ -8,11 +8,11 @@ use Illuminate\Support\Facades\Storage;
 
 class GalleryController extends Controller
 {
-    public function rules():array
+    public function rules(): array
     {
         return [
-            'title'=>'required',
-            'image'=>'required',
+            'title' => 'required',
+            'image' => 'required',
         ];
     }
 
@@ -20,7 +20,7 @@ class GalleryController extends Controller
     {
         $galleries = Gallery::orderBy('created_at', 'desc')->get();
 
-        return view ('galleries.index', compact('galleries'));
+        return view('galleries.index', compact('galleries'));
     }
 
     public function create()
@@ -32,21 +32,21 @@ class GalleryController extends Controller
     {
         $validData = $request->validate($this->rules());
 
-        $path = Storage::putFileAs('public', $request->image,'.'.$request->image->extension());
+        $path = Storage::putFileAs('public', $request->image,  $validData['title']. '.' . $request->image->extension());
         $validData["image"] = $path;
 
-        $galleries = Gallery::create($validData);
+        Gallery::create($validData);
 
         return redirect()->route('galleries.index')
-        ->with ('success', 'Votre image a bien été enregistrée !');
+            ->with('success', 'Votre image a bien été enregistrée !');
     }
 
     public function show(Gallery $gallery)
-     {
-         return view('galleries.show', compact('gallery'));
-     }
+    {
+        return view('galleries.show', compact('gallery'));
+    }
 
-     public function edit (Gallery $gallery)
+    public function edit(Gallery $gallery)
     {
         return view('galleries.edit', compact('gallery'));
     }
@@ -55,21 +55,21 @@ class GalleryController extends Controller
     {
         $validData = $request->validate($this->rules());
 
-        $path = Storage::putFileAs('public', $request->image,'.'.$request->image->extension());
+        $path = Storage::putFileAs('public', $request->image, $validData['title']. '.' . $request->image->extension());
         $validData["image"] = $path;
 
-            $gallery->update($validData);
+        $gallery->update($validData);
 
-            return redirect()->route('galleries.index')
-                       ->with ('success', 'Image mise à jour avec succès !');
+        return redirect()->route('galleries.index')
+            ->with('success', 'Image mise à jour avec succès !');
 
     }
 
-    public function destroy (Gallery $gallery)
+    public function destroy(Gallery $gallery)
     {
-       $gallery->delete();
-       return redirect()->route('galleries.index')
-                           ->with ('success', 'Image supprimée avec succès !');
+        $gallery->delete();
+        return redirect()->route('galleries.index')
+            ->with('success', 'Image supprimée avec succès !');
     }
 
 }
