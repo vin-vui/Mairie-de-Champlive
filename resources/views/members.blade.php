@@ -23,7 +23,7 @@
         </div>
 
         <div class="flex mt-12">
-            <div class="flex flex-col justify-center mx-auto lg:flex-row">
+            <div class="flex flex-col justify-center mx-auto md:flex-row lg:flex-row">
                 <div class="flex flex-col mx-16 mb-24 lg:mb-12">
                     @if ($firstassistant)
                         <img class="object-cover w-52 border-2 border-carribean rounded-xl shadow-lg shadow-carribean"

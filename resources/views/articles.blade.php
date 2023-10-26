@@ -7,7 +7,7 @@
             </h1>
         </div>
 
-        <div class="mx-24 mt-24 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3 ">
+        <div class="mx-12 mt-24 grid max-w-lg gap-5 md:max-w-none md:grid-cols-2 lg:max-w-none lg:grid-cols-3 ">
             @foreach ($articles as $article)
                 <div
                     class="flex flex-col mx-5 my-5 overflow-hidden rounded-xl shadow-xl shadow-carribean/50 border-2 border-carribean hover:scale-95">

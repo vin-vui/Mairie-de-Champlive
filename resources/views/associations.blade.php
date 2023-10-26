@@ -8,7 +8,7 @@
             </h1>
         </div>
 
-        <section class="bg-seasalt ">
+        <section class="bg-seasalt mx-12 md:mx-32 ">
             @foreach ($associations as $association)
                 <div class="grid max-w-screen-lg px-4 py-8 mx-auto my-24 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 border-2 border-carribean rounded-xl shadow-xl shadow-carribean/50">
                     <div class="mr-auto place-self-center lg:col-span-7">
