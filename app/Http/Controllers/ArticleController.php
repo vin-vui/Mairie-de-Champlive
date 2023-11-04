@@ -14,7 +14,7 @@ class ArticleController extends Controller
         return [
             'title' => 'required',
             'content' => 'required',
-            'image' => 'nullable',
+            'image' => 'sometimes|image|max:2048',
             'date' => 'required',
             'location' => 'required',
             'description' => 'nullable',

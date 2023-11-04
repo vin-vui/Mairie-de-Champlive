@@ -81,7 +81,7 @@
                                 x-ref="panel" @click.away="open = false">
                                 <div class="p-2 pl-5 ">
                                     <div
-                                        class="group relative flex gap-x-6 py-2  leading-6 border-b-2 border-transparent hover:transition-all hover:border-seasalt">
+                                        class="group relative flex gap-x-6 py-2  leading-6 border-b-2 border-transparent hover:transition-all hover:scale-110">
                                         <div class="flex-auto">
                                             <a href="{{ route('nos-membres') }}"
                                                 class="block font-semibold ">
@@ -91,7 +91,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:border-seasalt">
+                                        class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:scale-110">
                                         <div class="flex-auto">
                                             <a href="{{ route('nos-deliberations') }}"
                                                 class="block font-semibold">
@@ -101,7 +101,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent ">
+                                        class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:scale-110 ">
                                         <div class="flex-auto">
                                             <a href="{{ route('services-alentours') }}"
                                                 class="block font-semibold ">
@@ -138,7 +138,7 @@
                                 x-ref="panel" @click.away="open = false">
                                 <div class="p-2 pl-5">
                                     <div
-                                        class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:border-seasalt">
+                                        class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:scale-110">
                                         <div class="flex-auto">
                                             <a href="{{ route('nos-articles') }}"
                                                 class="block font-semibold ">
@@ -148,7 +148,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:border-seasalt">
+                                        class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:scale-110">
                                         <div class="flex-auto">
                                             <a href="{{ route('nos-associations') }}"
                                                 class="block font-semibold ">
@@ -158,7 +158,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:border-seasalt">
+                                        class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:scale-110">
                                         <div class="flex-auto">
                                             <a href="{{ route('numeros-utiles') }}" class="block font-semibold ">
                                                 Numéros utiles
@@ -167,7 +167,7 @@
                                         </div>
                                     </div>
                                     <div
-                                    class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:border-seasalt">
+                                    class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:scale-110">
                                     <div class="flex-auto">
                                         <a href="{{ route('journal') }}"
                                             class="block font-semibold ">
@@ -177,7 +177,7 @@
                                     </div>
                                 </div>
                                 <div
-                                class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent">
+                                class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:scale-110">
                                 <div class="flex-auto">
                                     <a href="{{ route('rubrique-souvenirs') }}"
                                         class="block font-semibold ">

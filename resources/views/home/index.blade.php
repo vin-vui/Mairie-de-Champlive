@@ -1,17 +1,8 @@
 <x-guest-layout>
     <div class="relative flex justify-center">
         <img class="h-[40rem] w-full object-cover " src="image/header2.jpg" alt="Photo du ruisseau de champlive">
-        {{-- <div class="waviy absolute text-seasalt mx-auto top-80 font-h1 text-5xl text-center md:text-6xl lg:text-7xl "
-            style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
-            <span style="--i:3">Bienvenue</span>
-            <span style="--i:3">à</span>
-            <span style="--i:3">la</span>
-            <span style="--i:1">Mairie</span>
-            <span style="--i:2">De</span>
-            <span style="--i:3">Champlive</span>
-        </div> --}}
-
-        <div class="absolute text-seasalt uppercase top-80 font-h1 text-3xl md:text-4xl lg:text-5xl whitespace-nowrap">
+        
+        <div class="absolute text-seasalt uppercase top-80 font-h1 text-xl md:text-4xl lg:text-5xl whitespace-nowrap">
             <h1 class="typewriter">Bienvenue à champlive</h1>
         </div>
     </div>
@@ -34,14 +25,14 @@
         </div>
 
         <div
-            class="flex flex-col mx-auto my-16 lg:w-[47rem] xl:w-96 xl:justify-end xl:ml-96 xl:my-auto 2xl:w-[50rem] xl:ml:-24 ">
-            <div class="lg:mt-36 mb-10 lg:ml-24">La première mention du nom Champlive date du XIVème. Son origine vient du fait
+            class="flex flex-col mx-auto mb-10 md:mb-24 lg:w-[47rem] xl:w-96 xl:justify-end xl:ml-96 xl:my-auto 2xl:w-[50rem] xl:ml:-24 ">
+            <div class="lg:mt-36 mb-10 ">La première mention du nom Champlive date du XIVème. Son origine vient du fait
                 que les terres étaient
                 inondées en cas de fortes pluies, donc Champs lavés d'où Champlive. Depuis, un tunnel a été creusé pour
                 évacuer l'eau. Le village est traversé par un ruisseau, Le Gour.
             </div>
 
-            <div class="lg:ml-24">Au sommet de la colline, les ruines du Château de Vaite, construit au XIIIème, surplombent la vallée du
+            <div class="">Au sommet de la colline, les ruines du Château de Vaite, construit au XIIIème, surplombent la vallée du
                 Doubs. De cet endroit, on peut avoir un magnifique point de vue. Ce château fut incendié en 1480 par les
                 troupes de Louis XI, la famille Lallemand l'entretint jusqu'en 1792 et c'est en 1793 que le Conseil
                 Général
