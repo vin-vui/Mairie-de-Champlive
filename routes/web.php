@@ -1,6 +1,5 @@
 <?php
 
-
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\MemberController;
@@ -10,13 +9,7 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\NewspaperController;
 use App\Http\Controllers\FrontHomeController;
-use App\Http\Controllers\FrontAssociationController;
-use App\Http\Controllers\FrontMemberController;
-use App\Http\Controllers\FrontDeliberationController;
 use App\Http\Controllers\FrontArticleController;
-use App\Http\Controllers\FrontServiceController;
-
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,16 +20,15 @@ use App\Http\Controllers\FrontServiceController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Route::get('/article/{article}',[FrontArticleController::class, 'show'])->name('article');
+Route::get('/nos-articles', [FrontArticleController::class, 'index'])->name('nos-articles');
 Route::get('/', [FrontHomeController::class, 'index'])->name('home');
 Route::get('/rubrique-souvenirs', [FrontHomeController::class, 'galleries'])->name('rubrique-souvenirs');
 Route::get('/journal', [FrontHomeController::class, 'newspaper'])->name('journal');
-Route::get('/nos-associations', [FrontAssociationController::class, 'index'])->name('nos-associations');    
-Route::get('/nos-membres', [FrontMemberController::class,'index'])->name('nos-membres');
-Route::get('/nos-deliberations', [FrontDeliberationController::class, 'index'])->name('nos-deliberations');
-Route::get('/nos-articles', [FrontArticleController::class, 'index'])->name('nos-articles');
-Route::get('/article/{article}',[FrontArticleController::class, 'show'])->name('article');
-Route::get('/services-alentours', [FrontServiceController::class, 'index'])->name('services-alentours');
+Route::get('/nos-associations', [FrontHomeController::class, 'association'])->name('nos-associations');
+Route::get('/nos-membres', [FrontHomeController::class,'member'])->name('nos-membres');
+Route::get('/nos-deliberations', [FrontHomeController::class, 'deliberation'])->name('nos-deliberations');
+Route::get('/services-alentours', [FrontHomeController::class, 'service'])->name('services-alentours');
 Route::get('/rubrique-souvenirs', [FrontHomeController::class, 'gallery'])->name('rubrique-souvenirs');
 Route::get('/journal', [FrontHomeController::class, 'newspaper'])->name('journal');
 

@@ -32,7 +32,7 @@ class ArticleSeeder extends Seeder
         $article->save();
 
 
-        for ($i = 1; $i <= 20; $i++) { /**Fait parti de la fonction $faker, et dit que l'on ajoute 1000 données aléatoires */
+        for ($i = 1; $i <= 20; $i++) { /**Fait parti de la fonction $faker, et dit que l'on ajoute 20 données aléatoires */
             $article = new Article;
             $article->title = $this->faker->word();
             $article->content = $this->faker->paragraph();
