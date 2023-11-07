@@ -10,14 +10,16 @@
 
         <div class="mx-10 md:flex md:flex-wrap md:justify-center ">
             @foreach ($newspapers as $newspaper)
-                <div class="flex border-2 border-carribean rounded-lg mb-8 p-5 md:mx-8  md:w-96 shadow-lg shadow-carribean/50 ">
+                <div
+                    class="flex border-2 border-carribean rounded-lg mb-8 p-5 md:mx-8  md:w-96 shadow-lg shadow-carribean/50 ">
 
                     <img class="w-32 mr-6" src="/image/news.png" alt="Icône d'un journal de presse">
                     <div class="flex flex-col content-between">
                         <div class="font-h2 uppercase font-semibold mb-8 mt-5 text-sm">{{ $newspaper->title }}</div>
                         <div class="flex justify-start">
                             <a href="{{ url(Storage::url($newspaper->file)) }}" type="button" target="_blank"
-                                class="bg-mint p-1 px-1.5  rounded-xl text-seasalt font-p hover:scale-110 border-2 border-transparent">Voir le journal</a>
+                                class="bg-mint p-1 px-1.5  rounded-xl text-seasalt font-p hover:scale-110 border-2 border-transparent">Voir
+                                le journal</a>
                         </div>
 
                     </div>

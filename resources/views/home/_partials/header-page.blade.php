@@ -19,13 +19,19 @@
             </div>
 
             {{-- mobile menu --}}
-            <div class="lg:hidden bg-gradient-to-b from-carribean to-mint w-full z-50 font-p text-seasalt " x-show="open" x-transition.scale.origin.top x-transition.delay.80ms>
+            <div class="lg:hidden bg-gradient-to-b from-carribean to-mint w-full z-50 font-p text-seasalt "
+                x-show="open" x-transition.scale.origin.top x-transition.delay.80ms>
                 <div class="flex flex-col space-y-3 py-5 px-5">
                     <a href="{{ route('home') }}">Accueil</a>
                     <div class="flex flex-col space-y-2">
-                        <div class="flex items-center text-seasalt uppercase pb-2 mb-3 border-b-2 border-teal-900 font-semibold">
-                            
-                            <svg class="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15 15"><path fill="currentColor" d="M13 4H9V1L7.5 0L6 1v3H2L1 5v1h13V5l-1-1zM7.5 1.5c.4 0 .7.3.7.8s-.3.7-.7.7s-.8-.3-.8-.8c0-.4.4-.7.8-.7zM13 7H2v4l-1 1.5V14h13v-1.5L13 11V7zm-8 5.5H4V8h1v4.5zm3 0H7V8h1v4.5zm3 0h-1V8h1v4.5z"/></svg>
+                        <div
+                            class="flex items-center text-seasalt uppercase pb-2 mb-3 border-b-2 border-teal-900 font-semibold">
+
+                            <svg class="" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 15 15">
+                                <path fill="currentColor"
+                                    d="M13 4H9V1L7.5 0L6 1v3H2L1 5v1h13V5l-1-1zM7.5 1.5c.4 0 .7.3.7.8s-.3.7-.7.7s-.8-.3-.8-.8c0-.4.4-.7.8-.7zM13 7H2v4l-1 1.5V14h13v-1.5L13 11V7zm-8 5.5H4V8h1v4.5zm3 0H7V8h1v4.5zm3 0h-1V8h1v4.5z" />
+                            </svg>
                             <div class="pt-1 ml-2">La Mairie</div>
                         </div>
                         <a href="{{ route('nos-membres') }}">Membres du conseil</a>
@@ -33,9 +39,13 @@
                         <a href="{{ route('services-alentours') }}">Services alentours</a>
                     </div>
                     <div class="flex flex-col space-y-2">
-                        <div class="flex items-center text-seasalt uppercase pb-2 mb-3 border-b-2 border-teal-900 font-semibold">
-                            
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 15 15"><path fill="currentColor" d="M6.176 1.176a.249.249 0 0 0-.352 0l-4.4 4.4A.25.25 0 0 0 1.6 6H3v6.751a.25.25 0 0 0 .249.249h3.5A.248.248 0 0 0 7 12.753v-7.43c0-.066.026-.13.073-.176L8.5 3.5L6.176 1.176ZM6 11H5v-1h1v1Zm0-2H5V8h1v1Zm0-3v1H5V6h1Zm6.75-3h-.5a.25.25 0 0 0-.25.25V5l-1.324-1.824a.249.249 0 0 0-.352 0L8.056 5.932A.246.246 0 0 0 8 6.088v6.66a.249.249 0 0 0 .246.252h1.5a.253.253 0 0 0 .254-.252V11h1v1.747a.253.253 0 0 0 .253.253h1.5a.25.25 0 0 0 .247-.249V3.25a.25.25 0 0 0-.25-.25ZM10 8H9V7h1v1Zm2 0h-1V7h1v1Zm-2 2H9V9h1v1Zm2 0h-1V9h1v1Z"/></svg>
+                        <div
+                            class="flex items-center text-seasalt uppercase pb-2 mb-3 border-b-2 border-teal-900 font-semibold">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 15 15">
+                                <path fill="currentColor"
+                                    d="M6.176 1.176a.249.249 0 0 0-.352 0l-4.4 4.4A.25.25 0 0 0 1.6 6H3v6.751a.25.25 0 0 0 .249.249h3.5A.248.248 0 0 0 7 12.753v-7.43c0-.066.026-.13.073-.176L8.5 3.5L6.176 1.176ZM6 11H5v-1h1v1Zm0-2H5V8h1v1Zm0-3v1H5V6h1Zm6.75-3h-.5a.25.25 0 0 0-.25.25V5l-1.324-1.824a.249.249 0 0 0-.352 0L8.056 5.932A.246.246 0 0 0 8 6.088v6.66a.249.249 0 0 0 .246.252h1.5a.253.253 0 0 0 .254-.252V11h1v1.747a.253.253 0 0 0 .253.253h1.5a.25.25 0 0 0 .247-.249V3.25a.25.25 0 0 0-.25-.25ZM10 8H9V7h1v1Zm2 0h-1V7h1v1Zm-2 2H9V9h1v1Zm2 0h-1V9h1v1Z" />
+                            </svg>
                             <div class="pt-1 ml-2">Le village</div>
                         </div>
                         <a href="{{ route('nos-articles') }}">Actualités</a>
@@ -43,7 +53,7 @@
                         <a href="{{ route('numeros-utiles') }}">Numéros utiles</a>
                         <a href="{{ route('journal') }}">Journal</a>
                         <a href="{{ route('rubrique-souvenirs') }}">Rubrique souvenirs</a>
-                       
+
                     </div>
                 </div>
                 <div>
@@ -59,8 +69,7 @@
                     </div>
                     <div>
                         <div class="hidden md:flex relative  pb-2 mt-2" x-data="{ open: false }">
-                            <button type="button"
-                                class="flex  gap-x-1 font-semibold leading-6 font-p text-seasalt"
+                            <button type="button" class="flex  gap-x-1 font-semibold leading-6 font-p text-seasalt"
                                 @click="open = !open">
                                 La Mairie
                                 <svg class="h-6 w-6 flex-none text-gray-400 hover:scale-110" viewBox="0 0 20 20"
@@ -83,8 +92,7 @@
                                     <div
                                         class="group relative flex gap-x-6 py-2  leading-6 border-b-2 border-transparent hover:transition-all hover:scale-110">
                                         <div class="flex-auto">
-                                            <a href="{{ route('nos-membres') }}"
-                                                class="block font-semibold ">
+                                            <a href="{{ route('nos-membres') }}" class="block font-semibold ">
                                                 Conseil municipal
                                                 <span class="absolute inset-0"></span>
                                             </a>
@@ -93,8 +101,7 @@
                                     <div
                                         class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:scale-110">
                                         <div class="flex-auto">
-                                            <a href="{{ route('nos-deliberations') }}"
-                                                class="block font-semibold">
+                                            <a href="{{ route('nos-deliberations') }}" class="block font-semibold">
                                                 Délibérations
                                                 <span class="absolute inset-0"></span>
                                             </a>
@@ -103,8 +110,7 @@
                                     <div
                                         class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:scale-110 ">
                                         <div class="flex-auto">
-                                            <a href="{{ route('services-alentours') }}"
-                                                class="block font-semibold ">
+                                            <a href="{{ route('services-alentours') }}" class="block font-semibold ">
                                                 Services alentours
                                                 <span class="absolute inset-0"></span>
                                             </a>
@@ -140,8 +146,7 @@
                                     <div
                                         class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:scale-110">
                                         <div class="flex-auto">
-                                            <a href="{{ route('nos-articles') }}"
-                                                class="block font-semibold ">
+                                            <a href="{{ route('nos-articles') }}" class="block font-semibold ">
                                                 Actualités
                                                 <span class="absolute inset-0"></span>
                                             </a>
@@ -150,8 +155,7 @@
                                     <div
                                         class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:scale-110">
                                         <div class="flex-auto">
-                                            <a href="{{ route('nos-associations') }}"
-                                                class="block font-semibold ">
+                                            <a href="{{ route('nos-associations') }}" class="block font-semibold ">
                                                 Associations
                                                 <span class="absolute inset-0"></span>
                                             </a>
@@ -167,25 +171,23 @@
                                         </div>
                                     </div>
                                     <div
-                                    class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:scale-110">
-                                    <div class="flex-auto">
-                                        <a href="{{ route('journal') }}"
-                                            class="block font-semibold ">
-                                            Journal
-                                            <span class="absolute inset-0"></span>
-                                        </a>
+                                        class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:transition-all hover:scale-110">
+                                        <div class="flex-auto">
+                                            <a href="{{ route('journal') }}" class="block font-semibold ">
+                                                Journal
+                                                <span class="absolute inset-0"></span>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div
-                                class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:scale-110">
-                                <div class="flex-auto">
-                                    <a href="{{ route('rubrique-souvenirs') }}"
-                                        class="block font-semibold ">
-                                        Rubrique souvenirs
-                                        <span class="absolute inset-0"></span>
-                                    </a>
-                                </div>
-                            </div>
+                                    <div
+                                        class="group relative flex gap-x-6 py-2 leading-6 border-b-2 border-transparent hover:scale-110">
+                                        <div class="flex-auto">
+                                            <a href="{{ route('rubrique-souvenirs') }}" class="block font-semibold ">
+                                                Rubrique souvenirs
+                                                <span class="absolute inset-0"></span>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

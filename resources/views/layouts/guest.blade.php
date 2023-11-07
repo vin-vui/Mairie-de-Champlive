@@ -26,8 +26,8 @@
         @include('home._partials.header-page')
     </header>
 
-    <main >
-        <div >
+    <main>
+        <div>
             {{ $slot }}
         </div>
     </main>

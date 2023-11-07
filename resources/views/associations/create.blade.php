@@ -32,17 +32,17 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
                             <label class="font-bold text-lg">Nom</label>
-                            <input type="text" name="name" class="form-control w-full"
-                                placeholder="Nom">
+                            <input type="text" name="name" class="form-control w-full" placeholder="Nom">
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
                         <label class="font-bold text-lg">Présentation</label>
-                            <input class="form-control w-full h-36" name="presentation" placeholder="Présentation de l'association"></input> 
+                        <input class="form-control w-full h-36" name="presentation"
+                            placeholder="Présentation de l'association"></input>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 pb-5">
                         <label class="font-bold text-lg">Contact</label>
-                            <input class="form-control w-full h-36" name="contact" placeholder="Contact"></input> 
+                        <input class="form-control w-full h-36" name="contact" placeholder="Contact"></input>
                     </div>
                     <div class="form-group py-2">
                         <label class="font-bold text-lg" for="image">Image</label>

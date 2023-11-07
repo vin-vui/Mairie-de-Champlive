@@ -2,9 +2,10 @@
 
     <div class="m-10">
         <div class="pb-3 flex justify-end items-center bg-seasalt">
-            <a class="border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt" href="{{ route('deliberations.create') }}">
+            <a class="border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt"
+                href="{{ route('deliberations.create') }}">
                 Ajouter une délibération</a>
-            
+
         </div>
         <div class="row mt-2">
             <div class="col-lg-12 italic pb-4 text-smocky-black">
@@ -28,9 +29,9 @@
 
                                 </div>
                             </th>
-                            
+
                             <th scope="col" class="px-6 py-3">
-                               Titre
+                                Titre
                             </th>
                             <th scope="col" class="px-6 py-3">
                                 Date
@@ -40,19 +41,20 @@
                             </th>
                         </tr>
                     </thead>
-                  
+
                     <tbody>
                         @foreach ($deliberations as $deliberation)
                             <tr class="bg-seasalt border-b" x-data="{ open: false }">
                                 <td scope="row" class="px-6 py-4">{{ $deliberation->id }}</td>
                                 <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                    {{ $deliberation->title}}</td>
+                                    {{ $deliberation->title }}</td>
                                 <td class="px-6 py-4">{{ $deliberation->date }}</td>
                                 <td class="px-6 py-4 flex">
                                     <a class="font-medium  hover:underline pr-2"
                                         href="{{ route('deliberations.show', $deliberation) }}">
-                                        <svg class="bg-green-600 rounded-lg p-0.5 hover:scale-105" xmlns="http://www.w3.org/2000/svg"
-                                            width="28" height="28" viewBox="0 0 24 24">
+                                        <svg class="bg-green-600 rounded-lg p-0.5 hover:scale-105"
+                                            xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            viewBox="0 0 24 24">
                                             <path fill="#fafafa"
                                                 d="M12 9a3.02 3.02 0 0 0-3 3c0 1.642 1.358 3 3 3c1.641 0 3-1.358 3-3c0-1.641-1.359-3-3-3z" />
                                             <path fill="#fafafa"
@@ -61,8 +63,9 @@
 
                                     <a class="font-medium hover:underline pr-2"
                                         href="{{ route('deliberations.edit', $deliberation) }}">
-                                        <svg class="bg-blue-600 rounded-lg p-0.5 hover:scale-105" xmlns="http://www.w3.org/2000/svg"
-                                            width="28" height="28" viewBox="0 0 24 24">
+                                        <svg class="bg-blue-600 rounded-lg p-0.5 hover:scale-105"
+                                            xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            viewBox="0 0 24 24">
                                             <path fill="#fafafa"
                                                 d="m19.3 8.925l-4.25-4.2l1.4-1.4q.575-.575 1.413-.575t1.412.575l1.4 1.4q.575.575.6 1.388t-.55 1.387L19.3 8.925ZM17.85 10.4L7.25 21H3v-4.25l10.6-10.6l4.25 4.25Z" />
                                         </svg></a>

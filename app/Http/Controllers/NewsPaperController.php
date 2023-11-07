@@ -8,11 +8,11 @@ use Illuminate\Support\Facades\Storage;
 
 class NewspaperController extends Controller
 {
-    public function rules():array
+    public function rules(): array
     {
         return [
-            'title'=>'required',
-            'file'=>'required',
+            'title' => 'required',
+            'file' => 'required',
         ];
     }
 
@@ -20,7 +20,7 @@ class NewspaperController extends Controller
     {
         $newspapers = Newspaper::orderBy('created_at', 'desc')->get();
 
-        return view ('newspapers.index', compact('newspapers'));
+        return view('newspapers.index', compact('newspapers'));
     }
 
     public function create()
@@ -32,13 +32,13 @@ class NewspaperController extends Controller
     {
         $validData = $request->validate($this->rules());
 
-        $path = Storage::putFileAs('public', $request->file,'.'.$request->file->extension());
+        $path = Storage::putFileAs('public', $request->file, '.' . $request->file->extension());
         $validData["file"] = $path;
 
         $newspaper = Newspaper::create($validData);
 
         return redirect()->route('newspapers.index')
-        ->with ('success', 'Votre journal a bien été enregistrée !');
+            ->with('success', 'Votre journal a bien été enregistrée !');
     }
 
     public function show(Newspaper $newspaper)
@@ -46,7 +46,7 @@ class NewspaperController extends Controller
         return view('newspapers.show', compact('newspaper'));
     }
 
-    public function edit (Newspaper $newspaper)
+    public function edit(Newspaper $newspaper)
     {
         return view('newspapers.edit', compact('newspaper'));
     }
@@ -55,20 +55,20 @@ class NewspaperController extends Controller
     {
         $validData = $request->validate($this->rules());
 
-        $path = Storage::putFileAs('public', $request->file,'.'.$request->file->extension());
+        $path = Storage::putFileAs('public', $request->file, '.' . $request->file->extension());
         $validData["file"] = $path;
 
-            $newspaper->update($validData);
+        $newspaper->update($validData);
 
-            return redirect()->route('newspapers.index')
-                       ->with ('success', 'Journal mis à jour avec succès !');
+        return redirect()->route('newspapers.index')
+            ->with('success', 'Journal mis à jour avec succès !');
 
     }
 
-    public function destroy (Newspaper $newspaper)
+    public function destroy(Newspaper $newspaper)
     {
-       $newspaper->delete();
-       return redirect()->route('newspapers.index')
-                           ->with ('success', 'Journal supprimé avec succès !');
+        $newspaper->delete();
+        return redirect()->route('newspapers.index')
+            ->with('success', 'Journal supprimé avec succès !');
     }
 }

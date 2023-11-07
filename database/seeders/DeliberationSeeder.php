@@ -12,11 +12,12 @@ class DeliberationSeeder extends Seeder
 {
     public function __construct()
     {
-        $this->faker=$this->withFaker();
+        $this->faker = $this->withFaker();
     }
 
-    protected function withFaker(){
-       return Container::getInstance()->make(Generator::class);
+    protected function withFaker()
+    {
+        return Container::getInstance()->make(Generator::class);
     }
 
     public function run(): void
@@ -36,5 +37,5 @@ class DeliberationSeeder extends Seeder
         }
     }
 
-    
+
 }

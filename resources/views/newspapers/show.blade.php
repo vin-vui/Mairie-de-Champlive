@@ -21,7 +21,9 @@
                     </div>
                     <div class="pb-5">
                         <label class="font-bold text-lg">Fichier</label>
-                        <embed src="{{ Storage::url($newspaper->file) }}" type="application/pdf" width="600" height="700" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+                        <embed src="{{ Storage::url($newspaper->file) }}" type="application/pdf" width="600"
+                            height="700" alt="pdf"
+                            pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
                     </div>
                 </div>
             </div>

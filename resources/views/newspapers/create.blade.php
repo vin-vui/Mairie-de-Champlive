@@ -38,7 +38,8 @@
                     </div>
                     <div class="form-group py-2">
                         <label class="font-bold text-lg" for="image">Fichier</label>
-                        <input type="file" name="file" id="file" class="form-control-file" accept="application/pdf">
+                        <input type="file" name="file" id="file" class="form-control-file"
+                            accept="application/pdf">
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                         <button type="submit"

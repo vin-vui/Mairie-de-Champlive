@@ -32,7 +32,7 @@ class GalleryController extends Controller
     {
         $validData = $request->validate($this->rules());
 
-        $path = Storage::putFileAs('public', $request->image,  $validData['title']. '.' . $request->image->extension());
+        $path = Storage::putFileAs('public', $request->image, $validData['title'] . '.' . $request->image->extension());
         $validData["image"] = $path;
 
         Gallery::create($validData);
@@ -55,7 +55,7 @@ class GalleryController extends Controller
     {
         $validData = $request->validate($this->rules());
 
-        $path = Storage::putFileAs('public', $request->image, $validData['title']. '.' . $request->image->extension());
+        $path = Storage::putFileAs('public', $request->image, $validData['title'] . '.' . $request->image->extension());
         $validData["image"] = $path;
 
         $gallery->update($validData);

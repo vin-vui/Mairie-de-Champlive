@@ -13,17 +13,18 @@ class ArticleSeeder extends Seeder
 {
     public function __construct()
     {
-        $this->faker=$this->withFaker();
+        $this->faker = $this->withFaker();
     }
 
-    protected function withFaker(){
-       return Container::getInstance()->make(Generator::class);
+    protected function withFaker()
+    {
+        return Container::getInstance()->make(Generator::class);
     }
 
     public function run(): void
     {
         $article = new Article;
-        $article->title='Concours';
+        $article->title = 'Concours';
         $article->content = 'Bienvenue au concours annuel de pétanque organisé par l\'association les pétanqueurs';
         $article->image = '';
         $article->date = '22-08-24';

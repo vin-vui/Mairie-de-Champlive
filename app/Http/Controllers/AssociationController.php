@@ -8,13 +8,13 @@ use Illuminate\Support\Facades\Storage;
 
 class AssociationController extends Controller
 {
-    public function rules():array
+    public function rules(): array
     {
         return [
-            'name'=>'required',
-            'presentation'=>'required',
-            'image'=>'nullable',
-            'contact'=>'required',
+            'name' => 'required',
+            'presentation' => 'required',
+            'image' => 'nullable',
+            'contact' => 'required',
         ];
     }
 
@@ -22,7 +22,7 @@ class AssociationController extends Controller
     {
         $associations = Association::orderBy('created_at', 'desc')->get();
 
-        return view('associations.index',compact('associations'));
+        return view('associations.index', compact('associations'));
     }
 
 
@@ -36,26 +36,25 @@ class AssociationController extends Controller
     {
         $validData = $request->validate($this->rules());
 
-        if ($request->hasFile('image')) 
-    {
-                $path = Storage::putFileAs('public', $request->image, $validData['name'].'.'.$request->image->extension());
-                $validData["image"] = $path;
-    }
-        
-            Association::create($validData);
+        if ($request->hasFile('image')) {
+            $path = Storage::putFileAs('public', $request->image, $validData['name'] . '.' . $request->image->extension());
+            $validData["image"] = $path;
+        }
+
+        Association::create($validData);
 
         return redirect()->route('associations.index')
-                        ->with ('success', 'Votre association a bien été enregistrée !');
-     }
+            ->with('success', 'Votre association a bien été enregistrée !');
+    }
 
-     //Show function
-     public function show(Association $association)
-     {
-         return view('associations.show', compact('association'));
-     }
+    //Show function
+    public function show(Association $association)
+    {
+        return view('associations.show', compact('association'));
+    }
 
-     // Edit function
-    public function edit (Association $association)
+    // Edit function
+    public function edit(Association $association)
     {
         return view('associations.edit', compact('association'));
     }
@@ -64,24 +63,23 @@ class AssociationController extends Controller
     {
         $validData = $request->validate($this->rules());
 
-       if ($request->hasFile('image')) 
-    {
-        $path = Storage::putFileAs('public', $request->image, $validData['name'].'.'.$request->image->extension());
-        $validData["image"] = $path;
-    }
-    
+        if ($request->hasFile('image')) {
+            $path = Storage::putFileAs('public', $request->image, $validData['name'] . '.' . $request->image->extension());
+            $validData["image"] = $path;
+        }
+
         $association->update($validData);
 
         return redirect()->route('associations.index')
-                       ->with ('success', 'Association mise à jour avec succès !');
+            ->with('success', 'Association mise à jour avec succès !');
 
     }
 
     //  Destroy function
-    public function destroy (association $association)
+    public function destroy(association $association)
     {
-       $association->delete();
-       return redirect()->route('associations.index')
-                           ->with ('success', 'Association supprimée avec succès !');
+        $association->delete();
+        return redirect()->route('associations.index')
+            ->with('success', 'Association supprimée avec succès !');
     }
 }

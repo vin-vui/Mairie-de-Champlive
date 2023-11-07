@@ -10,26 +10,27 @@ use Illuminate\Container\Container;
 
 class ServiceSeeder extends Seeder
 {
-    
+
     public function __construct()
     {
-        $this->faker=$this->withFaker();
+        $this->faker = $this->withFaker();
     }
 
-    protected function withFaker(){
-       return Container::getInstance()->make(Generator::class);
+    protected function withFaker()
+    {
+        return Container::getInstance()->make(Generator::class);
     }
 
 
     public function run(): void
     {
         $service = new Service;
-        $service-> name = 'Maison des Services';
-        $service-> address = '36 Rue du Moulin';
-        $service-> cp = '25642';
-        $service-> city = 'Roulans';
-        $service-> mail = 'maison.services@gmail.com';
-        $service-> phone = '03 84 32 58 96';
+        $service->name = 'Maison des Services';
+        $service->address = '36 Rue du Moulin';
+        $service->cp = '25642';
+        $service->city = 'Roulans';
+        $service->mail = 'maison.services@gmail.com';
+        $service->phone = '03 84 32 58 96';
         $service->save();
 
 

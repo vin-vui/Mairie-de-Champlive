@@ -2,7 +2,8 @@
 
     <div class="m-10">
         <div class="pb-3 flex justify-end items-center bg-seasalt">
-            <a class="border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt" href="{{ route('members.create') }}">
+            <a class="border-2 border-carribean bg-carribean text-seasalt rounded-xl p-2 px-5 hover:text-carribean hover:font-bold hover:bg-seasalt"
+                href="{{ route('members.create') }}">
                 Ajouter un membre</a>
         </div>
         <div class="row mt-2">
@@ -27,7 +28,7 @@
 
                                 </div>
                             </th>
-                            
+
                             <th scope="col" class="px-6 py-3">
                                 Nom
                             </th>
@@ -43,7 +44,7 @@
                             </th>
                         </tr>
                     </thead>
-                  
+
                     <tbody>
                         @foreach ($members as $member)
                             <tr class="bg-white border-b " x-data="{ open: false }">
@@ -52,13 +53,14 @@
                                     {{ $member->lastname }}</td>
                                 <td class="px-6 py-4">{{ $member->firstname }}</td>
                                 <td class="px-16 py-4">{{ $member->position }}</td>
-                
+
 
                                 <td class="px-6 py-4 flex">
                                     <a class="font-medium  hover:underline pr-2"
                                         href="{{ route('members.show', $member) }}">
-                                        <svg class="bg-green-600 rounded-lg p-0.5 hover:scale-105" xmlns="http://www.w3.org/2000/svg"
-                                            width="28" height="28" viewBox="0 0 24 24">
+                                        <svg class="bg-green-600 rounded-lg p-0.5 hover:scale-105"
+                                            xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            viewBox="0 0 24 24">
                                             <path fill="#fafafa"
                                                 d="M12 9a3.02 3.02 0 0 0-3 3c0 1.642 1.358 3 3 3c1.641 0 3-1.358 3-3c0-1.641-1.359-3-3-3z" />
                                             <path fill="#fafafa"
@@ -67,8 +69,9 @@
 
                                     <a class="font-medium hover:underline pr-2"
                                         href="{{ route('members.edit', $member) }}">
-                                        <svg class="bg-blue-600 rounded-lg p-0.5 hover:scale-105 " xmlns="http://www.w3.org/2000/svg"
-                                            width="28" height="28" viewBox="0 0 24 24">
+                                        <svg class="bg-blue-600 rounded-lg p-0.5 hover:scale-105 "
+                                            xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            viewBox="0 0 24 24">
                                             <path fill="#fafafa"
                                                 d="m19.3 8.925l-4.25-4.2l1.4-1.4q.575-.575 1.413-.575t1.412.575l1.4 1.4q.575.575.6 1.388t-.55 1.387L19.3 8.925ZM17.85 10.4L7.25 21H3v-4.25l10.6-10.6l4.25 4.25Z" />
                                         </svg></a>
@@ -88,23 +91,23 @@
                                                     d="M7 21q-.825 0-1.413-.588T5 19V6H4V4h5V3h6v1h5v2h-1v13q0 .825-.588 1.413T17 21H7Zm2-4h2V8H9v9Zm4 0h2V8h-2v9Z" />
                                             </svg></button>
 
-                                    <div x-show="open" @click.outside="open = false"
-                                        class="fixed top-60 left-1/3 z-50" x-cloak>
-                                        <div
-                                            class="bg-white p-10 rounded-lg shadow-lg border-carribean border-2 shadow-carribean ">
-                                            <h2 class="text-lg text-carribean font-bold mb-4">Confirmation de
-                                                suppression</h2>
-                                            <p class="mb-4 text-smocky-black">Êtes-vous sûr de vouloir supprimer ?
-                                            </p>
-                                            <div class="flex justify-end">
-                                                <button type="button"
-                                                    class="text-smocky-black mr-2 border-2 border-transparent rounded-lg p-1 hover:border-gray-200 hover:bg-gray-200 "
-                                                    @click.prevent="open = false">Annuler</button>
-                                                <button type="submit" @click="open = false"
-                                                    class="font-medium border-2 border-transparent rounded-lg p-1 text-red-600 hover:text-seasalt hover:border-red-600 hover:bg-red-600">Supprimer</button>
+                                        <div x-show="open" @click.outside="open = false"
+                                            class="fixed top-60 left-1/3 z-50" x-cloak>
+                                            <div
+                                                class="bg-white p-10 rounded-lg shadow-lg border-carribean border-2 shadow-carribean ">
+                                                <h2 class="text-lg text-carribean font-bold mb-4">Confirmation de
+                                                    suppression</h2>
+                                                <p class="mb-4 text-smocky-black">Êtes-vous sûr de vouloir supprimer ?
+                                                </p>
+                                                <div class="flex justify-end">
+                                                    <button type="button"
+                                                        class="text-smocky-black mr-2 border-2 border-transparent rounded-lg p-1 hover:border-gray-200 hover:bg-gray-200 "
+                                                        @click.prevent="open = false">Annuler</button>
+                                                    <button type="submit" @click="open = false"
+                                                        class="font-medium border-2 border-transparent rounded-lg p-1 text-red-600 hover:text-seasalt hover:border-red-600 hover:bg-red-600">Supprimer</button>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
                                     </form>
                                 </td>
                             </tr>

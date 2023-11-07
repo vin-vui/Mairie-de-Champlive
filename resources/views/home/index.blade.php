@@ -1,7 +1,7 @@
 <x-guest-layout>
     <div class="relative flex justify-center">
         <img class="h-[40rem] w-full object-cover " src="image/header2.jpg" alt="Photo du ruisseau de champlive">
-        
+
         <div class="absolute text-seasalt uppercase top-80 font-h1 text-xl md:text-4xl lg:text-5xl whitespace-nowrap">
             <h1 class="typewriter">Bienvenue à champlive</h1>
         </div>
@@ -32,7 +32,8 @@
                 évacuer l'eau. Le village est traversé par un ruisseau, Le Gour.
             </div>
 
-            <div class="">Au sommet de la colline, les ruines du Château de Vaite, construit au XIIIème, surplombent la vallée du
+            <div class="">Au sommet de la colline, les ruines du Château de Vaite, construit au XIIIème,
+                surplombent la vallée du
                 Doubs. De cet endroit, on peut avoir un magnifique point de vue. Ce château fut incendié en 1480 par les
                 troupes de Louis XI, la famille Lallemand l'entretint jusqu'en 1792 et c'est en 1793 que le Conseil
                 Général

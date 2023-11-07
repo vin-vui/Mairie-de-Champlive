@@ -6,71 +6,16 @@
     display: none;
 }
 
+/*Shape Dividers*/
 
-.shapedividers_com-6697{
-    overflow:hidden;
-    position:relative;
-    }
-    .shapedividers_com-6697::before{ 
-    content:'';
-    font-family:'shape divider from ShapeDividers.com';
-    position: absolute;
-    z-index: 3;
-    pointer-events: none;
-    background-repeat: no-repeat;
-    bottom: -0.1vw;
-    left: -0.1vw;
-    right: -0.1vw;
-    top: -0.1vw; 
-    background-size: 293% 177px;
-    background-position: 40% 0%;  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" fill="%2362a87c"/><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" opacity=".5" fill="%2362a87c"/><path d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z" opacity=".5" fill="%2362a87c"/></svg>'); 
-    }
-    
-    @media (min-width:2100px){
-    .shapedividers_com-6697::before{
-    background-size: 293% calc(2vw + 177px);
-    }
-    }
-     
-
-.shapedividers_com-1250{
-    overflow:hidden;
-    position:relative;
-    }
-    .shapedividers_com-1250::before{ 
-    content:'';
-    font-family:'shape divider from ShapeDividers.com';
-    position: absolute;
-    z-index: 3;
-    pointer-events: none;
-    background-repeat: no-repeat;
-    bottom: -0.1vw;
-    left: -0.1vw;
-    right: -0.1vw;
-    top: -0.1vw; 
-    background-size: 293% 177px;
-    background-position: 40% 0%;  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" fill="%23115e59"/><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" opacity=".5" fill="%23115e59"/><path d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z" opacity=".5" fill="%23115e59"/></svg>'); 
-    }
-    
-    @media (min-width:2100px){
-    .shapedividers_com-1250::before{
-    background-size: 293% calc(2vw + 177px);
-    }
-    }
-     
-
-.shadow_text {
-    text-shadow: 0px 4px 4px rgba(27, 23, 20, 0.72);
+.shapedividers_com-6697 {
+    overflow: hidden;
+    position: relative;
 }
 
-
-.shapedividers_com-5351{
-    overflow:hidden;
-    position:relative;
-    }
-    .shapedividers_com-5351::before{ 
-    content:'';
-    font-family:'shape divider from ShapeDividers.com';
+.shapedividers_com-6697::before {
+    content: "";
+    font-family: "shape divider from ShapeDividers.com";
     position: absolute;
     z-index: 3;
     pointer-events: none;
@@ -78,26 +23,79 @@
     bottom: -0.1vw;
     left: -0.1vw;
     right: -0.1vw;
-    top: -0.1vw; 
+    top: -0.1vw;
     background-size: 293% 177px;
-    background-position: 40% 100%;  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M35.28 1.67c-3.07-.55-9.27.41-16.15 0-6.87-.4-13.74-.58-19.13.1v.4h35.28z" fill="%23115e59"/><path d="M35.28 1.16c-3.17-.8-7.3.4-10.04.56-2.76.17-9.25-1.47-12.68-1.3-3.42.16-4.64.84-7.04.86C3.12 1.31 0 .4 0 .4v1.77h35.28z" opacity=".5" fill="%23115e59"/><path d="M35.28.31c-2.57.84-7.68.3-11.8.43-4.1.12-6.85.61-9.57.28C11.18.69 8.3-.16 5.3.02 2.3.22.57.85 0 .87v1.2h35.28z" opacity=".5" fill="%23115e59"/></svg>'); 
-    }
-    
-    @media (min-width:2100px){
-    .shapedividers_com-5351::before{
-    background-size: 293% calc(2vw + 177px);
-    }
-    }
-     
+    background-position: 40% 0%;
+    background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" fill="%2362a87c"/><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" opacity=".5" fill="%2362a87c"/><path d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z" opacity=".5" fill="%2362a87c"/></svg>');
+}
 
+@media (min-width: 2100px) {
+    .shapedividers_com-6697::before {
+        background-size: 293% calc(2vw + 177px);
+    }
+}
+
+.shapedividers_com-1250 {
+    overflow: hidden;
+    position: relative;
+}
+
+.shapedividers_com-1250::before {
+    content: "";
+    font-family: "shape divider from ShapeDividers.com";
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 293% 177px;
+    background-position: 40% 0%;
+    background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" fill="%23115e59"/><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" opacity=".5" fill="%23115e59"/><path d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z" opacity=".5" fill="%23115e59"/></svg>');
+}
+
+@media (min-width: 2100px) {
+    .shapedividers_com-1250::before {
+        background-size: 293% calc(2vw + 177px);
+    }
+}
+
+.shapedividers_com-5351 {
+    overflow: hidden;
+    position: relative;
+}
+
+.shapedividers_com-5351::before {
+    content: "";
+    font-family: "shape divider from ShapeDividers.com";
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 293% 177px;
+    background-position: 40% 100%;
+    background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M35.28 1.67c-3.07-.55-9.27.41-16.15 0-6.87-.4-13.74-.58-19.13.1v.4h35.28z" fill="%23115e59"/><path d="M35.28 1.16c-3.17-.8-7.3.4-10.04.56-2.76.17-9.25-1.47-12.68-1.3-3.42.16-4.64.84-7.04.86C3.12 1.31 0 .4 0 .4v1.77h35.28z" opacity=".5" fill="%23115e59"/><path d="M35.28.31c-2.57.84-7.68.3-11.8.43-4.1.12-6.85.61-9.57.28C11.18.69 8.3-.16 5.3.02 2.3.22.57.85 0 .87v1.2h35.28z" opacity=".5" fill="%23115e59"/></svg>');
+}
+
+@media (min-width: 2100px) {
+    .shapedividers_com-5351::before {
+        background-size: 293% calc(2vw + 177px);
+    }
+}
 
 .shapedividers_com-7249 {
     overflow: hidden;
 }
 
 .shapedividers_com-7249::before {
-    content: '';
-    font-family: 'shape divider from ShapeDividers.com';
+    content: "";
+    font-family: "shape divider from ShapeDividers.com";
     position: absolute;
     z-index: 3;
     pointer-events: none;
@@ -111,21 +109,20 @@
     background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.278 3.62" preserveAspectRatio="none"><path d="M35.278.092S8.238.267 0 3.62V.092z" opacity=".2" fill="%2362a87c"/><path d="M35.278.092S8.238.246 0 3.194V.092z" opacity=".2" fill="%2362a87c"/><path d="M35.278.092S8.238.223 0 2.738V.092zM35.278.092H0V0h35.278z" fill="%2362a87c"/></svg>');
 }
 
-@media (min-width:2100px) {
+@media (min-width: 2100px) {
     .shapedividers_com-7249::before {
         background-size: 100% calc(2vw + 150px);
     }
 }
 
+.shapedividers_com-7203 {
+    overflow: hidden;
+    position: relative;
+}
 
-
-.shapedividers_com-7203{
-    overflow:hidden;
-    position:relative;
-    }
-    .shapedividers_com-7203::before{ 
-    content:'';
-    font-family:'shape divider from ShapeDividers.com';
+.shapedividers_com-7203::before {
+    content: "";
+    font-family: "shape divider from ShapeDividers.com";
     position: absolute;
     z-index: 3;
     pointer-events: none;
@@ -133,47 +130,41 @@
     bottom: -0.1vw;
     left: -0.1vw;
     right: -0.1vw;
-    top: -0.1vw; 
+    top: -0.1vw;
     background-size: 298% 361px;
-    background-position: 50% 100%;  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.278 3.52" preserveAspectRatio="none"><path d="M0 3.528S27.04 3.352 35.278 0v3.528z" opacity=".2" fill="%2362a87c"/><path d="M0 3.528S27.04 3.374 35.278.425v3.103z" opacity=".2" fill="%2362a87c"/><path d="M0 3.528S27.04 3.396 35.278.882v2.646z" fill="%2362a87c"/><path d="M0 3.527h35.278v.092H0z" fill="%2362a87c"/></svg>'); 
-    }
-    
-    @media (min-width:2100px){
-    .shapedividers_com-7203::before{
-    background-size: 298% calc(2vw + 361px);
-    }
-    }
-     
+    background-position: 50% 100%;
+    background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.278 3.52" preserveAspectRatio="none"><path d="M0 3.528S27.04 3.352 35.278 0v3.528z" opacity=".2" fill="%2362a87c"/><path d="M0 3.528S27.04 3.374 35.278.425v3.103z" opacity=".2" fill="%2362a87c"/><path d="M0 3.528S27.04 3.396 35.278.882v2.646z" fill="%2362a87c"/><path d="M0 3.527h35.278v.092H0z" fill="%2362a87c"/></svg>');
+}
 
-      /* .waviy span {
-        position: relative;
-        display: inline-block;
-        color: #fafafa;
-        text-transform: uppercase;
-        animation: flip 2s;
-        animation-delay: calc(.2s * var(--i))
-      }
-      @keyframes flip {
-        0%,80% {
-          transform: rotateY(360deg) 
-        }
-      } */
+@media (min-width: 2100px) {
+    .shapedividers_com-7203::before {
+        background-size: 298% calc(2vw + 361px);
+    }
+}
 
-      .typewriter {
-        overflow: hidden; /* Ensures the content is not revealed until the animation */
-        letter-spacing: .15em; /* Adjust as needed */
-        animation: 
-          typing 3.5s steps(30, end),
-          blink-caret .5s step-end infinite;
+/* script effect */
 
-          @media screen and (max-width: 1024px) {
-            
-          }
-      }
-      
-      /* The typing effect */
-      @keyframes typing {
-        from { width: 0 }
-        to { width: 100% }
-      }
-      
+.typewriter {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    letter-spacing: 0.15em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Shadow on the text */
+
+.shadow_text {
+    text-shadow: 0px 4px 4px rgba(27, 23, 20, 0.72);
+}

@@ -10,11 +10,10 @@
 
         <div class=" flex  flex-col p-5 md:flex-row md:flex-wrap md:justify-center ">
             @foreach ($galleries as $gallery)
-                    <div class="flex mb-8 mx-auto sm:w-3/12 flex-wrap md:m-5">
-                            <img class="block rounded-lg w-full max-h-64 object-cover shadow-lg shadow-carribean/50"
-                                src="{{ Storage::url($gallery->image) }}" alt="{{ $gallery->name }}" />
-                    </div>
-                
+                <div class="flex mb-8 mx-auto sm:w-3/12 flex-wrap md:m-5">
+                    <img class="block rounded-lg w-full max-h-64 object-cover shadow-lg shadow-carribean/50"
+                        src="{{ Storage::url($gallery->image) }}" alt="{{ $gallery->name }}" />
+                </div>
             @endforeach
         </div>
 </x-guest-layout>

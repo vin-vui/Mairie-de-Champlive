@@ -60,8 +60,9 @@
                                 <td class="px-6 py-4 flex">
                                     <a class="font-medium  hover:underline pr-2"
                                         href="{{ route('articles.show', $article) }}">
-                                        <svg class="bg-green-600 rounded-lg p-0.5 hover:scale-105" xmlns="http://www.w3.org/2000/svg"
-                                            width="28" height="28" viewBox="0 0 24 24">
+                                        <svg class="bg-green-600 rounded-lg p-0.5 hover:scale-105"
+                                            xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            viewBox="0 0 24 24">
                                             <path fill="#fafafa"
                                                 d="M12 9a3.02 3.02 0 0 0-3 3c0 1.642 1.358 3 3 3c1.641 0 3-1.358 3-3c0-1.641-1.359-3-3-3z" />
                                             <path fill="#fafafa"
@@ -70,8 +71,9 @@
 
                                     <a class="font-medium hover:underline pr-2"
                                         href="{{ route('articles.edit', $article) }}">
-                                        <svg class="bg-blue-600 rounded-lg p-0.5 hover:scale-105" xmlns="http://www.w3.org/2000/svg"
-                                            width="28" height="28" viewBox="0 0 24 24">
+                                        <svg class="bg-blue-600 rounded-lg p-0.5 hover:scale-105"
+                                            xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            viewBox="0 0 24 24">
                                             <path fill="#fafafa"
                                                 d="m19.3 8.925l-4.25-4.2l1.4-1.4q.575-.575 1.413-.575t1.412.575l1.4 1.4q.575.575.6 1.388t-.55 1.387L19.3 8.925ZM17.85 10.4L7.25 21H3v-4.25l10.6-10.6l4.25 4.25Z" />
                                         </svg></a>

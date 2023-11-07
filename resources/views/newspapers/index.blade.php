@@ -57,10 +57,11 @@
                                                 d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316l-.105-.316C21.927 11.617 19.633 5 12 5zm0 12c-5.351 0-7.424-3.846-7.926-5C4.578 10.842 6.652 7 12 7c5.351 0 7.424 3.846 7.926 5c-.504 1.158-2.578 5-7.926 5z" />
                                         </svg></a>
 
-                                        <a class="font-medium hover:underline pr-2"
+                                    <a class="font-medium hover:underline pr-2"
                                         href="{{ route('newspapers.edit', $newspaper) }}">
-                                        <svg class="bg-blue-600 rounded-lg p-0.5 hover:scale-105" xmlns="http://www.w3.org/2000/svg"
-                                            width="28" height="28" viewBox="0 0 24 24">
+                                        <svg class="bg-blue-600 rounded-lg p-0.5 hover:scale-105"
+                                            xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            viewBox="0 0 24 24">
                                             <path fill="#fafafa"
                                                 d="m19.3 8.925l-4.25-4.2l1.4-1.4q.575-.575 1.413-.575t1.412.575l1.4 1.4q.575.575.6 1.388t-.55 1.387L19.3 8.925ZM17.85 10.4L7.25 21H3v-4.25l10.6-10.6l4.25 4.25Z" />
                                         </svg></a>
