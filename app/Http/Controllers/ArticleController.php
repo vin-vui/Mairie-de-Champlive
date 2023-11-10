@@ -14,7 +14,7 @@ class ArticleController extends Controller
         return [
             'title' => 'required',
             'content' => 'required',
-            'image' => 'sometimes|image|max:2048',
+            'image' => 'sometimes|image|max:2500',
             'date' => 'required',
             'location' => 'required',
             'description' => 'nullable',
@@ -37,7 +37,6 @@ class ArticleController extends Controller
 
     // Ex : INSERT INTO articles (titre, contenu, date_creation)
     // VALUES ('Mon Titre', 'Mon Contenu', '2023-10-12');
-
     public function create()
     {
         return view('articles.create');
