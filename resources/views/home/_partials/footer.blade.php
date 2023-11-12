@@ -5,13 +5,13 @@
         <div class="my-5">
             <div class="mb-5">Horaire d'ouverture :</div>
             <div class=" leading-8 lg:ml-10">
-                <div>Permanence le jeu de :</div>
+                <div>Permanence le jeudi </div>
                 <div>10h30 à 12h et de 17h à 18h30</div>
             </div>
         </div>
 
         <div class="my-5">
-            <div class="mb-5">Adresse :</div>
+            <div class="mb-5">Adresse </div>
             <div class=" leading-8 lg:ml-10">
                 <div>12 Grande rue</div>
                 <div>25360 CHAMPLIVE</div>
@@ -19,7 +19,7 @@
         </div>
 
         <div class="my-5">
-            <div class="mb-5">Contact :</div>
+            <div class="mb-5">Contact </div>
             <div class=" leading-8 flex flex-col lg:ml-10">
                 <div class="flex items-center justify-center lg:justify-normal">
                     <svg class="" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
