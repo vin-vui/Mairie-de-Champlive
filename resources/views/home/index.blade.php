@@ -1,6 +1,6 @@
 <x-guest-layout>
     <div class="relative flex justify-center">
-        <img class="h-[40rem] w-full object-cover " src="image/header2.jpg" alt="Photo du ruisseau de champlive">
+        <img class="h-[40rem] w-full object-cover " src="image/header2.webp" alt="Photo du ruisseau de champlive">
 
         <div class="absolute text-seasalt uppercase top-80 font-h1 text-xl md:text-4xl lg:text-5xl whitespace-nowrap">
             <h1 class="typewriter">Bienvenue à champlive</h1>
@@ -14,14 +14,13 @@
                 <img class="w-32 md:w-40" src="image/blason.png" alt="Blason du village de Champlive">
             </div>
             <div class=" flex absolute top-50 right-50 lg:left-[35rem] xl:left-[25rem] shadow-xl">
-                <img class="hidden rounded-xl md:w-80 lg:block " src="image/photo_1.jpg"
+                <img class="hidden rounded-xl md:w-80 lg:block " src="image/photo_1.webp"
                     alt="Photographie de la mairie">
             </div>
             <div class="flex mt-2 mr-10">
-                <img class="hidden rounded-xl md:w-80 lg:block xl:mt-5" src="image/photo_2.jpg"
+                <img class="hidden rounded-xl md:w-80 lg:block xl:mt-5" src="image/photo_2.webp"
                     alt="Photographie du village">
             </div>
-
         </div>
 
         <div

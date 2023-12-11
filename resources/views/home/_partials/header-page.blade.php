@@ -1,10 +1,11 @@
 <div class="fixed w-full top-0 z-40">
-    <nav class="bg-gradient-to-b from-carribean/90 to-mint lg:px-6">
+    <nav class="bg-gradient-to-b h-16 from-carribean/90 to-mint lg:px-6">
+        {{-- <div class="flex justify-between ml-5 lg:"> --}}
+
         <div class="flex flex-wrap justify-end h-12 lg:justify-center items-center lg:mx-auto max-w-screen-xl"
             x-data="{ open: false }">
-
+            <img class="h-16 hidden lg:block mr-5" src="/image/blason_svg.svg" alt="Blason de Champlive">
             {{-- mobile menu button --}}
-
             <div class="flex items-center mr-3 border-2 border-transparent lg:hidden">
                 <button type="button" @click="open = !open" class="flex">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 14 14">
@@ -195,6 +196,7 @@
                 </ul>
             </div>
         </div>
+        {{-- </div> --}}
     </nav>
-    <div class="shapedividers_com-7249 w-full h-40 relative z-40"></div>
+    <div class="shapedividers_com-7249 w-full h-40 relative z-40 hidden md:block"></div>
 </div>
