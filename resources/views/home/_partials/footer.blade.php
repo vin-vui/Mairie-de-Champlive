@@ -44,6 +44,6 @@
         </div>
     </div>
     <div class="flex justify-center text-seasalt font-p font-semibold text-sm hover:underline pb-2">
-        <a href="{{route('mentions-legales') }}" target="_blank">Mentions légales</a>
+        <a href="{{route('mentions-legales') }}">Mentions légales</a>
     </div>
 </footer>
