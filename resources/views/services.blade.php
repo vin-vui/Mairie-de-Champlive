@@ -25,7 +25,7 @@
                         <div class="mt-3">
                             {{ $service->phone }}
                         </div>
-                        <div class="">
+                        <div >
                             {{ $service->mail }}
                         </div>
                     </div>

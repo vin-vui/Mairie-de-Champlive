@@ -13,7 +13,7 @@
                         <div><span class="border-b-2 border-carribean">Lieu </span>: {{ $article->location }}</div>
                     </div>
                     <p class="mb-10 font-p leading-7">{{ $article->content }}</p>
-                    <img class="" src="{{ Storage::url($article->image) }}" alt="{{ $article->title }}">
+                    <img  src="{{ Storage::url($article->image) }}" alt="{{ $article->title }}">
                 </article>
             </div>
         </main>

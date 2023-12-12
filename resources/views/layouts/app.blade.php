@@ -26,7 +26,7 @@
         <nav class="bg-carribean  px-4 h-16 fixed left-0 right-0 top-0 z-50">
             <div class="flex flex-wrap justify-between items-start mt-2 ">
                 <div class="flex justify-start items-start">
-                    <x-application-logo class="" />
+                    <x-application-logo  />
                     <div class="flex justify-start mt-3 mx-12 text-seasalt text-2xl font-semibold ">Mairie
                         de Champlive</div>
                 </div>

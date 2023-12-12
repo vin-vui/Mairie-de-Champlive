@@ -31,7 +31,7 @@
                 évacuer l'eau. Le village est traversé par un ruisseau, Le Gour.
             </div>
 
-            <div class="">Au sommet de la colline, les ruines du Château de Vaite, construit au XIIIème,
+            <div >Au sommet de la colline, les ruines du Château de Vaite, construit au XIIIème,
                 surplombent la vallée du
                 Doubs. De cet endroit, on peut avoir un magnifique point de vue. Ce château fut incendié en 1480 par les
                 troupes de Louis XI, la famille Lallemand l'entretint jusqu'en 1792 et c'est en 1793 que le Conseil

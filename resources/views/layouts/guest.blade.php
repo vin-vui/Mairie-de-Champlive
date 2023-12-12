@@ -22,7 +22,7 @@
 </head>
 
 <body class="bg-seasalt ">
-    <header class="">
+    <header >
         @include('home._partials.header-page')
     </header>
 
