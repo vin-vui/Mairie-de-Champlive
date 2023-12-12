@@ -1,4 +1,4 @@
-<x-guest_layout>
+<x-guest-layout>
 
     <body class="mx-24 bg-seasalt ">
         <div class="relative mt-44 mx-6 flex flex-col">
@@ -74,4 +74,4 @@
             </div>
         </div>
     </body>
-</x-guest_layout>
+</x-guest-layout>
