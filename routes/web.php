@@ -37,6 +37,10 @@ Route::get('/numbers', function () {
     return view('numbers');
 })->name('numeros-utiles');
 
+Route::get('/legal-informations', function(){
+    return view('legal-informations');
+})->name('mentions-legales');
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

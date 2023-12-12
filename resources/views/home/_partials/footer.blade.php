@@ -1,7 +1,7 @@
-<footer>
-    <div class="shapedividers_com-7203 h-40"></div>
+<div class="shapedividers_com-7203 h-40"></div>
+<footer class="bg-gradient-to-b from-mint to-carribean/90 ">
     <div
-        class="bg-gradient-to-b from-mint to-carribean/90 flex flex-col text-center lg:text-justify lg:flex-row lg:justify-around py-16 text-seasalt font-p font-semibold">
+        class="flex flex-col text-center lg:text-justify lg:flex-row lg:justify-around py-16 text-seasalt font-p font-semibold">
         <div class="my-5">
             <div class="mb-5">Horaire d'ouverture :</div>
             <div class=" leading-8 lg:ml-10">
@@ -42,5 +42,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="flex justify-center text-seasalt font-p font-semibold text-sm hover:underline pb-2">
+        <a href="{{route('mentions-legales') }}" target="_blank">Mentions légales</a>
     </div>
 </footer>
