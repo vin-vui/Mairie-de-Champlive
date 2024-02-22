@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Newspaper;
 use Illuminate\Support\Facades\Storage;
 
-class NewspaperController extends Controller
+class PaperController extends Controller
 {
     public function rules(): array
     {

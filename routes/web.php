@@ -31,7 +31,6 @@ Route::get('/nos-membres', [FrontHomeController::class, 'member'])->name('nos-me
 Route::get('/nos-deliberations', [FrontHomeController::class, 'deliberation'])->name('nos-deliberations');
 Route::get('/services-alentours', [FrontHomeController::class, 'service'])->name('services-alentours');
 Route::get('/rubrique-souvenirs', [FrontHomeController::class, 'gallery'])->name('rubrique-souvenirs');
-Route::get('/journal', [FrontHomeController::class, 'newspaper'])->name('journal');
 
 Route::get('/numbers', function () {
     return view('numbers');
