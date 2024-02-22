@@ -38,7 +38,7 @@ class NewspaperController extends Controller
         $newspaper = Newspaper::create($validData);
 
         return redirect()->route('newspapers.index')
-            ->with('success', 'Votre journal a bien été enregistrée !');
+            ->with('success', 'Votre journal a bien été enregistré !');
     }
 
     public function show(Newspaper $newspaper)
