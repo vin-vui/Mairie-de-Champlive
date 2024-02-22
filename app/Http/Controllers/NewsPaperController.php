@@ -72,3 +72,4 @@ class NewspaperController extends Controller
             ->with('success', 'Journal supprimé avec succès !');
     }
 }
+
