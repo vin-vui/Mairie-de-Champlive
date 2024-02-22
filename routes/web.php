@@ -7,7 +7,7 @@ use App\Http\Controllers\DeliberationController;
 use App\Http\Controllers\AssociationController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\GalleryController;
-use App\Http\Controllers\NewspaperController;
+use App\Http\Controllers\PaperController;
 use App\Http\Controllers\FrontHomeController;
 use App\Http\Controllers\FrontArticleController;
 
@@ -70,7 +70,7 @@ Route::middleware([
 
     Route::resource('galleries', GalleryController::class);
 
-    Route::resource('newspapers', NewspaperController::class);
+    Route::resource('newspapers', PaperController::class);
 
 });
 
