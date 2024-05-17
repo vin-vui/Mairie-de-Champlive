@@ -34,7 +34,7 @@
             <div >Au sommet de la colline, les ruines du Château de Vaite, construit au XIIIème,
                 surplombent la vallée du
                 Doubs. De cet endroit, on peut avoir un magnifique point de vue. Ce château fut incendié en 1480 par les
-                troupes de Louis XI, la famille Lallemand l'entretint jusqu'en 1792 et c'est en 1793 que le Conseil
+                troupes de Louis XI, la famille Lallemand l'entretient jusqu'en 1792 et c'est en 1793 que le Conseil
                 Général
                 du Doubs le fit démolir en redoutant qu'il devienne un repaire de brigands. Il reste de nos jours une
                 tour

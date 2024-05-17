@@ -32,7 +32,7 @@ class PaperController extends Controller
     {
         $validData = $request->validate($this->rules());
 
-        $path = Storage::putFileAs('public', $request->file, '.' . $request->file->extension());
+        $path = Storage::putFileAs('public', $request->file, 'journal'.now()'.' . $request->file->extension());
         $validData["file"] = $path;
 
         $newspaper = Newspaper::create($validData);
@@ -55,7 +55,7 @@ class PaperController extends Controller
     {
         $validData = $request->validate($this->rules());
 
-        $path = Storage::putFileAs('public', $request->file, '.' . $request->file->extension());
+        $path = Storage::putFileAs('public', $request->file, $newspaper->file . '.' . $request->file->extension());
         $validData["file"] = $path;
 
         $newspaper->update($validData);
